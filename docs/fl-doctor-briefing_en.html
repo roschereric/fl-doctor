@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>fl-doctor — briefing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#FF5500;--s:#313638;--tan:#F7F4EE;--line:#E4E1DA;--mut:#6F7274;--cy:#1A2C32;--ok:#2E8540}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:Montserrat,system-ui,sans-serif;color:var(--s);background:#fff;line-height:1.6;font-size:15px}
+header{position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;gap:16px;padding:0 20px;
+ background:#fff;border-bottom:1px solid var(--line);border-top:3px solid var(--o);z-index:20}
+header .t{font-weight:700;font-size:16px}header .t span{font-weight:300;color:var(--mut)}
+header .av{margin-left:auto;font-size:12px;color:var(--mut)}header a.lang{font-size:13px;color:var(--o);font-weight:600;text-decoration:none}
+#menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:6px;padding:4px 10px;font:inherit;cursor:pointer}
+nav{position:fixed;top:56px;bottom:0;left:0;width:290px;overflow:auto;padding:18px 12px 40px 20px;background:var(--tan);
+ border-right:1px solid var(--line);font-size:13.5px}
+nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav ul ul{margin:2px 0 10px 10px;border-left:1px solid var(--line)}
+nav a{display:block;padding:3px 10px;color:var(--s);text-decoration:none;border-radius:4px}
+nav a.g{font-weight:700;margin-top:10px;text-transform:none}nav a:hover{background:#fff}
+nav a.act{color:var(--o);background:#fff;font-weight:600}
+main{margin:56px 0 0 290px;padding:28px 48px 80px;max-width:1180px}
+h1{font-weight:300;font-size:34px;margin:8px 0 4px}h2{font-size:24px;margin:48px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h2::before{content:"";display:inline-block;width:10px;height:10px;background:var(--o);margin-right:10px;vertical-align:middle}
+h3{font-size:18px;margin:32px 0 8px}h4{font-size:15px;margin:22px 0 6px;color:var(--s)}
+a{color:#C04000}code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.88em;background:#EFECE6;padding:1px 5px;
+ border-radius:4px;white-space:nowrap;font-variant-ligatures:none}
+pre{position:relative;background:var(--cy);color:#E8E6E3;padding:14px 16px;border-radius:6px;overflow:auto;border-left:3px solid var(--o)}
+pre code{background:none;padding:0;color:inherit;white-space:pre;font-size:13px}
+pre .cp{position:absolute;top:6px;right:6px;font:600 11px Montserrat,sans-serif;background:#2C4048;color:#fff;border:0;
+ border-radius:4px;padding:3px 8px;cursor:pointer}
+.tabla{overflow:auto;margin:12px 0}table{border-collapse:collapse;width:100%;font-size:14px}
+th{background:var(--s);color:#fff;text-align:left;font-weight:600;padding:8px 10px;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em}
+td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even){background:#FBFAF7}
+.aviso{margin:14px 0;padding:10px 14px;border-left:4px solid #2B6CB0;background:#EEF4FB;border-radius:4px}
+.aviso.warn{border-color:var(--o);background:#FFF4EC}.aviso.tip{border-color:var(--ok);background:#EEF7F0}
+.esperado{padding:8px 14px;border:1px solid #CFE6D5;background:#F4FAF5;border-radius:6px}
+figure.shot{margin:18px 0}figure.shot .zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+figure.shot svg{width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+figcaption{font-size:12.5px;color:var(--mut);margin-top:6px}
+.pend{border:2px dashed var(--o);padding:50px 20px;text-align:center;color:var(--mut)}
+dialog{border:0;padding:16px;background:transparent;max-width:none;max-height:none;width:100vw;height:100vh}
+dialog::backdrop{background:rgba(20,22,26,.92)}dialog .marco{overflow:auto;width:100%;height:100%;cursor:zoom-out}
+dialog svg{display:block;margin:0 auto;height:auto}
+footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
+@media (max-width:900px){nav{transform:translateX(-100%);transition:transform .2s;z-index:15;width:86vw}
+ body.abierto nav{transform:none}main{margin-left:0;padding:24px 16px 60px}#menu-btn{display:block}header .av{display:none}
+ code{white-space:normal;overflow-wrap:anywhere}main a{overflow-wrap:anywhere}}
+@media print{header,nav,pre .cp{display:none}main{margin:0;padding:0}}
+</style></head><body>
+<header><button id="menu-btn" type="button" aria-label="Sections">☰</button>
+<div class="t">fl-doctor 0.1.0 <span>· Documentation</span></div><div class="av">Unofficial tool, provided “as is”, without Illumio support.</div><a class="lang" href="fl-doctor-briefing_es.html">Español</a></header>
+<nav aria-label="Sections"><ul><li><a class="g" href="#the-problem">The problem</a>
+</li>
+<li><a class="g" href="#what-fl-doctor-is">What fl-doctor is</a>
+</li>
+<li><a class="g" href="#the-five-use-cases-that-matter">The five use cases that matter</a>
+</li>
+<li><a class="g" href="#guarantees">Guarantees</a>
+</li>
+<li><a class="g" href="#status">Status</a>
+</li>
+<li><a class="g" href="#next-steps">Next steps</a>
+</li></ul></nav>
+<main><h1>fl-doctor — briefing</h1>
+
+<h2 id="the-problem">The problem</h2>
+<p>When an Illumio FlowLink user says "I configured the switch to export flows to FlowLink, but I don't see the servers on the map", finding the break takes hours: <code>tcpdump</code> and <code>tshark</code> on the collector, reading FlowLink logs, and several rounds of questions. The break can be at any of five links: exporter, collector host, FlowLink, delivery to the PCE, or the PCE.</p>
+<p>Four failures seen in the field (anonymized):</p>
+<ol>
+<li><strong>FlowLink never uploaded anything.</strong> The collector could not resolve DNS for the PCE. The error was in the log on every attempt.
+</li>
+<li><strong>Millions of "bad data" drops.</strong> They were 100% ICMP, not a data problem.
+</li>
+<li><strong>Wrong capture point.</strong> The exporter did not see the server segment, so the IPs the Illumio FlowLink user was looking for never appeared.
+</li>
+<li><strong>Wrong port.</strong> The exporter sent to a UDP port FlowLink was not listening on.
+</li></ol>
+<h2 id="what-fl-doctor-is">What fl-doctor is</h2>
+<p>A terminal tool (TUI and CLI) in one static Linux binary, run on the FlowLink collector. It answers in minutes: are flows arriving, from which switch, does a given IP appear, does FlowLink process and deliver it, and what evidence goes to support.</p>
+<h2 id="the-five-use-cases-that-matter">The five use cases that matter</h2>
+<div class="tabla"><table>
+<thead><tr><th>Illumio FlowLink user's question</th><th>What fl-doctor shows</th></tr></thead>
+<tbody>
+<tr><td>"Where does the chain break?"</td><td>Home: links A–E (exporters, host, FlowLink, delivery, PCE) and a funnel: wire → socket → decoded → delivered (fig. 1)</td></tr>
+<tr><td>"Is my switch sending, and to the right port?"</td><td>Exporters: version, port, templates, sampling, and whether FlowLink accepts each one (fig. 2)</td></tr>
+<tr><td>"Do I see this server's flows, and how far do they get?"</td><td>An evidence ladder N0–N4 for any IP: seen on the wire, accepted by FlowLink, processed, delivered with HTTP 204 (fig. 3)</td></tr>
+<tr><td>"Why do I never see uploads?"</td><td>FlowLink › Log: cycles, 204 responses, DNS and connection errors to the PCE, drops with the dominant protocol (fig. 4)</td></tr>
+<tr><td>"What do I send to support?"</td><td>One key builds a bundle: summary in Spanish and English, relevant log, configuration with secrets hidden, and the pcap (fig. 5)</td></tr>
+</tbody></table></div>
+<p>The figures come from a lab collector with live traffic and synthetic data: documentation address ranges and invented names, no real site.</p>
+<figure class="shot"><button class="zoom" type="button" title="Click to view at full size"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
+<title>fl-doctor · flowlink-lab-01</title>
+
+<rect width="1372" height="947.04" rx="9" fill="#1b1d22"/>
+<path d="M0 9a9 9 0 0 1 9-9h1354a9 9 0 0 1 9 9v23H0z" fill="#16181c"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="6" fill="#febc2e"/>
+<circle cx="58" cy="16" r="6" fill="#28c840"/>
+<text x="686" y="20.2" text-anchor="middle" style="font-size:12px" fill="#c8ccd4" fill-opacity=".75">fl-doctor · flowlink-lab-01</text>
+<rect x="17.68" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
+<rect x="17.68" y="258" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="17.68" y="904.79" width="1336.65" height="1.05" fill="#8b8c8e"/>
+<rect x="266" y="258" width="1088.33" height="1.05" fill="#8b8c8e"/>
+<rect x="530.08" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
+<rect x="530.08" y="91.67" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="530.08" y="239.51" width="421.05" height="1.05" fill="#8b8c8e"/>
+<rect x="652.4" y="91.67" width="298.73" height="1.05" fill="#8b8c8e"/>
+<rect x="950.08" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
+<rect x="958.48" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
+<rect x="958.48" y="91.67" width="4.73" height="1.05" fill="#8b8c8e"/>
+<rect x="958.48" y="239.51" width="395.85" height="1.05" fill="#8b8c8e"/>
+<rect x="1097.6" y="91.67" width="256.73" height="1.05" fill="#8b8c8e"/>
+<rect x="1353.28" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
+<rect x="1353.28" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
+<rect x="22.4" y="156.88" width="436.8" height="18.48" fill="#e6e6e6"/>
+<rect x="22.4" y="138.4" width="478.8" height="18.48" fill="#e6e6e6"/>
+<rect x="22.4" y="119.92" width="495.6" height="18.48" fill="#e6e6e6"/>
+<rect x="39.2" y="101.44" width="445.2" height="18.48" fill="#e6e6e6"/>
+<rect x="30.8" y="101.44" width="8.4" height="18.48" fill="#f2cc60"/>
+<rect x="14" y="64.48" width="67.2" height="18.48" fill="#ff7a1a"/>
+<rect x="17.05" y="91.05" width="2.31" height="150.15" fill="#ff7a1a"/>
+<rect x="17.05" y="91.05" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="17.05" y="238.88" width="506.31" height="2.31" fill="#ff7a1a"/>
+<rect x="22.4" y="286.24" width="4.2" height="18.48" fill="#ff7a1a"/>
+<rect x="22.4" y="101.44" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="98" y="91.05" width="425.36" height="2.31" fill="#ff7a1a"/>
+<rect x="521.04" y="91.05" width="2.31" height="150.15" fill="#ff7a1a"/>
+<rect x="551.6" y="210.01" width="42" height="2.31" fill="#ff7a1a"/>
+<rect x="593.6" y="198.46" width="8.4" height="13.86" fill="#ff7a1a"/>
+<rect x="602" y="196.15" width="33.6" height="16.17" fill="#ff7a1a"/>
+<rect x="635.6" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="644" y="196.15" width="42" height="16.17" fill="#ff7a1a"/>
+<rect x="686" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="694.4" y="196.15" width="58.8" height="16.17" fill="#ff7a1a"/>
+<rect x="736.4" y="101.44" width="201.6" height="55.44" fill="#ff7a1a"/>
+<rect x="753.2" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="761.6" y="196.15" width="75.6" height="16.17" fill="#ff7a1a"/>
+<rect x="837.2" y="210.01" width="8.4" height="2.31" fill="#ff7a1a"/>
+<path d="M402.08 55.41L403.93 57.42L407.46 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="35" cy="92.2" r="2.86" fill="#ff7a1a"/>
+<path d="M24.05 107.33L29.31 110.68L24.05 114.03Z" fill="#1b1d22"/>
+<path d="M35 107.49L38.35 113.23L31.65 113.23Z" fill="#1b1d22"/>
+<path d="M964.88 110.85L966.73 112.86L970.26 108.33" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M964.88 129.33L966.73 131.34L970.26 126.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M964.88 147.81L966.73 149.82L970.26 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M964.88 166.29L966.73 168.3L970.26 163.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.48 184.77L34.33 186.78L37.86 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M964.88 184.77L966.73 186.78L970.26 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.48 203.25L34.33 205.26L37.86 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M967.4 199.89L970.75 205.63L964.05 205.63Z" fill="#f2cc60"/>
+<path d="M964.88 221.73L966.73 223.74L970.26 219.21" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.4 292.12L46.26 295.48L43.4 298.84L40.54 295.48Z" fill="#ff7a1a"/>
+<path d="M707 292.29L710.35 298.03L703.65 298.03Z" fill="#f2cc60"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
+<text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
+<text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
+<text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
+<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
+<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
+<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 5% ·</text>
+<text fill="#3fb950" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:43:00 UTC</text>
+<text fill="#1b1d22" font-weight="700" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
+<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
+<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
+<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
+<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#8b8c8e" x="1307.6" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">ES/</text>
+<text fill="#e6e6e6" font-weight="700" x="1332.8" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">EN</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">Chain</text>
+<text fill="#8b8c8e" font-weight="700" x="543.2" y="95.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Funnel · 15m</text>
+<text fill="#8b8c8e" font-weight="700" x="971.6" y="95.82" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Log indicators</text>
+<text fill="#1b1d22" font-weight="700" x="47.6" y="114.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">A</text>
+<text fill="#1b1d22" x="64.4" y="114.3" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Exporters</text>
+<text fill="#1b1d22" x="173.6" y="114.3" textLength="310.8" lengthAdjust="spacing" xml:space="preserve">A5 · Sampling on: 198.51.100.12 1:10,</text>
+<text fill="#8b8c8e" x="534.8" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
+<text fill="#e6e6e6" font-weight="700" x="660.8" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">11.8 pps</text>
+<text fill="#8b8c8e" x="980" y="114.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L01</text>
+<text fill="#e6e6e6" x="1013.6" y="114.3" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Log alive</text>
+<text fill="#1b1d22" x="173.6" y="132.78" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">198.51.100.13 1:512. With 1:512 sampling,</text>
+<text fill="#8b8c8e" x="534.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">socket</text>
+<text fill="#e6e6e6" font-weight="700" x="660.8" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">12.0 pps</text>
+<text fill="#8b8c8e" x="980" y="132.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L02</text>
+<text fill="#e6e6e6" x="1013.6" y="132.78" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">Starts and configuration</text>
+<text fill="#1b1d22" x="173.6" y="151.26" textLength="327.6" lengthAdjust="spacing" xml:space="preserve">a server that crosses fewer than ~1,500</text>
+<text fill="#8b8c8e" x="534.8" y="151.26" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">decoded</text>
+<text fill="#e6e6e6" font-weight="700" x="669.2" y="151.26" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">124 r/s</text>
+<text fill="#8b8c8e" x="980" y="151.26" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L03</text>
+<text fill="#e6e6e6" x="1013.6" y="151.26" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Consumers</text>
+<text fill="#1b1d22" x="173.6" y="169.74" textLength="285.6" lengthAdjust="spacing" xml:space="preserve">packets in 15 min may not show up.</text>
+<text fill="#8b8c8e" x="534.8" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">discards</text>
+<text fill="#e6e6e6" font-weight="700" x="669.2" y="169.74" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">0.0 r/s</text>
+<text fill="#8b8c8e" x="980" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L04</text>
+<text fill="#e6e6e6" x="1013.6" y="169.74" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Rate per consumer</text>
+<text fill="#e6e6e6" font-weight="700" x="47.6" y="188.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">B</text>
+<text fill="#e6e6e6" x="64.4" y="188.22" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Host</text>
+<text fill="#e6e6e6" x="173.6" y="188.22" textLength="285.6" lengthAdjust="spacing" xml:space="preserve">11.9 datagrams/s from 3 exporters.</text>
+<text fill="#8b8c8e" x="534.8" y="188.22" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">delivered</text>
+<text fill="#e6e6e6" font-weight="700" x="618.8" y="188.22" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">1/1 batches · 204</text>
+<text fill="#8b8c8e" x="980" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L05</text>
+<text fill="#e6e6e6" x="1013.6" y="188.22" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Counter reset</text>
+<text fill="#e6e6e6" font-weight="700" x="47.6" y="206.7" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">C</text>
+<text fill="#e6e6e6" x="64.4" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="173.6" y="206.7" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">Process 3377 · unit illumio-flowlink.ser…</text>
+<text fill="#8b8c8e" x="854" y="206.7" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">pps (15m)</text>
+<text fill="#8b8c8e" x="980" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L06</text>
+<text fill="#e6e6e6" x="1013.6" y="206.7" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Exporters seen by FlowLink</text>
+<text fill="#58a6ff" x="30.8" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#e6e6e6" font-weight="700" x="47.6" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">D</text>
+<text fill="#e6e6e6" x="64.4" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Delivery</text>
+<text fill="#e6e6e6" x="173.6" y="225.18" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">The path to the PCE was not tested (disa…</text>
+<text fill="#8b8c8e" x="980" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L07</text>
+<text fill="#e6e6e6" x="1013.6" y="225.18" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Data without template</text>
+<text fill="#8b8c8e" font-weight="700" x="30.8" y="262.14" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · list «perfil»</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
+<rect x="39.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="568.4" y="280.62" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
+<rect x="568.4" y="283.84" width="16.8" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="702.8" y="280.62" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Verdict</text>
+<rect x="702.8" y="283.84" width="58.8" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="946.4" y="280.62" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Ladder</text>
+<rect x="946.4" y="283.84" width="50.4" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="1047.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Last</text>
+<rect x="1047.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="1131.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Note</text>
+<rect x="1131.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" x="56" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
+<text fill="#e6e6e6" x="568.4" y="299.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
+<text fill="#f2cc60" x="719.6" y="299.1" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Waiting for the next cycle</text>
+<text fill="#3fb950" x="946.4" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">N1 N2 N3</text>
+<text fill="#8b8c8e" x="1022" y="299.1" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">··</text>
+<text fill="#e6e6e6" x="1047.2" y="299.1" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:42</text>
+<text fill="#8b8c8e" x="1131.2" y="299.1" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">next cycle in 0 s</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Home › Chain › A Exporters</text>
+<text fill="#ff7a1a" x="644" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="660.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
+<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
+<text fill="#ff7a1a" x="938" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="988.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text fill="#ff7a1a" x="1047.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">p</text>
+<text fill="#8b8c8e" x="1064" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">pause</text>
+<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+</svg></button><figcaption>Fig. 1 — Home: links A–E and funnel</figcaption></figure>
+<figure class="shot"><button class="zoom" type="button" title="Click to view at full size"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
+<title>fl-doctor · flowlink-lab-01</title>
+
+<rect width="1372" height="947.04" rx="9" fill="#1b1d22"/>
+<path d="M0 9a9 9 0 0 1 9-9h1354a9 9 0 0 1 9 9v23H0z" fill="#16181c"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="6" fill="#febc2e"/>
+<circle cx="58" cy="16" r="6" fill="#28c840"/>
+<text x="686" y="20.2" text-anchor="middle" style="font-size:12px" fill="#c8ccd4" fill-opacity=".75">fl-doctor · flowlink-lab-01</text>
+<rect x="551.6" y="119.92" width="8.4" height="18.48" fill="#3fb950"/>
+<rect x="635.6" y="119.92" width="33.6" height="18.48" fill="#3fb950"/>
+<rect x="677.6" y="119.92" width="8.4" height="18.48" fill="#3fb950"/>
+<rect x="908.08" y="91.67" width="1.05" height="814.17" fill="#8b8c8e"/>
+<rect x="908.08" y="91.67" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="908.08" y="904.79" width="446.25" height="1.05" fill="#8b8c8e"/>
+<rect x="1190" y="91.67" width="164.33" height="1.05" fill="#8b8c8e"/>
+<rect x="1353.28" y="91.67" width="1.05" height="814.17" fill="#8b8c8e"/>
+<rect x="39.2" y="119.92" width="512.4" height="18.48" fill="#e6e6e6"/>
+<rect x="560" y="119.92" width="75.6" height="18.48" fill="#e6e6e6"/>
+<rect x="669.2" y="119.92" width="8.4" height="18.48" fill="#e6e6e6"/>
+<rect x="686" y="119.92" width="210" height="18.48" fill="#e6e6e6"/>
+<rect x="1055.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1072.4" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1097.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1114.4" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1139.6" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1164.8" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1190" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1215.2" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1240.4" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1265.6" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1290.8" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1316" y="249.28" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1064" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
+<rect x="1089.2" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
+<rect x="1173.2" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
+<rect x="17.05" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
+<rect x="17.05" y="91.05" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="17.05" y="904.16" width="836.96" height="2.31" fill="#ff7a1a"/>
+<rect x="22.4" y="119.92" width="16.8" height="18.48" fill="#ff7a1a"/>
+<rect x="89.6" y="64.48" width="109.2" height="18.48" fill="#ff7a1a"/>
+<rect x="165.2" y="91.05" width="736.15" height="2.31" fill="#ff7a1a"/>
+<rect x="896" y="904.16" width="5.36" height="2.31" fill="#ff7a1a"/>
+<rect x="899.04" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
+<rect x="1055.6" y="270.07" width="92.4" height="16.17" fill="#ff7a1a"/>
+<rect x="1080.8" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1106" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1131.2" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1148" y="272.38" width="8.4" height="13.86" fill="#ff7a1a"/>
+<rect x="1156.4" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1156.4" y="270.07" width="67.2" height="16.17" fill="#ff7a1a"/>
+<rect x="1181.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1206.8" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1223.6" y="267.76" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1232" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1232" y="270.07" width="100.8" height="16.17" fill="#ff7a1a"/>
+<rect x="1257.2" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1282.4" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1307.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1332.8" y="249.28" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1332.8" y="272.38" width="8.4" height="13.86" fill="#ff7a1a"/>
+<path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="35" cy="92.2" r="2.86" fill="#ff7a1a"/>
+<path d="M1057.28 110.85L1059.13 112.86L1062.66 108.33" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.45 125.81L37.71 129.16L32.45 132.51Z" fill="#1b1d22"/>
+<path d="M553.28 129.33L555.13 131.34L558.66 126.81" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M679.28 129.33L681.13 131.34L684.66 126.81" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M553.28 147.81L555.13 149.82L558.66 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M679.28 147.81L681.13 149.82L684.66 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M679.62 163.94L683.98 168.3M683.98 163.94L679.62 168.3" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M679.28 184.77L681.13 186.78L684.66 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
+<text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
+<text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
+<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.1 GB</text>
+<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
+<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 6% ·</text>
+<text fill="#3fb950" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:32:09 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
+<text fill="#1b1d22" font-weight="700" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
+<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
+<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
+<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#8b8c8e" x="1307.6" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">ES/</text>
+<text fill="#e6e6e6" font-weight="700" x="1332.8" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">EN</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Exporters · 4</text>
+<text fill="#8b8c8e" font-weight="700" x="921.2" y="95.82" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">198.51.100.11:4739 · sw-core-01</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Exporter</text>
+<rect x="39.2" y="117.52" width="67.2" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="266" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Ver.</text>
+<rect x="266" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="350" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Port</text>
+<rect x="350" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="425.6" y="114.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">pps</text>
+<rect x="425.6" y="117.52" width="25.2" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="484.4" y="114.3" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">rec/s Tmpl.</text>
+<rect x="484.4" y="117.52" width="92.4" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="635.6" y="114.3" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Loss FlowLink</text>
+<rect x="635.6" y="117.52" width="109.2" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="820.4" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
+<rect x="820.4" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#8b8c8e" x="912.8" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="1072.4" y="114.3" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">accepts · log</text>
+<text fill="#1b1d22" x="39.2" y="132.78" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.11</text>
+<text fill="#76777a" x="156.8" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">sw-core-01</text>
+<text fill="#1b1d22" x="266" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">IPFIX</text>
+<text fill="#1b1d22" x="350" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">4739</text>
+<text fill="#1b1d22" x="425.6" y="132.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">6.7</text>
+<text fill="#1b1d22" x="492.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">76.7 1</text>
+<text fill="#1b1d22" x="635.6" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
+<text fill="#1b1d22" x="694.4" y="132.78" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">accepts · log  now</text>
+<text fill="#8b8c8e" x="912.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Format</text>
+<text fill="#e6e6e6" x="1055.6" y="132.78" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">IPFIX · ipfix-core</text>
+<text fill="#e6e6e6" x="39.2" y="151.26" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.12</text>
+<text fill="#8b8c8e" x="156.8" y="151.26" textLength="84" lengthAdjust="spacing" xml:space="preserve">sw-dist-02</text>
+<text fill="#e6e6e6" x="266" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v9</text>
+<text fill="#e6e6e6" x="350" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">2055</text>
+<text fill="#e6e6e6" x="425.6" y="151.26" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">4.2</text>
+<text fill="#e6e6e6" x="492.8" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">49.0 1</text>
+<text fill="#3fb950" x="635.6" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
+<text fill="#e6e6e6" x="694.4" y="151.26" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">accepts · log  now</text>
+<text fill="#8b8c8e" x="912.8" y="151.26" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Templates</text>
+<text fill="#e6e6e6" x="1055.6" y="151.26" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">1 · resend every 57 s · complete</text>
+<text fill="#e6e6e6" x="39.2" y="169.74" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14</text>
+<text fill="#8b8c8e" x="156.8" y="169.74" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">sw-lab-04</text>
+<text fill="#e6e6e6" x="266" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v5</text>
+<text fill="#e6e6e6" x="350" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">9995</text>
+<text fill="#e6e6e6" x="425.6" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1.2</text>
+<text fill="#e6e6e6" x="492.8" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">16.0</text>
+<text fill="#8b8c8e" x="534.8" y="169.74" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">—</text>
+<text fill="#3fb950" x="635.6" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
+<text fill="#e6e6e6" x="694.4" y="169.74" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">no listener</text>
+<text fill="#e6e6e6" x="820.4" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">now</text>
+<text fill="#8b8c8e" x="912.8" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Measures</text>
+<text fill="#e6e6e6" x="1055.6" y="169.74" textLength="285.6" lengthAdjust="spacing" xml:space="preserve">sampling no sampling · loss 0.0% ·</text>
+<text fill="#e6e6e6" x="39.2" y="188.22" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.13</text>
+<text fill="#8b8c8e" x="156.8" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">sw-borde-03</text>
+<text fill="#e6e6e6" x="266" y="188.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">sFlow</text>
+<text fill="#e6e6e6" x="350" y="188.22" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">6343</text>
+<text fill="#e6e6e6" x="425.6" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1.9</text>
+<text fill="#e6e6e6" x="501.2" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">8.5</text>
+<text fill="#8b8c8e" x="534.8" y="188.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">—</text>
+<text fill="#3fb950" x="635.6" y="188.22" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
+<text fill="#e6e6e6" x="694.4" y="188.22" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">accepts</text>
+<text fill="#e6e6e6" x="820.4" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">now</text>
+<text fill="#e6e6e6" x="1055.6" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">clock +22 s</text>
+<text fill="#8b8c8e" x="912.8" y="206.7" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Traffic</text>
+<text fill="#e6e6e6" x="1055.6" y="206.7" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">76.7 r/s · 6.7 pps · 3.7 KB/s ·</text>
+<text fill="#e6e6e6" x="1055.6" y="225.18" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">IPs: 83 private · 144 public</text>
+<text fill="#8b8c8e" x="912.8" y="243.66" textLength="42" lengthAdjust="spacing" xml:space="preserve">Other</text>
+<text fill="#e6e6e6" x="1055.6" y="243.66" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">fragmented 0 · max duration 42 s</text>
+<text fill="#8b8c8e" x="912.8" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">Per minute</text>
+<text fill="#8b8c8e" x="862.4" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/4</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">Exporters › Table › 198.51.100.11</text>
+<text fill="#ff7a1a" x="686" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="702.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text fill="#ff7a1a" x="778.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="795.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
+<text fill="#ff7a1a" x="862.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
+<text fill="#8b8c8e" x="879.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
+<text fill="#ff7a1a" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">d</text>
+<text fill="#8b8c8e" x="946.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">board</text>
+<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="1131.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
+<text fill="#ff7a1a" x="1215.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+</svg></button><figcaption>Fig. 2 — Exporters: version, port, templates, sampling and FlowLink acceptance</figcaption></figure>
+<figure class="shot"><button class="zoom" type="button" title="Click to view at full size"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
+<title>fl-doctor · flowlink-lab-01</title>
+
+<rect width="1372" height="947.04" rx="9" fill="#1b1d22"/>
+<path d="M0 9a9 9 0 0 1 9-9h1354a9 9 0 0 1 9 9v23H0z" fill="#16181c"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="6" fill="#febc2e"/>
+<circle cx="58" cy="16" r="6" fill="#28c840"/>
+<text x="686" y="20.2" text-anchor="middle" style="font-size:12px" fill="#c8ccd4" fill-opacity=".75">fl-doctor · flowlink-lab-01</text>
+<rect x="22.4" y="138.4" width="4.2" height="18.48" fill="#1b1d22"/>
+<rect x="316.4" y="138.4" width="8.4" height="18.48" fill="#3fb950"/>
+<rect x="353.68" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
+<rect x="353.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="353.68" y="904.79" width="1000.65" height="1.05" fill="#8b8c8e"/>
+<rect x="501.2" y="110.16" width="853.12" height="1.05" fill="#8b8c8e"/>
+<rect x="1353.28" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
+<rect x="56" y="138.4" width="260.4" height="18.48" fill="#e6e6e6"/>
+<rect x="324.8" y="138.4" width="16.8" height="18.48" fill="#e6e6e6"/>
+<rect x="17.05" y="109.53" width="2.31" height="796.95" fill="#ff7a1a"/>
+<rect x="17.05" y="109.53" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="17.05" y="904.16" width="282.56" height="2.31" fill="#ff7a1a"/>
+<rect x="22.4" y="156.88" width="4.2" height="18.48" fill="#ff7a1a"/>
+<rect x="22.4" y="138.4" width="33.6" height="18.48" fill="#ff7a1a"/>
+<rect x="207.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
+<rect x="240.8" y="109.53" width="106.15" height="2.31" fill="#ff7a1a"/>
+<rect x="341.6" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="344.64" y="109.53" width="2.31" height="796.95" fill="#ff7a1a"/>
+<rect x="744.8" y="387.88" width="8.4" height="9.24" fill="#ff7a1a"/>
+<rect x="753.2" y="385.57" width="16.8" height="11.55" fill="#ff7a1a"/>
+<rect x="770" y="378.64" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="778.4" y="385.57" width="25.2" height="11.55" fill="#ff7a1a"/>
+<rect x="803.6" y="378.64" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="812" y="394.81" width="8.4" height="2.31" fill="#ff7a1a"/>
+<path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="35" cy="110.68" r="2.86" fill="#ff7a1a"/>
+<path d="M687.68 129.33L689.53 131.34L693.06 126.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.45 144.29L37.71 147.64L32.45 150.99Z" fill="#1b1d22"/>
+<path d="M43.4 144.28L46.26 147.64L43.4 151L40.54 147.64Z" fill="#1b1d22"/>
+<path d="M318.08 147.81L319.93 149.82L323.46 145.29" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M360.08 147.81L361.93 149.82L365.46 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.4 162.76L46.26 166.12L43.4 169.48L40.54 166.12Z" fill="#ff7a1a"/>
+<path d="M318.42 163.94L322.78 168.3M322.78 163.94L318.42 168.3" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M360.08 166.29L361.93 168.3L365.46 163.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M360.08 203.25L361.93 205.26L365.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M360.08 221.73L361.93 223.74L365.46 219.21" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M362.6 273.81L365.95 279.55L359.25 279.55Z" fill="#f2cc60"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
+<text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
+<text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">25/64 MB</text>
+<text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
+<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
+<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
+<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 9% ·</text>
+<text fill="#3fb950" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:32:25 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
+<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
+<text fill="#1b1d22" font-weight="700" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
+<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
+<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#8b8c8e" x="1307.6" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">ES/</text>
+<text fill="#e6e6e6" font-weight="700" x="1332.8" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">EN</text>
+<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">[Watched]</text>
+<text fill="#8b8c8e" x="106.4" y="95.82" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · «perfil»</text>
+<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="126" lengthAdjust="spacing" xml:space="preserve">Evidence ladder</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
+<rect x="39.2" y="136" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="182" y="132.78" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
+<rect x="182" y="136" width="16.8" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="358.4" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77 · 10.20.30.77</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Verdict:</text>
+<text fill="#3fb950" x="702.8" y="132.78" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Delivered</text>
+<text fill="#8b8c8e" x="786.8" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(inferred)</text>
+<text fill="#1b1d22" x="56" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
+<text fill="#1b1d22" x="182" y="151.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N1</text>
+<text fill="#e6e6e6" x="400.4" y="151.26" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Reaches the collector</text>
+<text fill="#8b8c8e" x="585.2" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
+<text fill="#e6e6e6" x="660.8" y="151.26" textLength="520.8" lengthAdjust="spacing" xml:space="preserve">37 records · 1 exporters · Oct 16 14:24 UTC → Oct 16 14:31 UTC</text>
+<text fill="#e6e6e6" x="56" y="169.74" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">sonda-gestion… 10.20.40.99</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N2</text>
+<text fill="#e6e6e6" x="400.4" y="169.74" textLength="168" lengthAdjust="spacing" xml:space="preserve">FlowLink receives it</text>
+<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#e6e6e6" x="660.8" y="169.74" textLength="672" lengthAdjust="spacing" xml:space="preserve">The exporter is accepted by consumer "netflow-dist" (port 2055); the socket does</text>
+<text fill="#e6e6e6" x="660.8" y="188.22" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">not drop and FlowLink created its templates.</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="206.7" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N3</text>
+<text fill="#e6e6e6" x="400.4" y="206.7" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">FlowLink processed it</text>
+<text fill="#8b8c8e" x="585.2" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
+<text fill="#e6e6e6" x="660.8" y="206.7" textLength="512.4" lengthAdjust="spacing" xml:space="preserve">FlowLink processed it for the first time on Oct 16 13:46 UTC.</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="225.18" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N4</text>
+<text fill="#e6e6e6" x="400.4" y="225.18" textLength="126" lengthAdjust="spacing" xml:space="preserve">Cycle delivered</text>
+<text fill="#8b8c8e" x="585.2" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
+<text fill="#e6e6e6" x="660.8" y="225.18" textLength="512.4" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:32 UTC cycle: 1/1 batches with a 2xx response, 204.</text>
+<text fill="#58a6ff" x="358.4" y="243.66" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="243.66" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">E</text>
+<text fill="#e6e6e6" x="400.4" y="243.66" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">PCE</text>
+<text fill="#8b8c8e" x="585.2" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#e6e6e6" x="660.8" y="243.66" textLength="680.4" lengthAdjust="spacing" xml:space="preserve">Outside the host: the evidence package carries the technical context to review it</text>
+<text fill="#e6e6e6" x="660.8" y="262.14" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">in the PCE.</text>
+<text fill="#e6e6e6" x="375.2" y="280.62" textLength="394.8" lengthAdjust="spacing" xml:space="preserve">Waiting for the next cycle: it closes in 4 min.</text>
+<text fill="#8b8c8e" x="358.4" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">Peers</text>
+<text fill="#e6e6e6" x="484.4" y="317.58" textLength="865.2" lengthAdjust="spacing" xml:space="preserve">10.20.20.6:5432/tcp 27.0% · 10.99.0.53:53/udp 27.0% · 10.20.10.11:8443/tcp 13.5% · 10.20.10.12:8443/tcp</text>
+<text fill="#e6e6e6" x="484.4" y="336.06" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">13.5% · 203.0.113.25:443/tcp 8.1%</text>
+<text fill="#8b8c8e" x="358.4" y="354.54" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Exporters</text>
+<text fill="#e6e6e6" x="484.4" y="354.54" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
+<text fill="#8b8c8e" x="358.4" y="373.02" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Transport</text>
+<text fill="#e6e6e6" x="484.4" y="373.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">udp</text>
+<text fill="#8b8c8e" x="358.4" y="391.5" textLength="84" lengthAdjust="spacing" xml:space="preserve">Per minute</text>
+<text fill="#8b8c8e" x="828.8" y="391.5" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">records/min</text>
+<text fill="#8b8c8e" x="358.4" y="409.98" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Records</text>
+<text fill="#e6e6e6" x="484.4" y="409.98" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">37</text>
+<text fill="#e6e6e6" x="358.4" y="446.94" textLength="982.8" lengthAdjust="spacing" xml:space="preserve">Reaches the collector (N1) · FlowLink receives it (N2) · FlowLink processed it for the first time on Oct 16 13:46 UTC</text>
+<text fill="#e6e6e6" x="358.4" y="465.42" textLength="436.8" lengthAdjust="spacing" xml:space="preserve">(N3) · that cycle's batches were delivered, 204 (N4)</text>
+<text fill="#8b8c8e" x="358.4" y="502.38" textLength="747.6" lengthAdjust="spacing" xml:space="preserve">space watch · + add · / filter · e evidence · t tshark · c capture · r trace · Del remove</text>
+<text fill="#8b8c8e" x="308" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/2</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">IPs › Watched › 10.20.30.77</text>
+<text fill="#ff7a1a" x="375.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="425.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text fill="#ff7a1a" x="484.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="518" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
+<text fill="#ff7a1a" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
+<text fill="#8b8c8e" x="610.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">add</text>
+<text fill="#ff7a1a" x="652.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="669.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">filter</text>
+<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
+<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
+<text fill="#ff7a1a" x="938" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">t</text>
+<text fill="#8b8c8e" x="954.8" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">tshark</text>
+<text fill="#ff7a1a" x="1022" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Del</text>
+<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">remove</text>
+<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+</svg></button><figcaption>Fig. 3 — IPs › Watched: N0–N4 evidence ladder</figcaption></figure>
+<figure class="shot"><button class="zoom" type="button" title="Click to view at full size"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
+<title>fl-doctor · flowlink-lab-01</title>
+
+<rect width="1372" height="947.04" rx="9" fill="#1b1d22"/>
+<path d="M0 9a9 9 0 0 1 9-9h1354a9 9 0 0 1 9 9v23H0z" fill="#16181c"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="6" fill="#febc2e"/>
+<circle cx="58" cy="16" r="6" fill="#28c840"/>
+<text x="686" y="20.2" text-anchor="middle" style="font-size:12px" fill="#c8ccd4" fill-opacity=".75">fl-doctor · flowlink-lab-01</text>
+<rect x="72.8" y="286.24" width="8.4" height="18.48" fill="#3fb950"/>
+<rect x="207.2" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="282.8" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="358.4" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="408.8" y="286.24" width="58.8" height="18.48" fill="#3fb950"/>
+<rect x="434" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="509.6" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="585.2" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="660.8" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="736.4" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="812" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="887.6" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="963.2" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="1038.8" y="119.92" width="16.8" height="18.48" fill="#3fb950"/>
+<rect x="17.68" y="110.16" width="1.05" height="130.41" fill="#8b8c8e"/>
+<rect x="17.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="17.68" y="239.51" width="1336.65" height="1.05" fill="#8b8c8e"/>
+<rect x="266" y="110.16" width="1088.33" height="1.05" fill="#8b8c8e"/>
+<rect x="555.27" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
+<rect x="555.27" y="258" width="4.73" height="1.05" fill="#8b8c8e"/>
+<rect x="555.27" y="904.79" width="799.05" height="1.05" fill="#8b8c8e"/>
+<rect x="660.8" y="258" width="693.53" height="1.05" fill="#8b8c8e"/>
+<rect x="1353.28" y="110.16" width="1.05" height="130.41" fill="#8b8c8e"/>
+<rect x="1353.28" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
+<rect x="39.2" y="286.24" width="33.6" height="18.48" fill="#e6e6e6"/>
+<rect x="81.2" y="286.24" width="327.6" height="18.48" fill="#e6e6e6"/>
+<rect x="467.6" y="286.24" width="75.6" height="18.48" fill="#e6e6e6"/>
+<rect x="17.05" y="257.37" width="2.31" height="649.11" fill="#ff7a1a"/>
+<rect x="17.05" y="257.37" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="17.05" y="904.16" width="475.75" height="2.31" fill="#ff7a1a"/>
+<rect x="22.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a"/>
+<rect x="207.2" y="257.37" width="341.35" height="2.31" fill="#ff7a1a"/>
+<rect x="358.4" y="64.48" width="100.8" height="18.48" fill="#ff7a1a"/>
+<rect x="543.2" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="546.25" y="257.37" width="2.31" height="649.11" fill="#ff7a1a"/>
+<path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<path d="M192.08 203.25L193.93 205.26L197.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M192.42 219.38L196.78 223.74M196.78 219.38L192.42 223.74" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="35" cy="258.52" r="2.86" fill="#ff7a1a"/>
+<path d="M32.45 292.13L37.71 295.48L32.45 298.83Z" fill="#1b1d22"/>
+<path d="M74.48 295.65L76.33 297.66L79.86 293.13" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 314.13L76.33 316.14L79.86 311.61" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 314.13L689.53 316.14L693.06 311.61" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 332.61L76.33 334.62L79.86 330.09" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 332.61L689.53 334.62L693.06 330.09" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 351.09L76.33 353.1L79.86 348.57" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 351.09L689.53 353.1L693.06 348.57" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 369.57L76.33 371.58L79.86 367.05" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 369.57L689.53 371.58L693.06 367.05" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77 384.69L80.35 390.43L73.65 390.43Z" fill="#f2cc60"/>
+<path d="M687.68 388.05L689.53 390.06L693.06 385.53" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 406.53L76.33 408.54L79.86 404.01" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 406.53L689.53 408.54L693.06 404.01" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77 421.65L80.35 427.39L73.65 427.39Z" fill="#f2cc60"/>
+<path d="M687.68 425.01L689.53 427.02L693.06 422.49" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 443.49L76.33 445.5L79.86 440.97" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 443.49L689.53 445.5L693.06 440.97" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 461.97L76.33 463.98L79.86 459.45" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 461.97L689.53 463.98L693.06 459.45" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 480.45L689.53 482.46L693.06 477.93" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 498.93L76.33 500.94L79.86 496.41" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 498.93L689.53 500.94L693.06 496.41" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 517.41L76.33 519.42L79.86 514.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 517.41L689.53 519.42L693.06 514.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 535.89L689.53 537.9L693.06 533.37" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 554.37L76.33 556.38L79.86 551.85" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 554.37L689.53 556.38L693.06 551.85" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.48 572.85L76.33 574.86L79.86 570.33" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 572.85L689.53 574.86L693.06 570.33" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77 587.97L80.35 593.71L73.65 593.71Z" fill="#f2cc60"/>
+<path d="M687.68 591.33L689.53 593.34L693.06 588.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 609.81L689.53 611.82L693.06 607.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 628.29L689.53 630.3L693.06 625.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 646.77L689.53 648.78L693.06 644.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 665.25L689.53 667.26L693.06 662.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 683.73L689.53 685.74L693.06 681.21" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 702.21L689.53 704.22L693.06 699.69" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 720.69L689.53 722.7L693.06 718.17" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M688.02 736.82L692.38 741.18M692.38 736.82L688.02 741.18" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M687.68 757.65L689.53 759.66L693.06 755.13" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 776.13L689.53 778.14L693.06 773.61" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 794.61L689.53 796.62L693.06 792.09" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 813.09L689.53 815.1L693.06 810.57" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M687.68 831.57L689.53 833.58L693.06 829.05" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
+<text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
+<text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
+<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
+<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
+<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 4% ·</text>
+<text fill="#3fb950" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:33:11 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
+<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
+<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
+<text fill="#1b1d22" font-weight="700" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
+<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#8b8c8e" x="1307.6" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">ES/</text>
+<text fill="#e6e6e6" font-weight="700" x="1332.8" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">EN</text>
+<text fill="#8b8c8e" x="22.4" y="95.82" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Service</text>
+<text fill="#8b8c8e" x="106.4" y="95.82" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Configuration</text>
+<text fill="#ff7a1a" font-weight="700" x="232.4" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">[Log]</text>
+<text fill="#8b8c8e" x="291.2" y="95.82" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Batches</text>
+<text fill="#8b8c8e" x="383.6" y="95.82" textLength="168" lengthAdjust="spacing" xml:space="preserve">· [ ] switch subview</text>
+<text fill="#8b8c8e" font-weight="700" x="30.8" y="114.3" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Cycles, meters and discards</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="132.78" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Cycles (5 min)</text>
+<text fill="#8b8c8e" x="156.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:46</text>
+<text fill="#8b8c8e" x="232.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:51</text>
+<text fill="#8b8c8e" x="308" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:56</text>
+<text fill="#8b8c8e" x="383.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:01</text>
+<text fill="#8b8c8e" x="459.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:06</text>
+<text fill="#8b8c8e" x="534.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:11</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:16</text>
+<text fill="#8b8c8e" x="686" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:21</text>
+<text fill="#8b8c8e" x="761.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:24</text>
+<text fill="#8b8c8e" x="837.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
+<text fill="#8b8c8e" x="912.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
+<text fill="#8b8c8e" x="988.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:32</text>
+<text fill="#e6e6e6" x="1080.8" y="132.78" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">1 batches · 204 · flush 0 s</text>
+<text fill="#8b8c8e" x="22.4" y="151.26" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">meter ipfix-core</text>
+<text fill="#e6e6e6" x="182" y="151.26" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 79.8/s · 15 min 80.7/s</text>
+<text fill="#8b8c8e" x="22.4" y="169.74" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">meter netflow-dist</text>
+<text fill="#e6e6e6" x="182" y="169.74" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 54.2/s · 15 min 51.6/s</text>
+<text fill="#8b8c8e" x="22.4" y="188.22" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">meter sflow-borde</text>
+<text fill="#e6e6e6" x="182" y="188.22" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">1 min 9.2/s · 15 min 9.1/s</text>
+<text fill="#8b8c8e" x="22.4" y="206.7" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">bad data discards</text>
+<text fill="#e6e6e6" x="207.2" y="206.7" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">no discards</text>
+<text fill="#8b8c8e" x="22.4" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">Send errors</text>
+<text fill="#f85149" x="207.2" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">2</text>
+<text fill="#8b8c8e" x="224" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">· retries 2</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="262.14" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">Indicators L01–L17</text>
+<text fill="#8b8c8e" font-weight="700" x="568.4" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">Log events</text>
+<text fill="#e6e6e6" font-weight="700" x="72.8" y="280.62" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Indicator</text>
+<rect x="72.8" y="283.84" width="75.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="408.8" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Value</text>
+<rect x="408.8" y="283.84" width="42" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="576.8" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Time</text>
+<rect x="576.8" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="719.6" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Event</text>
+<rect x="719.6" y="283.84" width="42" height="1.05" fill="#e6e6e6"/>
+<text fill="#76777a" x="39.2" y="299.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L01</text>
+<text fill="#1b1d22" x="89.6" y="299.1" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Log alive</text>
+<text fill="#1b1d22" x="408.8" y="299.1" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">3 s ago</text>
+<text fill="#8b8c8e" x="576.8" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:33</text>
+<text fill="#58a6ff" x="686" y="299.1" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="719.6" y="299.1" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">Created template for {198.51.100.12 7 257}</text>
+<text fill="#8b8c8e" x="39.2" y="317.58" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L02</text>
+<text fill="#e6e6e6" x="89.6" y="317.58" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">Starts and configuration</text>
+<text fill="#3fb950" x="408.8" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="576.8" y="317.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:32</text>
+<text fill="#e6e6e6" x="719.6" y="317.58" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 10,361 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="336.06" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L03</text>
+<text fill="#e6e6e6" x="89.6" y="336.06" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Consumers</text>
+<text fill="#3fb950" x="408.8" y="336.06" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix:4739 netf…</text>
+<text fill="#8b8c8e" x="576.8" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:29</text>
+<text fill="#e6e6e6" x="719.6" y="336.06" textLength="378" lengthAdjust="spacing" xml:space="preserve">Cycle: 3,363 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="354.54" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L04</text>
+<text fill="#e6e6e6" x="89.6" y="354.54" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Rate per consumer</text>
+<text fill="#3fb950" x="408.8" y="354.54" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix-core 80/s…</text>
+<text fill="#8b8c8e" x="576.8" y="354.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:29</text>
+<text fill="#e6e6e6" x="719.6" y="354.54" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,644 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="373.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L05</text>
+<text fill="#e6e6e6" x="89.6" y="373.02" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Counter reset</text>
+<text fill="#8b8c8e" x="576.8" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:24</text>
+<text fill="#e6e6e6" x="719.6" y="373.02" textLength="378" lengthAdjust="spacing" xml:space="preserve">Cycle: 3,363 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L06</text>
+<text fill="#e6e6e6" x="89.6" y="391.5" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Exporters seen by FlowLink</text>
+<text fill="#f2cc60" x="408.8" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">2/4</text>
+<text fill="#8b8c8e" x="576.8" y="391.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:21</text>
+<text fill="#e6e6e6" x="719.6" y="391.5" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,745 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="409.98" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L07</text>
+<text fill="#e6e6e6" x="89.6" y="409.98" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Data without template</text>
+<text fill="#3fb950" x="408.8" y="409.98" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
+<text fill="#8b8c8e" x="576.8" y="409.98" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:16</text>
+<text fill="#e6e6e6" x="719.6" y="409.98" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,004 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="428.46" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L08</text>
+<text fill="#e6e6e6" x="89.6" y="428.46" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Aggregation cycle</text>
+<text fill="#f2cc60" x="408.8" y="428.46" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">every 3 min</text>
+<text fill="#8b8c8e" x="576.8" y="428.46" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:11</text>
+<text fill="#e6e6e6" x="719.6" y="428.46" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,345 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="446.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L09</text>
+<text fill="#e6e6e6" x="89.6" y="446.94" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Cycle delivery</text>
+<text fill="#3fb950" x="408.8" y="446.94" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">1/1 batches · f…</text>
+<text fill="#8b8c8e" x="576.8" y="446.94" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:06</text>
+<text fill="#e6e6e6" x="719.6" y="446.94" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,477 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="465.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L10</text>
+<text fill="#e6e6e6" x="89.6" y="465.42" textLength="168" lengthAdjust="spacing" xml:space="preserve">Last batch delivered</text>
+<text fill="#3fb950" x="408.8" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">53 s ago</text>
+<text fill="#8b8c8e" x="576.8" y="465.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:01</text>
+<text fill="#e6e6e6" x="719.6" y="465.42" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,428 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="483.9" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L11</text>
+<text fill="#58a6ff" x="72.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="89.6" y="483.9" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">Send errors</text>
+<text fill="#58a6ff" x="408.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">2</text>
+<text fill="#8b8c8e" x="576.8" y="483.9" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:56</text>
+<text fill="#e6e6e6" x="719.6" y="483.9" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,613 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="502.38" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L12</text>
+<text fill="#e6e6e6" x="89.6" y="502.38" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">PCE response codes</text>
+<text fill="#3fb950" x="408.8" y="502.38" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">204 ×28</text>
+<text fill="#8b8c8e" x="576.8" y="502.38" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:51</text>
+<text fill="#e6e6e6" x="719.6" y="502.38" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,456 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="520.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L13</text>
+<text fill="#e6e6e6" x="89.6" y="520.86" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">"bad data" discards</text>
+<text fill="#3fb950" x="408.8" y="520.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
+<text fill="#8b8c8e" x="576.8" y="520.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:46</text>
+<text fill="#e6e6e6" x="719.6" y="520.86" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,562 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="539.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L14</text>
+<text fill="#58a6ff" x="72.8" y="539.34" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="89.6" y="539.34" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">New IPs per cycle</text>
+<text fill="#58a6ff" x="408.8" y="539.34" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">3 new (3 priv ·…</text>
+<text fill="#8b8c8e" x="576.8" y="539.34" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:41</text>
+<text fill="#e6e6e6" x="719.6" y="539.34" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,782 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="557.82" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L15</text>
+<text fill="#e6e6e6" x="89.6" y="557.82" textLength="126" lengthAdjust="spacing" xml:space="preserve">Pending batches</text>
+<text fill="#3fb950" x="408.8" y="557.82" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
+<text fill="#8b8c8e" x="576.8" y="557.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:36</text>
+<text fill="#e6e6e6" x="719.6" y="557.82" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,093 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="576.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L16</text>
+<text fill="#e6e6e6" x="89.6" y="576.3" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">General errors</text>
+<text fill="#3fb950" x="408.8" y="576.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
+<text fill="#8b8c8e" x="576.8" y="576.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:31</text>
+<text fill="#e6e6e6" x="719.6" y="576.3" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,687 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="39.2" y="594.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L17</text>
+<text fill="#e6e6e6" x="89.6" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Log size</text>
+<text fill="#f2cc60" x="408.8" y="594.78" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">0 MB · +0 MB/h …</text>
+<text fill="#8b8c8e" x="576.8" y="594.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:26</text>
+<text fill="#e6e6e6" x="719.6" y="594.78" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,523 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="613.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:21</text>
+<text fill="#e6e6e6" x="719.6" y="613.26" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,745 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="631.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:16</text>
+<text fill="#e6e6e6" x="719.6" y="631.74" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,203 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="650.22" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:11</text>
+<text fill="#e6e6e6" x="719.6" y="650.22" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,170 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="668.7" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:06</text>
+<text fill="#e6e6e6" x="719.6" y="668.7" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,223 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="687.18" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:01</text>
+<text fill="#e6e6e6" x="719.6" y="687.18" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,149 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="705.66" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:56</text>
+<text fill="#e6e6e6" x="719.6" y="705.66" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,520 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:51</text>
+<text fill="#e6e6e6" x="719.6" y="724.14" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,568 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="742.62" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:48</text>
+<text fill="#e6e6e6" x="719.6" y="742.62" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">2 send errors (DNS)</text>
+<text fill="#8b8c8e" x="576.8" y="761.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:46</text>
+<text fill="#e6e6e6" x="719.6" y="761.1" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 14,488 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="779.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:41</text>
+<text fill="#e6e6e6" x="719.6" y="779.58" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,183 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="798.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:36</text>
+<text fill="#e6e6e6" x="719.6" y="798.06" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,522 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="816.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:31</text>
+<text fill="#e6e6e6" x="719.6" y="816.54" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,584 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="835.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:26</text>
+<text fill="#e6e6e6" x="719.6" y="835.02" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,475 flows · 1 batches · 1/1 with 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="853.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:23</text>
+<text fill="#58a6ff" x="686" y="853.5" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="719.6" y="853.5" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">FlowLink started (version 2.0.0)</text>
+<text fill="#8b8c8e" x="501.2" y="908.94" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">1/17</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="294" lengthAdjust="spacing" xml:space="preserve">FlowLink › Log › Indicators L01–L17</text>
+<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="854" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text fill="#ff7a1a" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="946.4" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
+<text fill="#ff7a1a" x="1013.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="1047.2" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
+<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+</svg></button><figcaption>Fig. 4 — FlowLink › Log: cycles, 204 responses and PCE errors</figcaption></figure>
+<figure class="shot"><button class="zoom" type="button" title="Click to view at full size"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
+<title>fl-doctor · flowlink-lab-01</title>
+
+<rect width="1372" height="947.04" rx="9" fill="#1b1d22"/>
+<path d="M0 9a9 9 0 0 1 9-9h1354a9 9 0 0 1 9 9v23H0z" fill="#16181c"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="6" fill="#febc2e"/>
+<circle cx="58" cy="16" r="6" fill="#28c840"/>
+<text x="686" y="20.2" text-anchor="middle" style="font-size:12px" fill="#c8ccd4" fill-opacity=".75">fl-doctor · flowlink-lab-01</text>
+<rect x="22.4" y="138.4" width="4.2" height="18.48" fill="#1b1d22"/>
+<rect x="353.68" y="110.16" width="1.05" height="120.65" fill="#8b8c8e"/>
+<rect x="353.68" y="748.24" width="1.05" height="157.61" fill="#8b8c8e"/>
+<rect x="353.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
+<rect x="353.68" y="904.79" width="1000.65" height="1.05" fill="#8b8c8e"/>
+<rect x="501.2" y="110.16" width="853.12" height="1.05" fill="#8b8c8e"/>
+<rect x="1353.28" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
+<rect x="56" y="138.4" width="260.4" height="18.48" fill="#e6e6e6"/>
+<rect x="308" y="452.56" width="193.2" height="18.48" fill="#e6e6e6"/>
+<rect x="324.8" y="138.4" width="16.8" height="18.48" fill="#e6e6e6"/>
+<rect x="316.4" y="138.4" width="8.4" height="18.48" fill="#f2cc60"/>
+<rect x="17.05" y="109.53" width="2.31" height="796.95" fill="#ff7a1a"/>
+<rect x="17.05" y="109.53" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="17.05" y="904.16" width="282.56" height="2.31" fill="#ff7a1a"/>
+<rect x="22.4" y="156.88" width="4.2" height="18.48" fill="#ff7a1a"/>
+<rect x="22.4" y="138.4" width="33.6" height="18.48" fill="#ff7a1a"/>
+<rect x="207.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
+<rect x="240.8" y="109.53" width="106.15" height="2.31" fill="#ff7a1a"/>
+<rect x="302.64" y="238.88" width="2.31" height="501.27" fill="#ff7a1a"/>
+<rect x="302.64" y="238.88" width="5.36" height="2.31" fill="#ff7a1a"/>
+<rect x="302.64" y="737.85" width="766.71" height="2.31" fill="#ff7a1a"/>
+<rect x="341.6" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
+<rect x="344.64" y="109.53" width="2.31" height="121.28" fill="#ff7a1a"/>
+<rect x="344.64" y="748.24" width="2.31" height="158.24" fill="#ff7a1a"/>
+<rect x="526.4" y="238.88" width="542.96" height="2.31" fill="#ff7a1a"/>
+<rect x="1067.05" y="238.88" width="2.31" height="501.27" fill="#ff7a1a"/>
+<path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="572.6" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="891.8" cy="55.24" r="2.86" fill="#58a6ff"/>
+<circle cx="1059.8" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="35" cy="110.68" r="2.86" fill="#ff7a1a"/>
+<path d="M690.2 125.97L693.55 131.71L686.85 131.71Z" fill="#f2cc60"/>
+<path d="M32.45 144.29L37.71 147.64L32.45 150.99Z" fill="#1b1d22"/>
+<path d="M43.4 144.28L46.26 147.64L43.4 151L40.54 147.64Z" fill="#1b1d22"/>
+<path d="M320.6 144.45L323.95 150.19L317.25 150.19Z" fill="#1b1d22"/>
+<path d="M360.08 147.81L361.93 149.82L365.46 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.4 162.76L46.26 166.12L43.4 169.48L40.54 166.12Z" fill="#ff7a1a"/>
+<path d="M318.42 163.94L322.78 168.3M322.78 163.94L318.42 168.3" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M360.08 166.29L361.93 168.3L365.46 163.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M360.08 203.25L361.93 205.26L365.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="320.6" cy="240.04" r="2.86" fill="#ff7a1a"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
+<text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
+<text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
+<text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
+<text fill="#8b8c8e" x="518" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="534.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
+<text fill="#e6e6e6" x="585.2" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text fill="#8b8c8e" x="660.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#e6e6e6" x="677.6" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
+<text fill="#3fb950" x="736.4" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
+<text fill="#e6e6e6" x="795.2" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
+<text fill="#8b8c8e" x="837.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#58a6ff" x="854" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">rec</text>
+<text fill="#58a6ff" x="904.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">359.6 KB/1.0 GB</text>
+<text fill="#8b8c8e" x="1038.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1072.4" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:33:59 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
+<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
+<text fill="#1b1d22" font-weight="700" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
+<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
+<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#8b8c8e" x="1307.6" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">ES/</text>
+<text fill="#e6e6e6" font-weight="700" x="1332.8" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">EN</text>
+<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">[Watched]</text>
+<text fill="#8b8c8e" x="106.4" y="95.82" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · «perfil»</text>
+<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="126" lengthAdjust="spacing" xml:space="preserve">Evidence ladder</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
+<rect x="39.2" y="136" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="182" y="132.78" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
+<rect x="182" y="136" width="16.8" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="358.4" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77 · 10.20.30.77</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Verdict:</text>
+<text fill="#f2cc60" x="702.8" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Waiting for the next cycle</text>
+<text fill="#8b8c8e" x="929.6" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(inferred)</text>
+<text fill="#1b1d22" x="56" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
+<text fill="#1b1d22" x="182" y="151.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N1</text>
+<text fill="#e6e6e6" x="400.4" y="151.26" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Reaches the collector</text>
+<text fill="#8b8c8e" x="585.2" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
+<text fill="#e6e6e6" x="660.8" y="151.26" textLength="520.8" lengthAdjust="spacing" xml:space="preserve">49 records · 1 exporters · Oct 16 14:24 UTC → Oct 16 14:33 UTC</text>
+<text fill="#e6e6e6" x="56" y="169.74" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">sonda-gestion… 10.20.40.99</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N2</text>
+<text fill="#e6e6e6" x="400.4" y="169.74" textLength="168" lengthAdjust="spacing" xml:space="preserve">FlowLink receives it</text>
+<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#e6e6e6" x="660.8" y="169.74" textLength="672" lengthAdjust="spacing" xml:space="preserve">The exporter is accepted by consumer "netflow-dist" (port 2055); the socket does</text>
+<text fill="#e6e6e6" x="660.8" y="188.22" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">not drop and FlowLink created its templates.</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="206.7" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N3</text>
+<text fill="#e6e6e6" x="400.4" y="206.7" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">FlowLink processed it</text>
+<text fill="#8b8c8e" x="585.2" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
+<text fill="#e6e6e6" x="660.8" y="206.7" textLength="512.4" lengthAdjust="spacing" xml:space="preserve">FlowLink processed it for the first time on Oct 16 13:46 UTC.</text>
+<text fill="#58a6ff" x="358.4" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#e6e6e6" font-weight="700" x="375.2" y="225.18" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N4</text>
+<text fill="#e6e6e6" x="400.4" y="225.18" textLength="126" lengthAdjust="spacing" xml:space="preserve">Cycle delivered</text>
+<text fill="#8b8c8e" x="585.2" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
+<text fill="#e6e6e6" x="660.8" y="225.18" textLength="571.2" lengthAdjust="spacing" xml:space="preserve">No aggregation cycle has closed since its last record yet (≈ 198 s).</text>
+<text fill="#ff7a1a" font-weight="700" x="333.2" y="243.66" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Evidence · step 4 of 4</text>
+<text fill="#e6e6e6" x="1072.4" y="243.66" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">e technical context to review it</text>
+<text fill="#ff7a1a" font-weight="700" x="308" y="262.14" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Confirm</text>
+<text fill="#8b8c8e" x="308" y="299.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">IPs</text>
+<text fill="#e6e6e6" font-weight="700" x="400.4" y="299.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
+<text fill="#8b8c8e" x="308" y="317.58" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Window</text>
+<text fill="#e6e6e6" x="400.4" y="317.58" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">last 15 min</text>
+<text fill="#e6e6e6" x="1072.4" y="317.58" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">/tcp 14.3% · 10.20.10.12:8443/tcp</text>
+<text fill="#8b8c8e" x="308" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Contents</text>
+<text fill="#e6e6e6" x="400.4" y="336.06" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">original · CSV</text>
+<text fill="#8b8c8e" x="308" y="354.54" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Size</text>
+<text fill="#e6e6e6" x="400.4" y="354.54" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">≈ 7.6 MB (≤ 200 MB)</text>
+<text fill="#8b8c8e" x="308" y="373.02" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Path</text>
+<text fill="#e6e6e6" x="400.4" y="373.02" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">/var/tmp/fl-doctor/fl-doctor-evidence-…tgz</text>
+<text fill="#8b8c8e" x="308" y="409.98" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">Equivalent command</text>
+<text fill="#ff7a1a" x="308" y="428.46" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">fl-doctor evidence --ip 10.20.30.77 --last 15m</text>
+<text fill="#e6e6e6" x="1072.4" y="446.94" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">e first time on Oct 16 13:46 UTC</text>
+<text fill="#1b1d22" x="316.4" y="465.42" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Build the package (⏎)</text>
+<text fill="#8b8c8e" x="1072.4" y="502.38" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">move</text>
+<text fill="#8b8c8e" x="308" y="705.66" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">⏎ build · PgUp back · Esc cancel</text>
+<text fill="#8b8c8e" x="308" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/2</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">IPs › Watched › 10.20.30.77</text>
+<text fill="#ff7a1a" x="375.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="425.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text fill="#ff7a1a" x="484.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="518" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
+<text fill="#ff7a1a" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
+<text fill="#8b8c8e" x="610.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">add</text>
+<text fill="#ff7a1a" x="652.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="669.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">filter</text>
+<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
+<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
+<text fill="#ff7a1a" x="938" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">t</text>
+<text fill="#8b8c8e" x="954.8" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">tshark</text>
+<text fill="#ff7a1a" x="1022" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Del</text>
+<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">remove</text>
+<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+</svg></button><figcaption>Fig. 5 — Evidence wizard: the support bundle, ready</figcaption></figure>
+<h2 id="guarantees">Guarantees</h2>
+<ul>
+<li><strong>Read-only.</strong> It changes nothing in FlowLink, the firewall, routes or <code>sysctl</code>. It does not open the collector's ports and does not take packets away from FlowLink (it copies traffic like <code>tcpdump</code>).
+</li>
+<li><strong>Light.</strong> Fixed memory budget: measured about 22 MB with the normal profile (a brief startup peak of up to about 33 MB, inside its 64 MB budget) and about 14 MB with lean (32 MB), flat over a 5-minute replay of a real NetStream capture on a Rocky 9 x86_64 VM. Low CPU priority.
+</li>
+<li><strong>No dependencies.</strong> One static binary; <code>tcpdump</code> or <code>tshark</code> are optional. <code>selftest</code> checks the platform before you start.
+</li>
+<li><strong>Evidence ready for support.</strong> Secrets hidden, the pcap in original or trimmed form, and the exact command to copy the bundle to the operator's home folder. Nothing leaves the machine on its own. An IPFIX file of 199,569 records decodes the same as <code>tshark</code>.
+</li></ul>
+<h2 id="status">Status</h2>
+<p>Version <strong>0.1.0</strong>: static binaries for Linux x86_64 and aarch64, with <code>SHA256SUMS</code> and SBOM (not signed). Tested on Rocky 9, UBI 8 and in a VM; <strong>not yet validated on a real Illumio FlowLink user's collector, and RHEL 7 is not verified.</strong></p>
+<div class="aviso warn"><strong>Important:</strong> fl-doctor is an unofficial field tool: it is not an Illumio product, it is not supported by Illumio, and it is provided "as is".</div>
+<h2 id="next-steps">Next steps</h2>
+<ul>
+<li>Download the binary and the documentation from the public fl-doctor repository. Run <code>selftest</code> first, then <code>sudo fl-doctor</code> on the collector.
+</li>
+<li>For a POC with FlowLink: first run on a lab or pilot collector; if anything fails, the evidence bundle goes to support.
+</li>
+<li>Feedback wanted from the field: collectors where it breaks, FlowLink versions beyond 2.0.0, and exporters from other vendors. Contact: Eric Roscher.
+</li></ul>
+<footer>fl-doctor is not an Illumio product and is not supported by Illumio; it is provided “as is”, without warranty. Screenshot data is synthetic.</footer></main>
+<dialog id="zoom" aria-label="Click to view at full size"><div class="marco" title="Close"></div></dialog>
+<script>
+(function(){
+var links=[].slice.call(document.querySelectorAll('nav a'));
+var obj=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+function spy(){var y=window.scrollY+90,i=-1;obj.forEach(function(e,k){if(e&&e.offsetTop<=y)i=k;});
+ links.forEach(function(a,k){a.classList.toggle('act',k===i);});}
+window.addEventListener('scroll',spy,{passive:true});spy();
+document.getElementById('menu-btn').onclick=function(){document.body.classList.toggle('abierto');};
+links.forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('abierto');});});
+var dlg=document.getElementById('zoom'),marco=dlg.querySelector('.marco');
+document.querySelectorAll('figure.shot .zoom').forEach(function(b){b.onclick=function(){
+ var s=b.querySelector('svg').cloneNode(true);s.style.width=(s.getAttribute('data-w')||'1372')+'px';
+ marco.innerHTML='';marco.appendChild(s);dlg.showModal();};});
+marco.onclick=function(){dlg.close();};
+document.querySelectorAll('pre').forEach(function(p){var b=document.createElement('button');b.className='cp';
+ b.textContent="Copy";b.onclick=function(){navigator.clipboard.writeText(p.querySelector('code').innerText).then(function(){
+ b.textContent="Copied";setTimeout(function(){b.textContent="Copy";},1200);});};p.appendChild(b);});
+})();
+</script>
+</body></html>
