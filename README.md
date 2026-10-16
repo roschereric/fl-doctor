@@ -6,6 +6,10 @@ fl-doctor is a terminal tool (TUI + CLI) that runs on the Illumio FlowLink colle
 far that IP's flows get, step by step: on the wire → accepted by FlowLink → processed → delivered to the PCE. One static
 Linux binary, no dependencies, read-only.
 
+**[Read the documentation](https://roschereric.github.io/fl-doctor/fl-doctor-docs_en.html)** ·
+[3-minute briefing](https://roschereric.github.io/fl-doctor/fl-doctor-briefing_en.html) ·
+[Download](releases/)
+
 <img src="docs/img/cu3_ips_vigilada_en.svg" width="100%" alt="Evidence ladder for a watched IP: N1 on the wire, N2 FlowLink receives it, N3 processed, N4 delivered with HTTP 204">
 
 ## Why fl-doctor
@@ -123,14 +127,18 @@ fl-doctor read capture.pcap --config config.yaml        # analyze a pcap on your
 
 ## Documentation
 
-In [`docs/`](docs/) (single HTML files: download and open in a browser):
+Read it online (single pages, no download needed):
 
-- **[Documentation](docs/fl-doctor-docs_en.html)**: install, the interface and its controls, every tab and submenu step
-  by step, use cases with screenshots, evidence for support, CLI reference, troubleshooting.
-- **[Briefing](docs/fl-doctor-briefing_en.html)** (3 minutes): the problem, the five main use cases, guarantees.
+- **[Documentation](https://roschereric.github.io/fl-doctor/fl-doctor-docs_en.html)**: install, the interface and its
+  controls, every tab and submenu step by step, use cases with screenshots, evidence for support, CLI reference,
+  troubleshooting.
+- **[Briefing](https://roschereric.github.io/fl-doctor/fl-doctor-briefing_en.html)** (3 minutes): the problem, the five
+  main use cases, guarantees.
 
-English is the reference documentation. Spanish translations: [documentación](docs/fl-doctor-docs_es.html) ·
-[briefing](docs/fl-doctor-briefing_es.html).
+English is the reference documentation. Spanish translations:
+[documentación](https://roschereric.github.io/fl-doctor/fl-doctor-docs_es.html) ·
+[briefing](https://roschereric.github.io/fl-doctor/fl-doctor-briefing_es.html). The same files are in [`docs/`](docs/)
+for offline use.
 
 All screenshots use synthetic data (documentation address ranges, a lab collector and the built-in demo).
 
