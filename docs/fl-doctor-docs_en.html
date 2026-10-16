@@ -48,7 +48,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 @media print{header,nav,pre .cp{display:none}main{margin:0;padding:0}}
 </style></head><body>
 <header><button id="menu-btn" type="button" aria-label="Sections">☰</button>
-<div class="t">fl-doctor 0.1.0 <span>· Documentation</span></div><div class="av">Unofficial tool, provided “as is”, without Illumio support.</div><a class="lang" href="fl-doctor-docs_es.html">Español</a></header>
+<div class="t">fl-doctor 0.1.0 <span>· Documentation</span></div><div class="av">Unofficial tool, provided “as is”, without Illumio support.</div><a class="lang" href="https://github.com/roschereric/fl-doctor" title="Binaries, SHA-256 sums and release notes for every version">Download (GitHub)</a><a class="lang" href="fl-doctor-docs_es.html">Español</a></header>
 <nav aria-label="Sections"><ul><li><a class="g" href="#introduction">Introduction</a>
 <ul><li><a href="#what-it-is-and-what-it-answers">What it is and what it answers</a></li><li><a href="#four-field-failures">Four field failures</a></li><li><a href="#what-it-does-and-what-it-does-not">What it does and what it does not</a></li><li><a href="#unofficial-tool">Unofficial tool</a></li><li><a href="#about-the-screenshots-and-the-example-data">About the screenshots and the example data</a></li></ul>
 </li>
@@ -164,6 +164,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <tr><td>Disk</td><td>An output folder (<code>/var/tmp/fl-doctor/</code> by default) with room for the evidence packages and the captures you ask for.</td></tr>
 </tbody></table></div>
 <h3 id="verify-and-install">Verify and install</h3>
+<p>Download the binary for your platform, its <code>SHA256SUMS</code> and the release notes from the <code>releases/</code> folder of the GitHub repository: <a href="https://github.com/roschereric/fl-doctor">https://github.com/roschereric/fl-doctor</a></p>
 <pre><code>sha256sum -c SHA256SUMS                                     # verify the download
 sudo install -m 0755 fl-doctor-0.1.0-x86_64-linux /usr/local/bin/fl-doctor
 fl-doctor --version
@@ -30886,7 +30887,7 @@ objetivo = &quot;198.51.100.20&quot;</code></pre>
 </li></ul>
 <h3 id="where-everything-else-comes-from">Where everything else comes from</h3>
 <p>What describes how fl-doctor works (N0–N4 ladder, memory, evidence, keys) comes from its own manual and the version 0.1.0 code, not from FlowLink's documentation. The memory figures were measured on a Rocky 9 x86_64 virtual machine with a real NetStream capture replayed for 5 minutes. Field observations (for example, that the "bad data" discards were ICMP) are project observations, not product rules.</p>
-<footer>fl-doctor is not an Illumio product and is not supported by Illumio; it is provided “as is”, without warranty. Screenshot data is synthetic.</footer></main>
+<footer><p><strong>Binaries, SHA-256 sums and release notes for every version:</strong> <a href="https://github.com/roschereric/fl-doctor">github.com/roschereric/fl-doctor</a></p>fl-doctor is not an Illumio product and is not supported by Illumio; it is provided “as is”, without warranty. Screenshot data is synthetic.</footer></main>
 <dialog id="zoom" aria-label="Click to view at full size"><div class="marco" title="Close"></div></dialog>
 <script>
 (function(){
