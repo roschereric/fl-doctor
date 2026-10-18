@@ -100,13 +100,24 @@ Or type a filter in the full language (`ip`, `net`, `src`, `dst`, `exporter`, `p
 
 <img src="docs/img/ref_ips_filtro_escrito_en.svg" width="100%" alt="Typing a filter: validated as you type, with the number of matching IPs">
 
+## A mascot that says it at a glance
+
+The corner of Home (and the welcome banner) shows a mascot, an owl by default, that reacts to what the collector
+sees: receiving data, heavy traffic, asleep when nothing arrives, a warning, a failure, a watched IP just seen… The line under
+it says the same in words, so it is decoration, not a replacement for the checks. Choose a monitor, a fish, a crab or none in
+Settings › Mascot (`--mascot`, `--no-splash`, `--no-motion`); it never moves without traffic.
+
+<img src="docs/img/ref_mascota_esquina_brand_en.svg" width="100%" alt="Home with the owl in its corner and the line 'receiving data' under it">
+
 ## Get it
 
-Binaries are in [`releases/`](releases/), one folder per version, with `SHA256SUMS` and an SBOM (not signed).
+Binaries are in [`releases/`](releases/), one folder per version, with `SHA256SUMS` and an SBOM (not signed). If you are
+reading a copy of this page or of the documentation, the place to download from is always
+**https://github.com/roschereric/fl-doctor**.
 
 ```
 sha256sum -c SHA256SUMS
-sudo install -m 0755 fl-doctor-0.1.0-x86_64-linux /usr/local/bin/fl-doctor
+sudo install -m 0755 fl-doctor-0.2.0-x86_64-linux /usr/local/bin/fl-doctor
 sudo /usr/local/bin/fl-doctor selftest      # checks the platform; no network, no FlowLink needed
 sudo /usr/local/bin/fl-doctor               # opens the TUI
 fl-doctor demo                              # the TUI with synthetic data, no root (training)
@@ -160,7 +171,7 @@ All screenshots use synthetic data (documentation address ranges, a lab collecto
 
 ## Status
 
-**0.1.0.** Static binaries for Linux x86_64 and aarch64 (macOS for `read` and `demo`). Tested on Rocky 9 and UBI 8 and in a
+**0.2.0.** Static binaries for Linux x86_64 and aarch64 (macOS for `read` and `demo`). Tested on Rocky 9 and UBI 8 and in a
 Rocky 9 x86_64 VM with replayed captures. **Not yet validated on a real Illumio FlowLink user's collector; RHEL 7 is not
 verified.** Release notes for each version are in its `releases/<version>/` folder.
 

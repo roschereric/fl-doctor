@@ -48,7 +48,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 @media print{header,nav,pre .cp{display:none}main{margin:0;padding:0}}
 </style></head><body>
 <header><button id="menu-btn" type="button" aria-label="Secciones">☰</button>
-<div class="t">fl-doctor 0.1.0 <span>· Documentación</span></div><div class="av">Herramienta no oficial, provista «tal cual», sin soporte de Illumio.</div><a class="lang" href="https://github.com/roschereric/fl-doctor" title="Binarios, sumas SHA-256 y notas de cada versión">Descargar (GitHub)</a><a class="lang" href="fl-doctor-briefing_en.html">English</a></header>
+<div class="t">fl-doctor 0.2.0 <span>· Documentación</span></div><div class="av">Herramienta no oficial, provista «tal cual», sin soporte de Illumio.</div><a class="lang" href="https://github.com/roschereric/fl-doctor" title="Binarios, sumas SHA-256 y notas de cada versión">Descargar (GitHub)</a><a class="lang" href="fl-doctor-briefing_en.html">English</a></header>
 <nav aria-label="Secciones"><ul><li><a class="g" href="#el-problema">El problema</a>
 </li>
 <li><a class="g" href="#qué-es-fl-doctor">Qué es fl-doctor</a>
@@ -81,8 +81,8 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <div class="tabla"><table>
 <thead><tr><th>Pregunta del usuario de Illumio FlowLink</th><th>Qué muestra fl-doctor</th></tr></thead>
 <tbody>
-<tr><td>«¿Dónde se corta la cadena?»</td><td>Home: eslabones A–E (exportadores, host, FlowLink, entrega, PCE) y un embudo: cable → socket → decodificado → entregado (fig. 1)</td></tr>
-<tr><td>«¿Mi switch manda, y al puerto correcto?»</td><td>Exporters: versión, puerto, plantillas, muestreo y si FlowLink acepta a cada uno (fig. 2)</td></tr>
+<tr><td>«¿Dónde se corta la cadena?»</td><td>Inicio: eslabones A–E (exportadores, host, FlowLink, entrega, PCE) y un embudo: cable → socket → decodificado → entregado (fig. 1)</td></tr>
+<tr><td>«¿Mi switch manda, y al puerto correcto?»</td><td>Exportadores: versión, puerto, plantillas, muestreo y si FlowLink acepta a cada uno (fig. 2)</td></tr>
 <tr><td>«¿Veo los flujos de este servidor y hasta dónde llegan?»</td><td>Escalera de evidencia N0–N4 para cualquier IP: visto en el cable, aceptado por FlowLink, procesado, entregado con HTTP 204 (fig. 3)</td></tr>
 <tr><td>«¿Por qué nunca veo subidas?»</td><td>FlowLink › Log: ciclos, respuestas 204, errores de DNS y de conexión al PCE, descartes con el protocolo dominante (fig. 4)</td></tr>
 <tr><td>«¿Qué le mando a soporte?»</td><td>Con una tecla arma un paquete: resumen en español e inglés, log relevante, configuración con secretos ocultos y el pcap (fig. 5)</td></tr>
@@ -100,7 +100,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="17.68" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
 <rect x="17.68" y="258" width="4.72" height="1.05" fill="#8b8c8e"/>
 <rect x="17.68" y="904.79" width="1336.65" height="1.05" fill="#8b8c8e"/>
-<rect x="266" y="258" width="1088.33" height="1.05" fill="#8b8c8e"/>
+<rect x="291.2" y="258" width="1063.12" height="1.05" fill="#8b8c8e"/>
 <rect x="530.08" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
 <rect x="530.08" y="91.67" width="4.72" height="1.05" fill="#8b8c8e"/>
 <rect x="530.08" y="239.51" width="421.05" height="1.05" fill="#8b8c8e"/>
@@ -109,36 +109,34 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="958.48" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
 <rect x="958.48" y="91.67" width="4.73" height="1.05" fill="#8b8c8e"/>
 <rect x="958.48" y="239.51" width="395.85" height="1.05" fill="#8b8c8e"/>
-<rect x="1097.6" y="91.67" width="256.73" height="1.05" fill="#8b8c8e"/>
+<rect x="1139.6" y="91.67" width="214.73" height="1.05" fill="#8b8c8e"/>
 <rect x="1353.28" y="91.67" width="1.05" height="148.89" fill="#8b8c8e"/>
 <rect x="1353.28" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
 <rect x="22.4" y="138.4" width="462" height="36.96" fill="#e6e6e6"/>
 <rect x="22.4" y="119.92" width="487.2" height="18.48" fill="#e6e6e6"/>
 <rect x="39.2" y="101.44" width="445.2" height="18.48" fill="#e6e6e6"/>
 <rect x="30.8" y="101.44" width="8.4" height="18.48" fill="#f2cc60"/>
-<rect x="14" y="64.48" width="67.2" height="18.48" fill="#ff7a1a"/>
+<rect x="14" y="64.48" width="84" height="18.48" fill="#ff7a1a"/>
 <rect x="17.05" y="91.05" width="2.31" height="150.15" fill="#ff7a1a"/>
 <rect x="17.05" y="91.05" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="17.05" y="238.88" width="506.31" height="2.31" fill="#ff7a1a"/>
-<rect x="22.4" y="286.24" width="4.2" height="18.48" fill="#ff7a1a"/>
+<rect x="22.4" y="286.24" width="4.2" height="36.96" fill="#ff7a1a"/>
 <rect x="22.4" y="101.44" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="98" y="91.05" width="425.36" height="2.31" fill="#ff7a1a"/>
+<rect x="106.4" y="91.05" width="416.96" height="2.31" fill="#ff7a1a"/>
 <rect x="521.04" y="91.05" width="2.31" height="150.15" fill="#ff7a1a"/>
-<rect x="568.4" y="210.01" width="42" height="2.31" fill="#ff7a1a"/>
-<rect x="610.4" y="198.46" width="8.4" height="13.86" fill="#ff7a1a"/>
-<rect x="618.8" y="196.15" width="33.6" height="16.17" fill="#ff7a1a"/>
-<rect x="652.4" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="660.8" y="196.15" width="42" height="16.17" fill="#ff7a1a"/>
-<rect x="702.8" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="711.2" y="196.15" width="58.8" height="16.17" fill="#ff7a1a"/>
-<rect x="736.4" y="101.44" width="201.6" height="55.44" fill="#ff7a1a"/>
+<rect x="560" y="210.01" width="50.4" height="2.31" fill="#ff7a1a"/>
+<rect x="610.4" y="200.77" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="618.8" y="196.15" width="151.2" height="16.17" fill="#ff7a1a"/>
+<rect x="736.4" y="119.92" width="186.9" height="18.48" fill="#ff7a1a"/>
+<rect x="736.4" y="101.44" width="201.6" height="18.48" fill="#ff7a1a"/>
+<rect x="761.6" y="138.4" width="184.8" height="18.48" fill="#ff7a1a"/>
 <rect x="770" y="193.84" width="8.4" height="18.48" fill="#ff7a1a"/>
 <rect x="778.4" y="196.15" width="58.8" height="16.17" fill="#ff7a1a"/>
 <rect x="837.2" y="203.08" width="8.4" height="9.24" fill="#ff7a1a"/>
-<path d="M402.08 55.41L403.93 57.42L407.46 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
-<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1101.8" cy="55.24" r="2.86" fill="#3fb950"/>
 <circle cx="35" cy="92.2" r="2.86" fill="#ff7a1a"/>
 <path d="M24.05 107.33L29.31 110.68L24.05 114.03Z" fill="#1b1d22"/>
 <path d="M35 107.49L38.35 113.23L31.65 113.23Z" fill="#1b1d22"/>
@@ -146,77 +144,79 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <path d="M964.88 129.33L966.73 131.34L970.26 126.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M964.88 147.81L966.73 149.82L970.26 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M964.88 166.29L966.73 168.3L970.26 163.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32.48 184.77L34.33 186.78L37.86 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.82 182.42L37.18 186.78M37.18 182.42L32.82 186.78" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M964.88 184.77L966.73 186.78L970.26 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32.48 203.25L34.33 205.26L37.86 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.82 200.9L37.18 205.26M37.18 200.9L32.82 205.26" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M967.4 199.89L970.75 205.63L964.05 205.63Z" fill="#f2cc60"/>
 <path d="M964.88 221.73L966.73 223.74L970.26 219.21" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M43.4 292.12L46.26 295.48L43.4 298.84L40.54 295.48Z" fill="#ff7a1a"/>
 <path d="M707 292.29L710.35 298.03L703.65 298.03Z" fill="#f2cc60"/>
-<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<path d="M43.4 310.6L46.26 313.96L43.4 317.32L40.54 313.96Z" fill="#ff7a1a"/>
+<path d="M704.82 311.78L709.18 316.14M709.18 311.78L704.82 316.14" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
 <text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
 <text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
-<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">captura</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">nativo ens224</text>
 <text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">22/64 MB</text>
 <text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
-<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 6% ·</text>
-<text fill="#3fb950" x="1164.8" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
-<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:42:44 UTC</text>
-<text fill="#1b1d22" font-weight="700" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
-<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
-<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
-<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
-<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
-<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
-<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">sistema</text>
+<text fill="#3fb950" x="963.2" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
+<text fill="#e6e6e6" x="1022" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">libres</text>
+<text fill="#8b8c8e" x="1080.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1114.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:38:05 UTC</text>
+<text fill="#1b1d22" font-weight="700" x="22.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">1 Inicio</text>
+<text fill="#e6e6e6" x="114.8" y="77.34" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">2 Exportadores</text>
+<text fill="#e6e6e6" x="257.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="324.8" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">4 Flujos</text>
+<text fill="#e6e6e6" x="417.2" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="526.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">6 Equipo</text>
+<text fill="#e6e6e6" x="618.8" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Captura</text>
 <text fill="#e6e6e6" font-weight="700" x="1307.6" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">ES</text>
 <text fill="#8b8c8e" x="1324.4" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">/EN</text>
-<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">Chain</text>
-<text fill="#8b8c8e" font-weight="700" x="543.2" y="95.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Funnel · 15m</text>
-<text fill="#8b8c8e" font-weight="700" x="971.6" y="95.82" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Log indicators</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Cadena</text>
+<text fill="#8b8c8e" font-weight="700" x="543.2" y="95.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Embudo · 15m</text>
+<text fill="#8b8c8e" font-weight="700" x="971.6" y="95.82" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Indicadores del log</text>
 <text fill="#1b1d22" font-weight="700" x="47.6" y="114.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">A</text>
 <text fill="#1b1d22" x="64.4" y="114.3" textLength="420" lengthAdjust="spacing" xml:space="preserve">Exportadores A5 · Muestreo en: 198.51.100.12 1:10,</text>
-<text fill="#8b8c8e" x="534.8" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
-<text fill="#e6e6e6" font-weight="700" x="660.8" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">11,8 pps</text>
+<text fill="#8b8c8e" x="534.8" y="114.3" textLength="42" lengthAdjust="spacing" xml:space="preserve">cable</text>
+<text fill="#e6e6e6" font-weight="700" x="660.8" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">13,1 pps</text>
 <text fill="#8b8c8e" x="980" y="114.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L01</text>
 <text fill="#e6e6e6" x="1013.6" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Log vivo</text>
 <text fill="#1b1d22" x="173.6" y="132.78" textLength="336" lengthAdjust="spacing" xml:space="preserve">198.51.100.13 1:512. Con muestreo 1:512,</text>
 <text fill="#8b8c8e" x="534.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">socket</text>
-<text fill="#e6e6e6" font-weight="700" x="660.8" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">11,9 pps</text>
+<text fill="#e6e6e6" font-weight="700" x="660.8" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">12,1 pps</text>
 <text fill="#8b8c8e" x="980" y="132.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L02</text>
 <text fill="#e6e6e6" x="1013.6" y="132.78" textLength="210" lengthAdjust="spacing" xml:space="preserve">Arranques y configuración</text>
 <text fill="#1b1d22" x="173.6" y="151.26" textLength="310.8" lengthAdjust="spacing" xml:space="preserve">un servidor que cruza menos de ~1.500</text>
-<text fill="#8b8c8e" x="534.8" y="151.26" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">decoded</text>
-<text fill="#e6e6e6" font-weight="700" x="669.2" y="151.26" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">123 r/s</text>
+<text fill="#8b8c8e" x="534.8" y="151.26" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">decodificados</text>
+<text fill="#e6e6e6" font-weight="700" x="694.4" y="151.26" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">141 r/s</text>
 <text fill="#8b8c8e" x="980" y="151.26" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L03</text>
 <text fill="#e6e6e6" x="1013.6" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Consumidores</text>
 <text fill="#1b1d22" x="173.6" y="169.74" textLength="310.8" lengthAdjust="spacing" xml:space="preserve">paquetes en 15 min puede no aparecer.</text>
-<text fill="#8b8c8e" x="534.8" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">discards</text>
+<text fill="#8b8c8e" x="534.8" y="169.74" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">descartes</text>
 <text fill="#e6e6e6" font-weight="700" x="669.2" y="169.74" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">0,0 r/s</text>
 <text fill="#8b8c8e" x="980" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L04</text>
 <text fill="#e6e6e6" x="1013.6" y="169.74" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Tasa por consumidor</text>
 <text fill="#e6e6e6" font-weight="700" x="47.6" y="188.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">B</text>
-<text fill="#e6e6e6" x="64.4" y="188.22" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Host</text>
-<text fill="#e6e6e6" x="173.6" y="188.22" textLength="302.4" lengthAdjust="spacing" xml:space="preserve">11,8 datagramas/s de 3 exportadores.</text>
-<text fill="#8b8c8e" x="534.8" y="188.22" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">delivered</text>
-<text fill="#e6e6e6" font-weight="700" x="618.8" y="188.22" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">1/1 batches · 204</text>
+<text fill="#e6e6e6" x="64.4" y="188.22" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Equipo</text>
+<text fill="#e6e6e6" x="173.6" y="188.22" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">B2 · Llega a puertos donde FlowLink no e…</text>
+<text fill="#8b8c8e" x="534.8" y="188.22" textLength="84" lengthAdjust="spacing" xml:space="preserve">entregados</text>
+<text fill="#e6e6e6" font-weight="700" x="618.8" y="188.22" textLength="126" lengthAdjust="spacing" xml:space="preserve">1/1 lotes · 204</text>
 <text fill="#8b8c8e" x="980" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L05</text>
 <text fill="#e6e6e6" x="1013.6" y="188.22" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Reinicio por contador</text>
 <text fill="#e6e6e6" font-weight="700" x="47.6" y="206.7" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">C</text>
 <text fill="#e6e6e6" x="64.4" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
-<text fill="#e6e6e6" x="173.6" y="206.7" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">Proceso 3377 · unidad illumio-flowlink.s…</text>
+<text fill="#e6e6e6" x="173.6" y="206.7" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">C3 · Llegan datagramas al puerto 9995 y …</text>
 <text fill="#8b8c8e" x="854" y="206.7" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">pps (15m)</text>
 <text fill="#8b8c8e" x="980" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L06</text>
 <text fill="#e6e6e6" x="1013.6" y="206.7" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Exportadores según FlowLink</text>
@@ -226,44 +226,53 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <text fill="#e6e6e6" x="173.6" y="225.18" textLength="344.4" lengthAdjust="spacing" xml:space="preserve">No se probó la salida al PCE (apagada co…</text>
 <text fill="#8b8c8e" x="980" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L07</text>
 <text fill="#e6e6e6" x="1013.6" y="225.18" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Datos sin plantilla</text>
-<text fill="#8b8c8e" font-weight="700" x="30.8" y="262.14" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · list «perfil»</text>
-<text fill="#e6e6e6" font-weight="700" x="39.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
-<rect x="39.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#8b8c8e" font-weight="700" x="30.8" y="262.14" textLength="252" lengthAdjust="spacing" xml:space="preserve">IPs vigiladas · lista «perfil»</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="280.62" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Nombre</text>
+<rect x="39.2" y="283.84" width="50.4" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="568.4" y="280.62" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
 <rect x="568.4" y="283.84" width="16.8" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="702.8" y="280.62" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Verdict</text>
-<rect x="702.8" y="283.84" width="58.8" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="946.4" y="280.62" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Ladder</text>
-<rect x="946.4" y="283.84" width="50.4" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="1047.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Last</text>
-<rect x="1047.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="1131.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Note</text>
+<text fill="#e6e6e6" font-weight="700" x="702.8" y="280.62" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Veredicto</text>
+<rect x="702.8" y="283.84" width="75.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="946.4" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Escalera</text>
+<rect x="946.4" y="283.84" width="67.2" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="1047.2" y="280.62" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Último</text>
+<rect x="1047.2" y="283.84" width="50.4" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="1131.2" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Nota</text>
 <rect x="1131.2" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" x="56" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
 <text fill="#e6e6e6" x="568.4" y="299.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
 <text fill="#f2cc60" x="719.6" y="299.1" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Esperando el próximo ciclo</text>
 <text fill="#3fb950" x="946.4" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">N1 N2 N3</text>
 <text fill="#8b8c8e" x="1022" y="299.1" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">··</text>
-<text fill="#e6e6e6" x="1047.2" y="299.1" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:42</text>
+<text fill="#e6e6e6" x="1047.2" y="299.1" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:37</text>
 <text fill="#8b8c8e" x="1131.2" y="299.1" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">próximo ciclo en 14 s</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="243.6" lengthAdjust="spacing" xml:space="preserve">Home › Chain › A Exportadores</text>
-<text fill="#ff7a1a" x="644" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text fill="#8b8c8e" x="660.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
-<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
-<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
-<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
-<text fill="#ff7a1a" x="938" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text fill="#8b8c8e" x="988.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text fill="#ff7a1a" x="1047.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">p</text>
-<text fill="#8b8c8e" x="1064" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">pause</text>
-<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
-<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
-<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
-<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
-</svg></button><figcaption>Fig. 1 — Home: cadena A–E y embudo</figcaption></figure>
+<text fill="#e6e6e6" x="56" y="317.58" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">sonda-gestion-99</text>
+<text fill="#e6e6e6" x="568.4" y="317.58" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.99</text>
+<text fill="#f85149" x="719.6" y="317.58" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">No lo recibe FlowLink</text>
+<text fill="#3fb950" x="946.4" y="317.58" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N1</text>
+<text fill="#8b8c8e" x="971.6" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">·· ·· ··</text>
+<text fill="#e6e6e6" x="1047.2" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:38</text>
+<text fill="#8b8c8e" x="1131.2" y="317.58" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">desde 198.51.100.14</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">Inicio › Cadena › A Exportadores</text>
+<text fill="#ff7a1a" x="476" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="492.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">detalle</text>
+<text fill="#ff7a1a" x="568.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="585.2" y="927.42" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">rastrear IP</text>
+<text fill="#ff7a1a" x="694.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="711.2" y="927.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">evidencia</text>
+<text fill="#ff7a1a" x="803.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="854" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">vigilar</text>
+<text fill="#ff7a1a" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">p</text>
+<text fill="#8b8c8e" x="946.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">pausa</text>
+<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1030.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">pestañas</text>
+<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1206.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text fill="#8b8c8e" x="1223.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">salir</text>
+<text fill="#ff7a1a" x="1282.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1299.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">ayuda</text>
+</svg></button><figcaption>Fig. 1 — Inicio: cadena A–E y embudo</figcaption></figure>
 <figure class="shot"><button class="zoom" type="button" title="Clic para ver en tamaño original"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
 <title>fl-doctor · flowlink-lab-01</title>
 
@@ -285,25 +294,26 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="560" y="119.92" width="67.2" height="18.48" fill="#e6e6e6"/>
 <rect x="669.2" y="119.92" width="8.4" height="18.48" fill="#e6e6e6"/>
 <rect x="686" y="119.92" width="210" height="18.48" fill="#e6e6e6"/>
-<rect x="1055.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1290.8" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1055.6" y="249.28" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
 <rect x="17.05" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
 <rect x="17.05" y="91.05" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="17.05" y="904.16" width="836.96" height="2.31" fill="#ff7a1a"/>
 <rect x="22.4" y="119.92" width="16.8" height="18.48" fill="#ff7a1a"/>
-<rect x="89.6" y="64.48" width="109.2" height="18.48" fill="#ff7a1a"/>
-<rect x="165.2" y="91.05" width="736.15" height="2.31" fill="#ff7a1a"/>
+<rect x="106.4" y="64.48" width="134.4" height="18.48" fill="#ff7a1a"/>
+<rect x="190.4" y="91.05" width="710.96" height="2.31" fill="#ff7a1a"/>
 <rect x="896" y="904.16" width="5.36" height="2.31" fill="#ff7a1a"/>
 <rect x="899.04" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
-<rect x="1064" y="249.28" width="235.2" height="18.48" fill="#ff7a1a"/>
-<rect x="1097.6" y="277" width="8.4" height="9.24" fill="#ff7a1a"/>
-<rect x="1106" y="270.07" width="142.8" height="16.17" fill="#ff7a1a"/>
-<rect x="1248.8" y="267.76" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1257.2" y="270.07" width="75.6" height="16.17" fill="#ff7a1a"/>
-<rect x="1332.8" y="272.38" width="8.4" height="13.86" fill="#ff7a1a"/>
+<rect x="1064" y="249.28" width="226.8" height="18.48" fill="#ff7a1a"/>
+<rect x="1097.6" y="274.69" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="1106" y="270.07" width="84" height="16.17" fill="#ff7a1a"/>
+<rect x="1190" y="267.76" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1198.4" y="270.07" width="134.4" height="16.17" fill="#ff7a1a"/>
+<rect x="1332.8" y="277" width="8.4" height="9.24" fill="#ff7a1a"/>
 <path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
-<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1101.8" cy="55.24" r="2.86" fill="#3fb950"/>
 <circle cx="35" cy="92.2" r="2.86" fill="#ff7a1a"/>
 <path d="M1057.28 110.85L1059.13 112.86L1062.66 108.33" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M32.45 125.81L37.71 129.16L32.45 132.51Z" fill="#1b1d22"/>
@@ -313,86 +323,88 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <path d="M679.28 147.81L681.13 149.82L684.66 145.29" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M679.62 163.94L683.98 168.3M683.98 163.94L679.62 168.3" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M679.28 184.77L681.13 186.78L684.66 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
 <text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
 <text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
-<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">captura</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">nativo ens224</text>
 <text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">22/64 MB</text>
 <text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
-<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 5% ·</text>
-<text fill="#3fb950" x="1164.8" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
-<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:29:29 UTC</text>
-<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
-<text fill="#1b1d22" font-weight="700" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
-<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
-<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
-<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
-<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
-<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">sistema</text>
+<text fill="#3fb950" x="963.2" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
+<text fill="#e6e6e6" x="1022" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">libres</text>
+<text fill="#8b8c8e" x="1080.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1114.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:38:15 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">1 Inicio</text>
+<text fill="#1b1d22" font-weight="700" x="114.8" y="77.34" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">2 Exportadores</text>
+<text fill="#e6e6e6" x="257.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="324.8" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">4 Flujos</text>
+<text fill="#e6e6e6" x="417.2" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="526.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">6 Equipo</text>
+<text fill="#e6e6e6" x="618.8" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Captura</text>
 <text fill="#e6e6e6" font-weight="700" x="1307.6" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">ES</text>
 <text fill="#8b8c8e" x="1324.4" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">/EN</text>
-<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Exporters · 4</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="95.82" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">Exportadores · 4</text>
 <text fill="#8b8c8e" font-weight="700" x="921.2" y="95.82" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">198.51.100.11:4739 · sw-core-01</text>
-<text fill="#e6e6e6" font-weight="700" x="39.2" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Exporter</text>
-<rect x="39.2" y="117.52" width="67.2" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="114.3" textLength="84" lengthAdjust="spacing" xml:space="preserve">Exportador</text>
+<rect x="39.2" y="117.52" width="84" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="266" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Ver.</text>
 <rect x="266" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="350" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Port</text>
-<rect x="350" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="333.2" y="114.3" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Puerto</text>
+<rect x="333.2" y="117.52" width="50.4" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="425.6" y="114.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">pps</text>
 <rect x="425.6" y="117.52" width="25.2" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="484.4" y="114.3" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">rec/s Tmpl.</text>
-<rect x="484.4" y="117.52" width="92.4" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="635.6" y="114.3" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Loss FlowLink</text>
-<rect x="635.6" y="117.52" width="109.2" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="820.4" y="114.3" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
-<rect x="820.4" y="117.52" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="484.4" y="114.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">reg/s Plant.</text>
+<rect x="484.4" y="117.52" width="100.8" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="610.4" y="114.3" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">Pérdida FlowLink</text>
+<rect x="610.4" y="117.52" width="134.4" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="820.4" y="114.3" textLength="42" lengthAdjust="spacing" xml:space="preserve">Visto</text>
+<rect x="820.4" y="117.52" width="42" height="1.05" fill="#e6e6e6"/>
 <text fill="#8b8c8e" x="912.8" y="114.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
-<text fill="#e6e6e6" x="1072.4" y="114.3" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">accepts · log</text>
+<text fill="#e6e6e6" x="1072.4" y="114.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">acepta · log</text>
 <text fill="#1b1d22" x="39.2" y="132.78" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.11</text>
 <text fill="#76777a" x="156.8" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">sw-core-01</text>
 <text fill="#1b1d22" x="266" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">IPFIX</text>
 <text fill="#1b1d22" x="350" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">4739</text>
 <text fill="#1b1d22" x="425.6" y="132.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">6,3</text>
-<text fill="#1b1d22" x="492.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">72,5 1</text>
+<text fill="#1b1d22" x="492.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">72,2 1</text>
 <text fill="#1b1d22" x="627.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">0,0 %</text>
-<text fill="#1b1d22" x="694.4" y="132.78" textLength="168" lengthAdjust="spacing" xml:space="preserve">accepts · log  ahora</text>
-<text fill="#8b8c8e" x="912.8" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Format</text>
+<text fill="#1b1d22" x="694.4" y="132.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">acepta · log</text>
+<text fill="#1b1d22" x="820.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">ahora</text>
+<text fill="#8b8c8e" x="912.8" y="132.78" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Formato</text>
 <text fill="#e6e6e6" x="1055.6" y="132.78" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">IPFIX · ipfix-core</text>
 <text fill="#e6e6e6" x="39.2" y="151.26" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.12</text>
 <text fill="#8b8c8e" x="156.8" y="151.26" textLength="84" lengthAdjust="spacing" xml:space="preserve">sw-dist-02</text>
 <text fill="#e6e6e6" x="266" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v9</text>
 <text fill="#e6e6e6" x="350" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">2055</text>
 <text fill="#e6e6e6" x="425.6" y="151.26" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">4,0</text>
-<text fill="#e6e6e6" x="492.8" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">46,4 1</text>
+<text fill="#e6e6e6" x="492.8" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">46,2 1</text>
 <text fill="#3fb950" x="627.2" y="151.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">0,0 %</text>
-<text fill="#e6e6e6" x="694.4" y="151.26" textLength="168" lengthAdjust="spacing" xml:space="preserve">accepts · log  ahora</text>
-<text fill="#8b8c8e" x="912.8" y="151.26" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Templates</text>
-<text fill="#e6e6e6" x="1055.6" y="151.26" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">1 · resend every 57 s · completas</text>
+<text fill="#e6e6e6" x="694.4" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">acepta · log</text>
+<text fill="#e6e6e6" x="820.4" y="151.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">ahora</text>
+<text fill="#8b8c8e" x="912.8" y="151.26" textLength="84" lengthAdjust="spacing" xml:space="preserve">Plantillas</text>
+<text fill="#e6e6e6" x="1055.6" y="151.26" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">1 · reenvía cada 57 s · completas</text>
 <text fill="#e6e6e6" x="39.2" y="169.74" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14</text>
 <text fill="#8b8c8e" x="156.8" y="169.74" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">sw-lab-04</text>
 <text fill="#e6e6e6" x="266" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v5</text>
 <text fill="#e6e6e6" x="350" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">9995</text>
 <text fill="#e6e6e6" x="425.6" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1,1</text>
-<text fill="#e6e6e6" x="492.8" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">15,2</text>
+<text fill="#e6e6e6" x="492.8" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">15,1</text>
 <text fill="#8b8c8e" x="534.8" y="169.74" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">—</text>
 <text fill="#3fb950" x="627.2" y="169.74" textLength="42" lengthAdjust="spacing" xml:space="preserve">0,0 %</text>
-<text fill="#e6e6e6" x="694.4" y="169.74" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">no listener</text>
+<text fill="#e6e6e6" x="694.4" y="169.74" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">sin escucha</text>
 <text fill="#e6e6e6" x="820.4" y="169.74" textLength="42" lengthAdjust="spacing" xml:space="preserve">ahora</text>
-<text fill="#8b8c8e" x="912.8" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Measures</text>
-<text fill="#e6e6e6" x="1055.6" y="169.74" textLength="294" lengthAdjust="spacing" xml:space="preserve">sampling no sampling · loss 0,0 % ·</text>
+<text fill="#8b8c8e" x="912.8" y="169.74" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Medidas</text>
+<text fill="#e6e6e6" x="1055.6" y="169.74" textLength="294" lengthAdjust="spacing" xml:space="preserve">muestreo sin muestreo · pérdida 0,0</text>
 <text fill="#e6e6e6" x="39.2" y="188.22" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.13</text>
 <text fill="#8b8c8e" x="156.8" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">sw-borde-03</text>
 <text fill="#e6e6e6" x="266" y="188.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">sFlow</text>
@@ -401,34 +413,36 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <text fill="#e6e6e6" x="501.2" y="188.22" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">8,0</text>
 <text fill="#8b8c8e" x="534.8" y="188.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">—</text>
 <text fill="#3fb950" x="627.2" y="188.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">0,0 %</text>
-<text fill="#e6e6e6" x="694.4" y="188.22" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">accepts</text>
+<text fill="#e6e6e6" x="694.4" y="188.22" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">acepta</text>
 <text fill="#e6e6e6" x="820.4" y="188.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">ahora</text>
-<text fill="#e6e6e6" x="1055.6" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">clock +15 s</text>
-<text fill="#8b8c8e" x="912.8" y="206.7" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Traffic</text>
-<text fill="#e6e6e6" x="1055.6" y="206.7" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">72,5 r/s · 6,3 pps · 3,5 KB/s ·</text>
-<text fill="#e6e6e6" x="1055.6" y="225.18" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">IPs: 83 private · 144 public</text>
-<text fill="#8b8c8e" x="912.8" y="243.66" textLength="42" lengthAdjust="spacing" xml:space="preserve">Other</text>
-<text fill="#e6e6e6" x="1055.6" y="243.66" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">fragmented 0 · max duration 42 s</text>
-<text fill="#8b8c8e" x="912.8" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">Per minute</text>
+<text fill="#e6e6e6" x="1055.6" y="188.22" textLength="126" lengthAdjust="spacing" xml:space="preserve">% · reloj +15 s</text>
+<text fill="#8b8c8e" x="912.8" y="206.7" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Tráfico</text>
+<text fill="#e6e6e6" x="1055.6" y="206.7" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">72,2 r/s · 6,3 pps · 3,4 KB/s ·</text>
+<text fill="#e6e6e6" x="1055.6" y="225.18" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">IPs: 83 privadas · 144 públicas</text>
+<text fill="#8b8c8e" x="912.8" y="243.66" textLength="42" lengthAdjust="spacing" xml:space="preserve">Otros</text>
+<text fill="#e6e6e6" x="1055.6" y="243.66" textLength="294" lengthAdjust="spacing" xml:space="preserve">fragmentados 0 · duración máx. 42 s</text>
+<text fill="#8b8c8e" x="912.8" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">Por minuto</text>
 <text fill="#8b8c8e" x="862.4" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/4</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">Exporters › Table › 198.51.100.11</text>
-<text fill="#ff7a1a" x="686" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text fill="#8b8c8e" x="702.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text fill="#ff7a1a" x="778.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text fill="#8b8c8e" x="795.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
-<text fill="#ff7a1a" x="862.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
-<text fill="#8b8c8e" x="879.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
-<text fill="#ff7a1a" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">d</text>
-<text fill="#8b8c8e" x="946.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">board</text>
-<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
-<text fill="#8b8c8e" x="1131.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
-<text fill="#ff7a1a" x="1215.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text fill="#8b8c8e" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
-<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
-</svg></button><figcaption>Fig. 2 — Exporters: versión, puerto, plantillas, muestreo y aceptación de FlowLink</figcaption></figure>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="302.4" lengthAdjust="spacing" xml:space="preserve">Exportadores › Tabla › 198.51.100.11</text>
+<text fill="#ff7a1a" x="518" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="534.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">detalle</text>
+<text fill="#ff7a1a" x="610.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="627.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">buscar</text>
+<text fill="#ff7a1a" x="694.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
+<text fill="#8b8c8e" x="711.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">orden</text>
+<text fill="#ff7a1a" x="770" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">d</text>
+<text fill="#8b8c8e" x="786.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">tablero</text>
+<text fill="#ff7a1a" x="862.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="912.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">vigilar</text>
+<text fill="#ff7a1a" x="988.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="1005.2" y="927.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">evidencia</text>
+<text fill="#ff7a1a" x="1097.6" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1122.8" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">pestañas</text>
+<text fill="#ff7a1a" x="1206.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text fill="#8b8c8e" x="1223.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">salir</text>
+<text fill="#ff7a1a" x="1282.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1299.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">ayuda</text>
+</svg></button><figcaption>Fig. 2 — Exportadores: versión, puerto, plantillas, muestreo y aceptación de FlowLink</figcaption></figure>
 <figure class="shot"><button class="zoom" type="button" title="Clic para ver en tamaño original"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
 <title>fl-doctor · flowlink-lab-01</title>
 
@@ -443,7 +457,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="353.68" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
 <rect x="353.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
 <rect x="353.68" y="904.79" width="1000.65" height="1.05" fill="#8b8c8e"/>
-<rect x="501.2" y="110.16" width="853.12" height="1.05" fill="#8b8c8e"/>
+<rect x="551.6" y="110.16" width="802.73" height="1.05" fill="#8b8c8e"/>
 <rect x="1353.28" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
 <rect x="56" y="138.4" width="260.4" height="18.48" fill="#e6e6e6"/>
 <rect x="324.8" y="138.4" width="16.8" height="18.48" fill="#e6e6e6"/>
@@ -452,20 +466,20 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="17.05" y="904.16" width="282.56" height="2.31" fill="#ff7a1a"/>
 <rect x="22.4" y="156.88" width="4.2" height="18.48" fill="#ff7a1a"/>
 <rect x="22.4" y="138.4" width="33.6" height="18.48" fill="#ff7a1a"/>
-<rect x="207.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
-<rect x="240.8" y="109.53" width="106.15" height="2.31" fill="#ff7a1a"/>
+<rect x="249.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
+<rect x="257.6" y="109.53" width="89.35" height="2.31" fill="#ff7a1a"/>
 <rect x="341.6" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="344.64" y="109.53" width="2.31" height="796.95" fill="#ff7a1a"/>
 <rect x="770" y="406.36" width="8.4" height="9.24" fill="#ff7a1a"/>
-<rect x="778.4" y="404.05" width="16.8" height="11.55" fill="#ff7a1a"/>
-<rect x="795.2" y="397.12" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="803.6" y="404.05" width="16.8" height="11.55" fill="#ff7a1a"/>
+<rect x="778.4" y="404.05" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="786.8" y="397.12" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="795.2" y="404.05" width="25.2" height="11.55" fill="#ff7a1a"/>
 <path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
-<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1101.8" cy="55.24" r="2.86" fill="#3fb950"/>
 <circle cx="35" cy="110.68" r="2.86" fill="#ff7a1a"/>
-<path d="M687.68 129.33L689.53 131.34L693.06 126.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M704.48 129.33L706.33 131.34L709.86 126.81" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M32.45 144.29L37.71 147.64L32.45 150.99Z" fill="#1b1d22"/>
 <path d="M43.4 144.28L46.26 147.64L43.4 151L40.54 147.64Z" fill="#1b1d22"/>
 <path d="M318.08 147.81L319.93 149.82L323.46 145.29" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -476,115 +490,113 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <path d="M360.08 203.25L361.93 205.26L365.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M360.08 221.73L361.93 223.74L365.46 219.21" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M362.6 292.29L365.95 298.03L359.25 298.03Z" fill="#f2cc60"/>
-<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
 <text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
 <text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
-<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">captura</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">nativo ens224</text>
 <text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">22/64 MB</text>
 <text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,1 GB</text>
-<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 3% ·</text>
-<text fill="#3fb950" x="1164.8" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
-<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:29:45 UTC</text>
-<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
-<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
-<text fill="#1b1d22" font-weight="700" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
-<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
-<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
-<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
-<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">sistema</text>
+<text fill="#3fb950" x="963.2" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
+<text fill="#e6e6e6" x="1022" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">libres</text>
+<text fill="#8b8c8e" x="1080.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1114.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:38:30 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">1 Inicio</text>
+<text fill="#e6e6e6" x="114.8" y="77.34" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">2 Exportadores</text>
+<text fill="#1b1d22" font-weight="700" x="257.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="324.8" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">4 Flujos</text>
+<text fill="#e6e6e6" x="417.2" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="526.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">6 Equipo</text>
+<text fill="#e6e6e6" x="618.8" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Captura</text>
 <text fill="#e6e6e6" font-weight="700" x="1307.6" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">ES</text>
 <text fill="#8b8c8e" x="1324.4" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">/EN</text>
-<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">[Watched]</text>
-<text fill="#8b8c8e" x="106.4" y="95.82" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
-<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · «perfil»</text>
-<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="126" lengthAdjust="spacing" xml:space="preserve">Evidence ladder</text>
-<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
-<rect x="39.2" y="136" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">[Vigiladas]</text>
+<text fill="#8b8c8e" x="123.2" y="95.82" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Vistas</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">IPs vigiladas · «perfil»</text>
+<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Escalera de evidencia</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Nombre</text>
+<rect x="39.2" y="136" width="50.4" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="182" y="132.78" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
 <rect x="182" y="136" width="16.8" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="358.4" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77 · 10.20.30.77</text>
-<text fill="#8b8c8e" x="610.4" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Verdict:</text>
-<text fill="#3fb950" x="702.8" y="132.78" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Entregado</text>
-<text fill="#8b8c8e" x="786.8" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(inferred)</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">Veredicto:</text>
+<text fill="#3fb950" x="719.6" y="132.78" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Entregado</text>
+<text fill="#8b8c8e" x="803.6" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(deducido)</text>
 <text fill="#1b1d22" x="56" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
 <text fill="#1b1d22" x="182" y="151.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N1</text>
 <text fill="#e6e6e6" x="400.4" y="151.26" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Llega al colector</text>
-<text fill="#8b8c8e" x="585.2" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
-<text fill="#e6e6e6" x="660.8" y="151.26" textLength="562.8" lengthAdjust="spacing" xml:space="preserve">26 registros · 1 exportadores · 16-oct 14:24 UTC → 16-oct 14:29 UTC</text>
+<text fill="#8b8c8e" x="585.2" y="151.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">cable</text>
+<text fill="#e6e6e6" x="660.8" y="151.26" textLength="562.8" lengthAdjust="spacing" xml:space="preserve">26 registros · 1 exportadores · 18-oct 00:33 UTC → 18-oct 00:38 UTC</text>
 <text fill="#e6e6e6" x="56" y="169.74" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">sonda-gestion… 10.20.40.99</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N2</text>
 <text fill="#e6e6e6" x="400.4" y="169.74" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">FlowLink la recibe</text>
-<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">deducido</text>
 <text fill="#e6e6e6" x="660.8" y="169.74" textLength="638.4" lengthAdjust="spacing" xml:space="preserve">El exportador es aceptado por el consumidor «netflow-dist» (puerto 2055); el</text>
 <text fill="#e6e6e6" x="660.8" y="188.22" textLength="420" lengthAdjust="spacing" xml:space="preserve">socket no descarta y FlowLink creó sus plantillas.</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="206.7" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N3</text>
 <text fill="#e6e6e6" x="400.4" y="206.7" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó</text>
 <text fill="#8b8c8e" x="585.2" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
-<text fill="#e6e6e6" x="660.8" y="206.7" textLength="470.4" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó por primera vez el 16-oct 13:46 UTC.</text>
+<text fill="#e6e6e6" x="660.8" y="206.7" textLength="470.4" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó por primera vez el 17-oct 23:55 UTC.</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="225.18" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N4</text>
 <text fill="#e6e6e6" x="400.4" y="225.18" textLength="126" lengthAdjust="spacing" xml:space="preserve">Ciclo entregado</text>
 <text fill="#8b8c8e" x="585.2" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
-<text fill="#e6e6e6" x="660.8" y="225.18" textLength="655.2" lengthAdjust="spacing" xml:space="preserve">Ciclo de 16-oct 14:29 UTC y 1 ciclos posteriores: 1/1 lotes con respuesta 2xx,</text>
+<text fill="#e6e6e6" x="660.8" y="225.18" textLength="655.2" lengthAdjust="spacing" xml:space="preserve">Ciclo de 18-oct 00:38 UTC y 1 ciclos posteriores: 1/1 lotes con respuesta 2xx,</text>
 <text fill="#e6e6e6" x="660.8" y="243.66" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">204.</text>
 <text fill="#58a6ff" x="358.4" y="262.14" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="262.14" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">E</text>
 <text fill="#e6e6e6" x="400.4" y="262.14" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">PCE</text>
-<text fill="#8b8c8e" x="585.2" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#8b8c8e" x="585.2" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">deducido</text>
 <text fill="#e6e6e6" x="660.8" y="262.14" textLength="672" lengthAdjust="spacing" xml:space="preserve">Fuera del host: el paquete de evidencia lleva el contexto técnico para revisarlo</text>
 <text fill="#e6e6e6" x="660.8" y="280.62" textLength="84" lengthAdjust="spacing" xml:space="preserve">en el PCE.</text>
 <text fill="#e6e6e6" x="375.2" y="299.1" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Esperando el próximo ciclo: cierra en 4 min.</text>
-<text fill="#8b8c8e" x="358.4" y="336.06" textLength="42" lengthAdjust="spacing" xml:space="preserve">Peers</text>
+<text fill="#8b8c8e" x="358.4" y="336.06" textLength="42" lengthAdjust="spacing" xml:space="preserve">Pares</text>
 <text fill="#e6e6e6" x="484.4" y="336.06" textLength="714" lengthAdjust="spacing" xml:space="preserve">10.20.20.6:5432/tcp 26,9 % · 10.99.0.53:53/udp 26,9 % · 10.20.10.12:8443/tcp 15,4 % ·</text>
 <text fill="#e6e6e6" x="484.4" y="354.54" textLength="470.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.11:8443/tcp 11,5 % · 203.0.113.25:443/tcp 7,7 %</text>
-<text fill="#8b8c8e" x="358.4" y="373.02" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Exporters</text>
+<text fill="#8b8c8e" x="358.4" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Exportadores</text>
 <text fill="#e6e6e6" x="484.4" y="373.02" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
-<text fill="#8b8c8e" x="358.4" y="391.5" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Transport</text>
+<text fill="#8b8c8e" x="358.4" y="391.5" textLength="84" lengthAdjust="spacing" xml:space="preserve">Transporte</text>
 <text fill="#e6e6e6" x="484.4" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">udp</text>
-<text fill="#8b8c8e" x="358.4" y="409.98" textLength="84" lengthAdjust="spacing" xml:space="preserve">Per minute</text>
-<text fill="#8b8c8e" x="828.8" y="409.98" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">records/min</text>
-<text fill="#8b8c8e" x="358.4" y="428.46" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Records</text>
+<text fill="#8b8c8e" x="358.4" y="409.98" textLength="84" lengthAdjust="spacing" xml:space="preserve">Por minuto</text>
+<text fill="#8b8c8e" x="828.8" y="409.98" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">registros/min</text>
+<text fill="#8b8c8e" x="358.4" y="428.46" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Registros</text>
 <text fill="#e6e6e6" x="484.4" y="428.46" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">26</text>
-<text fill="#e6e6e6" x="358.4" y="465.42" textLength="982.8" lengthAdjust="spacing" xml:space="preserve">Llega al colector (N1) · FlowLink la recibe (N2) · FlowLink la procesó por primera vez el 16-oct 13:46 UTC (N3) · los</text>
+<text fill="#e6e6e6" x="358.4" y="465.42" textLength="982.8" lengthAdjust="spacing" xml:space="preserve">Llega al colector (N1) · FlowLink la recibe (N2) · FlowLink la procesó por primera vez el 17-oct 23:55 UTC (N3) · los</text>
 <text fill="#e6e6e6" x="358.4" y="483.9" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">lotes de ese ciclo se entregaron, 204 (N4)</text>
-<text fill="#8b8c8e" x="358.4" y="520.86" textLength="806.4" lengthAdjust="spacing" xml:space="preserve">space vigilar · + agregar · / filtrar · e evidence · t tshark · c capture · r trace · Del remove</text>
+<text fill="#8b8c8e" x="358.4" y="520.86" textLength="848.4" lengthAdjust="spacing" xml:space="preserve">space vigilar · + agregar · / filtrar · e evidencia · t tshark · c capturar · r rastrear · Del quitar</text>
 <text fill="#8b8c8e" x="308" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/2</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">IPs › Watched › 10.20.30.77</text>
-<text fill="#ff7a1a" x="375.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text fill="#8b8c8e" x="425.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text fill="#ff7a1a" x="484.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
-<text fill="#8b8c8e" x="518" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
-<text fill="#ff7a1a" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
-<text fill="#8b8c8e" x="610.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">add</text>
-<text fill="#ff7a1a" x="652.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text fill="#8b8c8e" x="669.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">filter</text>
-<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
-<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
-<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
-<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
-<text fill="#ff7a1a" x="938" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">t</text>
-<text fill="#8b8c8e" x="954.8" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">tshark</text>
-<text fill="#ff7a1a" x="1022" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Del</text>
-<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">remove</text>
-<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
-<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
-<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
-<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
-</svg></button><figcaption>Fig. 3 — IPs › Watched: escalera de evidencia N0–N4</figcaption></figure>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="243.6" lengthAdjust="spacing" xml:space="preserve">IPs › Vigiladas › 10.20.30.77</text>
+<text fill="#ff7a1a" x="341.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="392" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">vigilar</text>
+<text fill="#ff7a1a" x="467.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="501.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">subvista</text>
+<text fill="#ff7a1a" x="585.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
+<text fill="#8b8c8e" x="602" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">agregar</text>
+<text fill="#ff7a1a" x="677.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="694.4" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">filtrar</text>
+<text fill="#ff7a1a" x="770" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="786.8" y="927.42" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">rastrear IP</text>
+<text fill="#ff7a1a" x="896" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="912.8" y="927.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">evidencia</text>
+<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1030.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">pestañas</text>
+<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1206.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text fill="#8b8c8e" x="1223.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">salir</text>
+<text fill="#ff7a1a" x="1282.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1299.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">ayuda</text>
+</svg></button><figcaption>Fig. 3 — IPs › Vigiladas: escalera de evidencia N0–N4</figcaption></figure>
 <figure class="shot"><button class="zoom" type="button" title="Clic para ver en tamaño original"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
 <title>fl-doctor · flowlink-lab-01</title>
 
@@ -611,11 +623,11 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="17.68" y="110.16" width="1.05" height="130.41" fill="#8b8c8e"/>
 <rect x="17.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
 <rect x="17.68" y="239.51" width="1336.65" height="1.05" fill="#8b8c8e"/>
-<rect x="266" y="110.16" width="1088.33" height="1.05" fill="#8b8c8e"/>
+<rect x="282.8" y="110.16" width="1071.53" height="1.05" fill="#8b8c8e"/>
 <rect x="555.27" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
 <rect x="555.27" y="258" width="4.73" height="1.05" fill="#8b8c8e"/>
 <rect x="555.27" y="904.79" width="799.05" height="1.05" fill="#8b8c8e"/>
-<rect x="660.8" y="258" width="693.53" height="1.05" fill="#8b8c8e"/>
+<rect x="702.8" y="258" width="651.53" height="1.05" fill="#8b8c8e"/>
 <rect x="1353.28" y="110.16" width="1.05" height="130.41" fill="#8b8c8e"/>
 <rect x="1353.28" y="258" width="1.05" height="647.85" fill="#8b8c8e"/>
 <rect x="39.2" y="286.24" width="33.6" height="18.48" fill="#e6e6e6"/>
@@ -625,14 +637,14 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="17.05" y="257.37" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="17.05" y="904.16" width="475.75" height="2.31" fill="#ff7a1a"/>
 <rect x="22.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a"/>
-<rect x="207.2" y="257.37" width="341.35" height="2.31" fill="#ff7a1a"/>
-<rect x="358.4" y="64.48" width="100.8" height="18.48" fill="#ff7a1a"/>
+<rect x="215.6" y="257.37" width="332.95" height="2.31" fill="#ff7a1a"/>
+<rect x="408.8" y="64.48" width="100.8" height="18.48" fill="#ff7a1a"/>
 <rect x="543.2" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="546.25" y="257.37" width="2.31" height="649.11" fill="#ff7a1a"/>
 <path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
-<circle cx="1152.2" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="1101.8" cy="55.24" r="2.86" fill="#3fb950"/>
 <path d="M192.08 203.25L193.93 205.26L197.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M192.42 219.38L196.78 223.74M196.78 219.38L192.42 223.74" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <circle cx="35" cy="258.52" r="2.86" fill="#ff7a1a"/>
@@ -680,205 +692,207 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <path d="M687.68 776.13L689.53 778.14L693.06 773.61" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M687.68 794.61L689.53 796.62L693.06 792.09" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M687.68 813.09L689.53 815.1L693.06 810.57" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="324.8" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">FlowLink</text>
 <text fill="#e6e6e6" x="417.2" y="58.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
 <text fill="#8b8c8e" x="467.6" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">capture</text>
-<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">native ens224</text>
+<text fill="#e6e6e6" x="484.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">captura</text>
+<text fill="#e6e6e6" x="568.4" y="58.86" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">nativo ens224</text>
 <text fill="#8b8c8e" x="686" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text fill="#8b8c8e" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
 <text fill="#e6e6e6" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
 <text fill="#8b8c8e" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text fill="#3fb950" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
-<text fill="#e6e6e6" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text fill="#8b8c8e" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 5% ·</text>
-<text fill="#3fb950" x="1164.8" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
-<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:30:32 UTC</text>
-<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
-<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
-<text fill="#e6e6e6" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
-<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
-<text fill="#1b1d22" font-weight="700" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
-<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
-<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#e6e6e6" x="896" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">sistema</text>
+<text fill="#3fb950" x="963.2" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
+<text fill="#e6e6e6" x="1022" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">libres</text>
+<text fill="#8b8c8e" x="1080.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1114.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:39:17 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">1 Inicio</text>
+<text fill="#e6e6e6" x="114.8" y="77.34" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">2 Exportadores</text>
+<text fill="#e6e6e6" x="257.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="324.8" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">4 Flujos</text>
+<text fill="#1b1d22" font-weight="700" x="417.2" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="526.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">6 Equipo</text>
+<text fill="#e6e6e6" x="618.8" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Captura</text>
 <text fill="#e6e6e6" font-weight="700" x="1307.6" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">ES</text>
 <text fill="#8b8c8e" x="1324.4" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">/EN</text>
-<text fill="#8b8c8e" x="22.4" y="95.82" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Service</text>
-<text fill="#8b8c8e" x="106.4" y="95.82" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Configuration</text>
-<text fill="#ff7a1a" font-weight="700" x="232.4" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">[Log]</text>
-<text fill="#8b8c8e" x="291.2" y="95.82" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Batches</text>
-<text fill="#8b8c8e" x="383.6" y="95.82" textLength="210" lengthAdjust="spacing" xml:space="preserve">· [ ] cambian de subvista</text>
-<text fill="#8b8c8e" font-weight="700" x="30.8" y="114.3" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Cycles, meters and discards</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="132.78" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Cycles (5 min)</text>
-<text fill="#8b8c8e" x="156.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:41</text>
-<text fill="#8b8c8e" x="232.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:46</text>
-<text fill="#8b8c8e" x="308" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:51</text>
-<text fill="#8b8c8e" x="383.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:56</text>
-<text fill="#8b8c8e" x="459.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:01</text>
-<text fill="#8b8c8e" x="534.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:06</text>
-<text fill="#8b8c8e" x="610.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:11</text>
-<text fill="#8b8c8e" x="686" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:16</text>
-<text fill="#8b8c8e" x="761.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:21</text>
-<text fill="#8b8c8e" x="837.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:24</text>
-<text fill="#8b8c8e" x="912.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
-<text fill="#8b8c8e" x="988.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
-<text fill="#e6e6e6" x="1080.8" y="132.78" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">1 batches · 204 · flush 0 s</text>
+<text fill="#8b8c8e" x="22.4" y="95.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Servicio</text>
+<text fill="#8b8c8e" x="114.8" y="95.82" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Configuración</text>
+<text fill="#ff7a1a" font-weight="700" x="240.8" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">[Log]</text>
+<text fill="#8b8c8e" x="299.6" y="95.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">Lotes</text>
+<text fill="#8b8c8e" x="375.2" y="95.82" textLength="210" lengthAdjust="spacing" xml:space="preserve">· [ ] cambian de subvista</text>
+<text fill="#8b8c8e" font-weight="700" x="30.8" y="114.3" textLength="243.6" lengthAdjust="spacing" xml:space="preserve">Ciclos, medidores y descartes</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="132.78" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Ciclos (5 min)</text>
+<text fill="#8b8c8e" x="156.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">23:50</text>
+<text fill="#8b8c8e" x="232.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">23:55</text>
+<text fill="#8b8c8e" x="308" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:00</text>
+<text fill="#8b8c8e" x="383.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:05</text>
+<text fill="#8b8c8e" x="459.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:10</text>
+<text fill="#8b8c8e" x="534.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:15</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:20</text>
+<text fill="#8b8c8e" x="686" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:25</text>
+<text fill="#8b8c8e" x="761.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:30</text>
+<text fill="#8b8c8e" x="837.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:33</text>
+<text fill="#8b8c8e" x="912.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:38</text>
+<text fill="#8b8c8e" x="988.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:38</text>
+<text fill="#e6e6e6" x="1080.8" y="132.78" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">1 lotes · 204 · vaciado 0 s</text>
 <text fill="#8b8c8e" x="22.4" y="151.26" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">meter ipfix-core</text>
-<text fill="#e6e6e6" x="182" y="151.26" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 83,2/s · 15 min 81,0/s</text>
+<text fill="#e6e6e6" x="182" y="151.26" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 79,8/s · 15 min 82,3/s</text>
 <text fill="#8b8c8e" x="22.4" y="169.74" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">meter netflow-dist</text>
-<text fill="#e6e6e6" x="182" y="169.74" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 54,0/s · 15 min 52,1/s</text>
+<text fill="#e6e6e6" x="182" y="169.74" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 49,8/s · 15 min 52,7/s</text>
 <text fill="#8b8c8e" x="22.4" y="188.22" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">meter sflow-borde</text>
-<text fill="#e6e6e6" x="182" y="188.22" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">1 min 9,6/s · 15 min 8,9/s</text>
-<text fill="#8b8c8e" x="22.4" y="206.7" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">bad data discards</text>
+<text fill="#e6e6e6" x="182" y="188.22" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">1 min 8,7/s · 15 min 9,0/s</text>
+<text fill="#8b8c8e" x="22.4" y="206.7" textLength="168" lengthAdjust="spacing" xml:space="preserve">descartes «bad data»</text>
 <text fill="#e6e6e6" x="207.2" y="206.7" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">sin descartes</text>
-<text fill="#8b8c8e" x="22.4" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">Send errors</text>
+<text fill="#8b8c8e" x="22.4" y="225.18" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">Errores de envío</text>
 <text fill="#f85149" x="207.2" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">2</text>
-<text fill="#8b8c8e" x="224" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">· retries 2</text>
-<text fill="#ff7a1a" font-weight="700" x="47.6" y="262.14" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">Indicators L01–L17</text>
-<text fill="#8b8c8e" font-weight="700" x="568.4" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">Log events</text>
-<text fill="#e6e6e6" font-weight="700" x="72.8" y="280.62" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Indicator</text>
+<text fill="#8b8c8e" x="224" y="225.18" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">· reintentos 2</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="262.14" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Indicadores L01–L17</text>
+<text fill="#8b8c8e" font-weight="700" x="568.4" y="262.14" textLength="126" lengthAdjust="spacing" xml:space="preserve">Eventos del log</text>
+<text fill="#e6e6e6" font-weight="700" x="72.8" y="280.62" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Indicador</text>
 <rect x="72.8" y="283.84" width="75.6" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="408.8" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Value</text>
+<text fill="#e6e6e6" font-weight="700" x="408.8" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Valor</text>
 <rect x="408.8" y="283.84" width="42" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="576.8" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Time</text>
+<text fill="#e6e6e6" font-weight="700" x="576.8" y="280.62" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Hora</text>
 <rect x="576.8" y="283.84" width="33.6" height="1.05" fill="#e6e6e6"/>
-<text fill="#e6e6e6" font-weight="700" x="719.6" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Event</text>
-<rect x="719.6" y="283.84" width="42" height="1.05" fill="#e6e6e6"/>
+<text fill="#e6e6e6" font-weight="700" x="719.6" y="280.62" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Evento</text>
+<rect x="719.6" y="283.84" width="50.4" height="1.05" fill="#e6e6e6"/>
 <text fill="#76777a" x="39.2" y="299.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L01</text>
 <text fill="#1b1d22" x="89.6" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Log vivo</text>
 <text fill="#1b1d22" x="408.8" y="299.1" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">hace 23 s</text>
-<text fill="#8b8c8e" x="576.8" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:30</text>
+<text fill="#8b8c8e" x="576.8" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:38</text>
 <text fill="#58a6ff" x="686" y="299.1" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="719.6" y="299.1" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">Created template for {198.51.100.12 7 257}</text>
 <text fill="#8b8c8e" x="39.2" y="317.58" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L02</text>
 <text fill="#e6e6e6" x="89.6" y="317.58" textLength="210" lengthAdjust="spacing" xml:space="preserve">Arranques y configuración</text>
 <text fill="#3fb950" x="408.8" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
-<text fill="#8b8c8e" x="576.8" y="317.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:29</text>
+<text fill="#8b8c8e" x="576.8" y="317.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:38</text>
 <text fill="#e6e6e6" x="719.6" y="317.58" textLength="361.2" lengthAdjust="spacing" xml:space="preserve">Ciclo: 3.363 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="336.06" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L03</text>
 <text fill="#e6e6e6" x="89.6" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Consumidores</text>
 <text fill="#3fb950" x="408.8" y="336.06" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix:4739 netf…</text>
-<text fill="#8b8c8e" x="576.8" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:29</text>
-<text fill="#e6e6e6" x="719.6" y="336.06" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.644 flujos · 1 lotes · 1/1 con 2xx</text>
+<text fill="#8b8c8e" x="576.8" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:38</text>
+<text fill="#e6e6e6" x="719.6" y="336.06" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.654 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="354.54" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L04</text>
 <text fill="#e6e6e6" x="89.6" y="354.54" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Tasa por consumidor</text>
-<text fill="#3fb950" x="408.8" y="354.54" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix-core 83/s…</text>
-<text fill="#8b8c8e" x="576.8" y="354.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:24</text>
+<text fill="#3fb950" x="408.8" y="354.54" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix-core 80/s…</text>
+<text fill="#8b8c8e" x="576.8" y="354.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:33</text>
 <text fill="#e6e6e6" x="719.6" y="354.54" textLength="361.2" lengthAdjust="spacing" xml:space="preserve">Ciclo: 3.363 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="373.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L05</text>
 <text fill="#e6e6e6" x="89.6" y="373.02" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Reinicio por contador</text>
-<text fill="#8b8c8e" x="576.8" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:21</text>
+<text fill="#8b8c8e" x="576.8" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:30</text>
 <text fill="#e6e6e6" x="719.6" y="373.02" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 16.745 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L06</text>
 <text fill="#e6e6e6" x="89.6" y="391.5" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Exportadores según FlowLink</text>
 <text fill="#f2cc60" x="408.8" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">2/4</text>
-<text fill="#8b8c8e" x="576.8" y="391.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:16</text>
+<text fill="#8b8c8e" x="576.8" y="391.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:25</text>
 <text fill="#e6e6e6" x="719.6" y="391.5" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 16.004 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="409.98" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L07</text>
 <text fill="#e6e6e6" x="89.6" y="409.98" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Datos sin plantilla</text>
 <text fill="#3fb950" x="408.8" y="409.98" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text fill="#8b8c8e" x="576.8" y="409.98" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:11</text>
+<text fill="#8b8c8e" x="576.8" y="409.98" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:20</text>
 <text fill="#e6e6e6" x="719.6" y="409.98" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.345 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="428.46" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L08</text>
 <text fill="#e6e6e6" x="89.6" y="428.46" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Ciclo de agregación</text>
 <text fill="#f2cc60" x="408.8" y="428.46" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">c/3 min</text>
-<text fill="#8b8c8e" x="576.8" y="428.46" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:06</text>
+<text fill="#8b8c8e" x="576.8" y="428.46" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:15</text>
 <text fill="#e6e6e6" x="719.6" y="428.46" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.477 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="446.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L09</text>
 <text fill="#e6e6e6" x="89.6" y="446.94" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Entrega del ciclo</text>
 <text fill="#3fb950" x="408.8" y="446.94" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">1/1 lotes · vac…</text>
-<text fill="#8b8c8e" x="576.8" y="446.94" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 14:01</text>
+<text fill="#8b8c8e" x="576.8" y="446.94" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:10</text>
 <text fill="#e6e6e6" x="719.6" y="446.94" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 16.428 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="465.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L10</text>
 <text fill="#e6e6e6" x="89.6" y="465.42" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Último lote entregado</text>
-<text fill="#3fb950" x="408.8" y="465.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">hace 53 s</text>
-<text fill="#8b8c8e" x="576.8" y="465.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:56</text>
+<text fill="#3fb950" x="408.8" y="465.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">hace 52 s</text>
+<text fill="#8b8c8e" x="576.8" y="465.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:05</text>
 <text fill="#e6e6e6" x="719.6" y="465.42" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.613 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="483.9" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L11</text>
 <text fill="#58a6ff" x="72.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="89.6" y="483.9" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">Errores de envío</text>
 <text fill="#58a6ff" x="408.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">2</text>
-<text fill="#8b8c8e" x="576.8" y="483.9" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:51</text>
+<text fill="#8b8c8e" x="576.8" y="483.9" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">18-oct 00:00</text>
 <text fill="#e6e6e6" x="719.6" y="483.9" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.456 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="502.38" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L12</text>
 <text fill="#e6e6e6" x="89.6" y="502.38" textLength="126" lengthAdjust="spacing" xml:space="preserve">Códigos del PCE</text>
 <text fill="#3fb950" x="408.8" y="502.38" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">204 ×27</text>
-<text fill="#8b8c8e" x="576.8" y="502.38" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:46</text>
+<text fill="#8b8c8e" x="576.8" y="502.38" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:55</text>
 <text fill="#e6e6e6" x="719.6" y="502.38" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.562 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="520.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L13</text>
 <text fill="#e6e6e6" x="89.6" y="520.86" textLength="168" lengthAdjust="spacing" xml:space="preserve">Descartes «bad data»</text>
 <text fill="#3fb950" x="408.8" y="520.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text fill="#8b8c8e" x="576.8" y="520.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:41</text>
+<text fill="#8b8c8e" x="576.8" y="520.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:50</text>
 <text fill="#e6e6e6" x="719.6" y="520.86" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.782 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="539.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L14</text>
 <text fill="#58a6ff" x="72.8" y="539.34" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="89.6" y="539.34" textLength="168" lengthAdjust="spacing" xml:space="preserve">IPs nuevas por ciclo</text>
 <text fill="#58a6ff" x="408.8" y="539.34" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">3 nuevas (3 pri…</text>
-<text fill="#8b8c8e" x="576.8" y="539.34" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:36</text>
+<text fill="#8b8c8e" x="576.8" y="539.34" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:45</text>
 <text fill="#e6e6e6" x="719.6" y="539.34" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.093 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="557.82" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L15</text>
 <text fill="#e6e6e6" x="89.6" y="557.82" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">Lotes pendientes</text>
 <text fill="#3fb950" x="408.8" y="557.82" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text fill="#8b8c8e" x="576.8" y="557.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:31</text>
+<text fill="#8b8c8e" x="576.8" y="557.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:40</text>
 <text fill="#e6e6e6" x="719.6" y="557.82" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 15.687 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="576.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L16</text>
 <text fill="#e6e6e6" x="89.6" y="576.3" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Errores generales</text>
 <text fill="#3fb950" x="408.8" y="576.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text fill="#8b8c8e" x="576.8" y="576.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:26</text>
+<text fill="#8b8c8e" x="576.8" y="576.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:35</text>
 <text fill="#e6e6e6" x="719.6" y="576.3" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 16.523 flujos · 1 lotes · 1/1 con 2xx</text>
 <text fill="#8b8c8e" x="39.2" y="594.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L17</text>
 <text fill="#e6e6e6" x="89.6" y="594.78" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Tamaño del log</text>
 <text fill="#f2cc60" x="408.8" y="594.78" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">0 MB · +0 MB/h …</text>
-<text fill="#8b8c8e" x="576.8" y="594.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:21</text>
+<text fill="#8b8c8e" x="576.8" y="594.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:30</text>
 <text fill="#e6e6e6" x="719.6" y="594.78" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.745 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="613.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:16</text>
+<text fill="#8b8c8e" x="576.8" y="613.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:25</text>
 <text fill="#e6e6e6" x="719.6" y="613.26" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.203 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="631.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:11</text>
+<text fill="#8b8c8e" x="576.8" y="631.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:20</text>
 <text fill="#e6e6e6" x="719.6" y="631.74" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.170 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="650.22" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:06</text>
+<text fill="#8b8c8e" x="576.8" y="650.22" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:15</text>
 <text fill="#e6e6e6" x="719.6" y="650.22" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 15.223 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="668.7" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 13:01</text>
+<text fill="#8b8c8e" x="576.8" y="668.7" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:10</text>
 <text fill="#e6e6e6" x="719.6" y="668.7" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 15.149 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="687.18" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:56</text>
+<text fill="#8b8c8e" x="576.8" y="687.18" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:05</text>
 <text fill="#e6e6e6" x="719.6" y="687.18" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.520 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="705.66" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:51</text>
+<text fill="#8b8c8e" x="576.8" y="705.66" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 23:00</text>
 <text fill="#e6e6e6" x="719.6" y="705.66" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.568 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:48</text>
+<text fill="#8b8c8e" x="576.8" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:57</text>
 <text fill="#e6e6e6" x="719.6" y="724.14" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">2 errores de envío (DNS)</text>
-<text fill="#8b8c8e" x="576.8" y="742.62" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:46</text>
+<text fill="#8b8c8e" x="576.8" y="742.62" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:55</text>
 <text fill="#e6e6e6" x="719.6" y="742.62" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 14.488 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="761.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:41</text>
+<text fill="#8b8c8e" x="576.8" y="761.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:50</text>
 <text fill="#e6e6e6" x="719.6" y="761.1" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.183 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="779.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:36</text>
+<text fill="#8b8c8e" x="576.8" y="779.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:45</text>
 <text fill="#e6e6e6" x="719.6" y="779.58" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 18.522 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="798.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:31</text>
+<text fill="#8b8c8e" x="576.8" y="798.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:40</text>
 <text fill="#e6e6e6" x="719.6" y="798.06" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 17.584 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="816.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:26</text>
+<text fill="#8b8c8e" x="576.8" y="816.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:35</text>
 <text fill="#e6e6e6" x="719.6" y="816.54" textLength="369.6" lengthAdjust="spacing" xml:space="preserve">Ciclo: 16.475 flujos · 1 lotes · 1/1 con 2xx</text>
-<text fill="#8b8c8e" x="576.8" y="835.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">16-oct 12:23</text>
+<text fill="#8b8c8e" x="576.8" y="835.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">17-oct 22:32</text>
 <text fill="#58a6ff" x="686" y="835.02" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="719.6" y="835.02" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">FlowLink arrancó (versión 2.0.0)</text>
 <text fill="#8b8c8e" x="501.2" y="908.94" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">1/17</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="294" lengthAdjust="spacing" xml:space="preserve">FlowLink › Log › Indicators L01–L17</text>
-<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text fill="#8b8c8e" x="854" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text fill="#ff7a1a" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text fill="#8b8c8e" x="946.4" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
-<text fill="#ff7a1a" x="1013.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
-<text fill="#8b8c8e" x="1047.2" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
-<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
-<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
-<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
-<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="302.4" lengthAdjust="spacing" xml:space="preserve">FlowLink › Log › Indicadores L01–L17</text>
+<text fill="#ff7a1a" x="711.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text fill="#8b8c8e" x="728" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">detalle</text>
+<text fill="#ff7a1a" x="803.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="820.4" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">buscar</text>
+<text fill="#ff7a1a" x="887.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="921.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">subvista</text>
+<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1030.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">pestañas</text>
+<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1206.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text fill="#8b8c8e" x="1223.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">salir</text>
+<text fill="#ff7a1a" x="1282.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1299.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">ayuda</text>
 </svg></button><figcaption>Fig. 4 — FlowLink › Log: ciclos, respuestas 204 y errores al PCE</figcaption></figure>
 <figure class="shot"><button class="zoom" type="button" title="Clic para ver en tamaño original"><svg xml:space="preserve" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,monospace" font-size="14" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1372 947.04" data-w="1372" aria-label="fl-doctor · flowlink-lab-01">
 <title>fl-doctor · flowlink-lab-01</title>
@@ -894,7 +908,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="353.68" y="748.24" width="1.05" height="157.61" fill="#8b8c8e"/>
 <rect x="353.68" y="110.16" width="4.72" height="1.05" fill="#8b8c8e"/>
 <rect x="353.68" y="904.79" width="1000.65" height="1.05" fill="#8b8c8e"/>
-<rect x="501.2" y="110.16" width="853.12" height="1.05" fill="#8b8c8e"/>
+<rect x="551.6" y="110.16" width="802.73" height="1.05" fill="#8b8c8e"/>
 <rect x="1353.28" y="110.16" width="1.05" height="795.69" fill="#8b8c8e"/>
 <rect x="56" y="138.4" width="260.4" height="18.48" fill="#e6e6e6"/>
 <rect x="308" y="452.56" width="201.6" height="18.48" fill="#e6e6e6"/>
@@ -905,22 +919,22 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <rect x="17.05" y="904.16" width="282.56" height="2.31" fill="#ff7a1a"/>
 <rect x="22.4" y="156.88" width="4.2" height="18.48" fill="#ff7a1a"/>
 <rect x="22.4" y="138.4" width="33.6" height="18.48" fill="#ff7a1a"/>
-<rect x="207.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
-<rect x="240.8" y="109.53" width="106.15" height="2.31" fill="#ff7a1a"/>
+<rect x="249.2" y="64.48" width="58.8" height="18.48" fill="#ff7a1a"/>
+<rect x="257.6" y="109.53" width="89.35" height="2.31" fill="#ff7a1a"/>
 <rect x="302.64" y="238.88" width="2.31" height="501.27" fill="#ff7a1a"/>
 <rect x="302.64" y="238.88" width="5.36" height="2.31" fill="#ff7a1a"/>
 <rect x="302.64" y="737.85" width="766.71" height="2.31" fill="#ff7a1a"/>
 <rect x="341.6" y="904.16" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="344.64" y="109.53" width="2.31" height="121.28" fill="#ff7a1a"/>
 <rect x="344.64" y="748.24" width="2.31" height="158.24" fill="#ff7a1a"/>
-<rect x="526.4" y="238.88" width="542.96" height="2.31" fill="#ff7a1a"/>
+<rect x="534.8" y="238.88" width="534.56" height="2.31" fill="#ff7a1a"/>
 <rect x="1067.05" y="238.88" width="2.31" height="501.27" fill="#ff7a1a"/>
 <path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <circle cx="572.6" cy="55.24" r="2.86" fill="#3fb950"/>
-<circle cx="891.8" cy="55.24" r="2.86" fill="#58a6ff"/>
-<circle cx="1059.8" cy="55.24" r="2.86" fill="#3fb950"/>
+<circle cx="917" cy="55.24" r="2.86" fill="#58a6ff"/>
+<circle cx="1085" cy="55.24" r="2.86" fill="#3fb950"/>
 <circle cx="35" cy="110.68" r="2.86" fill="#ff7a1a"/>
-<path d="M690.2 125.97L693.55 131.71L686.85 131.71Z" fill="#f2cc60"/>
+<path d="M707 125.97L710.35 131.71L703.65 131.71Z" fill="#f2cc60"/>
 <path d="M32.45 144.29L37.71 147.64L32.45 150.99Z" fill="#1b1d22"/>
 <path d="M43.4 144.28L46.26 147.64L43.4 151L40.54 147.64Z" fill="#1b1d22"/>
 <path d="M320.6 144.45L323.95 150.19L317.25 150.19Z" fill="#1b1d22"/>
@@ -930,7 +944,7 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <path d="M360.08 166.29L361.93 168.3L365.46 163.77" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M360.08 203.25L361.93 205.26L365.46 200.73" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="320.6" cy="240.04" r="2.86" fill="#ff7a1a"/>
-<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text fill="#ff7a1a" font-weight="700" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text fill="#8b8c8e" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text fill="#e6e6e6" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text fill="#8b8c8e" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
@@ -942,101 +956,99 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <text fill="#e6e6e6" x="534.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
 <text fill="#e6e6e6" x="585.2" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
 <text fill="#8b8c8e" x="660.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#e6e6e6" x="677.6" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text fill="#3fb950" x="736.4" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
-<text fill="#e6e6e6" x="795.2" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text fill="#8b8c8e" x="837.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#58a6ff" x="854" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">rec</text>
-<text fill="#58a6ff" x="904.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">370,8 KB/1,0 GB</text>
-<text fill="#8b8c8e" x="1038.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
-<text fill="#3fb950" x="1072.4" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
-<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:31:20 UTC</text>
-<text fill="#e6e6e6" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
-<text fill="#e6e6e6" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
-<text fill="#1b1d22" font-weight="700" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
-<text fill="#e6e6e6" x="282.8" y="77.34" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">4 Flows</text>
-<text fill="#e6e6e6" x="366.8" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
-<text fill="#e6e6e6" x="476" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">6 Host</text>
-<text fill="#e6e6e6" x="551.6" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Capture</text>
+<text fill="#e6e6e6" x="677.6" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">sistema</text>
+<text fill="#3fb950" x="744.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3,0 GB</text>
+<text fill="#e6e6e6" x="803.6" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">libres</text>
+<text fill="#8b8c8e" x="862.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#58a6ff" x="879.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">rec</text>
+<text fill="#58a6ff" x="929.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">364,4 KB/1,0 GB</text>
+<text fill="#8b8c8e" x="1064" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
+<text fill="#3fb950" x="1097.6" y="58.86" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">EN VIVO</text>
+<text fill="#8b8c8e" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:40:04 UTC</text>
+<text fill="#e6e6e6" x="22.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">1 Inicio</text>
+<text fill="#e6e6e6" x="114.8" y="77.34" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">2 Exportadores</text>
+<text fill="#1b1d22" font-weight="700" x="257.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
+<text fill="#e6e6e6" x="324.8" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">4 Flujos</text>
+<text fill="#e6e6e6" x="417.2" y="77.34" textLength="84" lengthAdjust="spacing" xml:space="preserve">5 FlowLink</text>
+<text fill="#e6e6e6" x="526.4" y="77.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">6 Equipo</text>
+<text fill="#e6e6e6" x="618.8" y="77.34" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">7 Captura</text>
 <text fill="#e6e6e6" font-weight="700" x="1307.6" y="77.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">ES</text>
 <text fill="#8b8c8e" x="1324.4" y="77.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">/EN</text>
-<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">[Watched]</text>
-<text fill="#8b8c8e" x="106.4" y="95.82" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Seen</text>
-<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Watched IPs · «perfil»</text>
-<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="126" lengthAdjust="spacing" xml:space="preserve">Evidence ladder</text>
-<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Name</text>
-<rect x="39.2" y="136" width="33.6" height="1.05" fill="#e6e6e6"/>
+<text fill="#ff7a1a" font-weight="700" x="14" y="95.82" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">[Vigiladas]</text>
+<text fill="#8b8c8e" x="123.2" y="95.82" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Vistas</text>
+<text fill="#ff7a1a" font-weight="700" x="47.6" y="114.3" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">IPs vigiladas · «perfil»</text>
+<text fill="#8b8c8e" font-weight="700" x="366.8" y="114.3" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Escalera de evidencia</text>
+<text fill="#e6e6e6" font-weight="700" x="39.2" y="132.78" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Nombre</text>
+<rect x="39.2" y="136" width="50.4" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="182" y="132.78" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">IP</text>
 <rect x="182" y="136" width="16.8" height="1.05" fill="#e6e6e6"/>
 <text fill="#e6e6e6" font-weight="700" x="358.4" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77 · 10.20.30.77</text>
-<text fill="#8b8c8e" x="610.4" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Verdict:</text>
-<text fill="#f2cc60" x="702.8" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Esperando el próximo ciclo</text>
-<text fill="#8b8c8e" x="929.6" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(inferred)</text>
+<text fill="#8b8c8e" x="610.4" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">Veredicto:</text>
+<text fill="#f2cc60" x="719.6" y="132.78" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Esperando el próximo ciclo</text>
+<text fill="#8b8c8e" x="946.4" y="132.78" textLength="84" lengthAdjust="spacing" xml:space="preserve">(deducido)</text>
 <text fill="#1b1d22" x="56" y="151.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">app-nuevo-77</text>
 <text fill="#1b1d22" x="182" y="151.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N1</text>
 <text fill="#e6e6e6" x="400.4" y="151.26" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Llega al colector</text>
-<text fill="#8b8c8e" x="585.2" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">wire</text>
-<text fill="#e6e6e6" x="660.8" y="151.26" textLength="562.8" lengthAdjust="spacing" xml:space="preserve">34 registros · 1 exportadores · 16-oct 14:24 UTC → 16-oct 14:31 UTC</text>
+<text fill="#8b8c8e" x="585.2" y="151.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">cable</text>
+<text fill="#e6e6e6" x="660.8" y="151.26" textLength="562.8" lengthAdjust="spacing" xml:space="preserve">34 registros · 1 exportadores · 18-oct 00:33 UTC → 18-oct 00:39 UTC</text>
 <text fill="#e6e6e6" x="56" y="169.74" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">sonda-gestion… 10.20.40.99</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N2</text>
 <text fill="#e6e6e6" x="400.4" y="169.74" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">FlowLink la recibe</text>
-<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">inferred</text>
+<text fill="#8b8c8e" x="585.2" y="169.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">deducido</text>
 <text fill="#e6e6e6" x="660.8" y="169.74" textLength="638.4" lengthAdjust="spacing" xml:space="preserve">El exportador es aceptado por el consumidor «netflow-dist» (puerto 2055); el</text>
 <text fill="#e6e6e6" x="660.8" y="188.22" textLength="420" lengthAdjust="spacing" xml:space="preserve">socket no descarta y FlowLink creó sus plantillas.</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="206.7" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N3</text>
 <text fill="#e6e6e6" x="400.4" y="206.7" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó</text>
 <text fill="#8b8c8e" x="585.2" y="206.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
-<text fill="#e6e6e6" x="660.8" y="206.7" textLength="470.4" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó por primera vez el 16-oct 13:46 UTC.</text>
+<text fill="#e6e6e6" x="660.8" y="206.7" textLength="470.4" lengthAdjust="spacing" xml:space="preserve">FlowLink la procesó por primera vez el 17-oct 23:55 UTC.</text>
 <text fill="#58a6ff" x="358.4" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
 <text fill="#e6e6e6" font-weight="700" x="375.2" y="225.18" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">N4</text>
 <text fill="#e6e6e6" x="400.4" y="225.18" textLength="126" lengthAdjust="spacing" xml:space="preserve">Ciclo entregado</text>
 <text fill="#8b8c8e" x="585.2" y="225.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">log</text>
-<text fill="#e6e6e6" x="660.8" y="225.18" textLength="638.4" lengthAdjust="spacing" xml:space="preserve">Aún no cerró un ciclo de agregación después de su último registro (≈ 197 s).</text>
-<text fill="#ff7a1a" font-weight="700" x="333.2" y="243.66" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Evidence · step 4 of 4</text>
+<text fill="#e6e6e6" x="660.8" y="225.18" textLength="638.4" lengthAdjust="spacing" xml:space="preserve">Aún no cerró un ciclo de agregación después de su último registro (≈ 199 s).</text>
+<text fill="#ff7a1a" font-weight="700" x="333.2" y="243.66" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">Evidencia · paso 4 de 4</text>
 <text fill="#e6e6e6" x="1072.4" y="243.66" textLength="260.4" lengthAdjust="spacing" xml:space="preserve">contexto técnico para revisarlo</text>
-<text fill="#ff7a1a" font-weight="700" x="308" y="262.14" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Confirm</text>
+<text fill="#ff7a1a" font-weight="700" x="308" y="262.14" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Confirmar</text>
 <text fill="#8b8c8e" x="308" y="299.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">IPs</text>
 <text fill="#e6e6e6" font-weight="700" x="400.4" y="299.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.77</text>
-<text fill="#8b8c8e" x="308" y="317.58" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Window</text>
+<text fill="#8b8c8e" x="308" y="317.58" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Ventana</text>
 <text fill="#e6e6e6" x="400.4" y="317.58" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">últimos 15 min</text>
 <text fill="#e6e6e6" x="1072.4" y="317.58" textLength="126" lengthAdjust="spacing" xml:space="preserve">43/tcp 14,7 % ·</text>
-<text fill="#8b8c8e" x="308" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Contents</text>
+<text fill="#8b8c8e" x="308" y="336.06" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Contenido</text>
 <text fill="#e6e6e6" x="400.4" y="336.06" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">original · CSV</text>
-<text fill="#8b8c8e" x="308" y="354.54" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Size</text>
-<text fill="#e6e6e6" x="400.4" y="354.54" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">≈ 7,3 MB (≤ 200 MB)</text>
-<text fill="#8b8c8e" x="308" y="373.02" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Path</text>
+<text fill="#8b8c8e" x="308" y="354.54" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">Tamaño</text>
+<text fill="#e6e6e6" x="400.4" y="354.54" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">≈ 7,2 MB (≤ 200 MB)</text>
+<text fill="#8b8c8e" x="308" y="373.02" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">Ruta</text>
 <text fill="#e6e6e6" x="400.4" y="373.02" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">/var/tmp/fl-doctor/fl-doctor-evidence-…tgz</text>
 <text fill="#8b8c8e" x="308" y="409.98" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">Comando equivalente</text>
 <text fill="#ff7a1a" x="308" y="428.46" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">fl-doctor evidence --ip 10.20.30.77 --last 15m</text>
-<text fill="#e6e6e6" x="1072.4" y="446.94" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">z el 16-oct 13:46 UTC (N3) ·</text>
+<text fill="#e6e6e6" x="1072.4" y="446.94" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">z el 17-oct 23:55 UTC (N3) ·</text>
 <text fill="#1b1d22" x="316.4" y="465.42" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">Generar el paquete (⏎)</text>
-<text fill="#8b8c8e" x="1080.8" y="502.38" textLength="84" lengthAdjust="spacing" xml:space="preserve">Del remove</text>
+<text fill="#8b8c8e" x="1072.4" y="502.38" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ear · Del quitar</text>
 <text fill="#8b8c8e" x="308" y="705.66" textLength="336" lengthAdjust="spacing" xml:space="preserve">⏎ generar · PgUp anterior · Esc cancelar</text>
 <text fill="#8b8c8e" x="308" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1/2</text>
-<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">IPs › Watched › 10.20.30.77</text>
-<text fill="#ff7a1a" x="375.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text fill="#8b8c8e" x="425.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text fill="#ff7a1a" x="484.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
-<text fill="#8b8c8e" x="518" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
-<text fill="#ff7a1a" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
-<text fill="#8b8c8e" x="610.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">add</text>
-<text fill="#ff7a1a" x="652.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text fill="#8b8c8e" x="669.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">filter</text>
-<text fill="#ff7a1a" x="736.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
-<text fill="#8b8c8e" x="753.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">trace IP</text>
-<text fill="#ff7a1a" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
-<text fill="#8b8c8e" x="854" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
-<text fill="#ff7a1a" x="938" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">t</text>
-<text fill="#8b8c8e" x="954.8" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">tshark</text>
-<text fill="#ff7a1a" x="1022" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Del</text>
-<text fill="#8b8c8e" x="1055.6" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">remove</text>
-<text fill="#ff7a1a" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text fill="#8b8c8e" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text fill="#ff7a1a" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
-<text fill="#8b8c8e" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
-<text fill="#ff7a1a" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
-<text fill="#8b8c8e" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
+<text fill="#e6e6e6" font-weight="700" x="22.4" y="927.42" textLength="243.6" lengthAdjust="spacing" xml:space="preserve">IPs › Vigiladas › 10.20.30.77</text>
+<text fill="#ff7a1a" x="341.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text fill="#8b8c8e" x="392" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">vigilar</text>
+<text fill="#ff7a1a" x="467.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text fill="#8b8c8e" x="501.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">subvista</text>
+<text fill="#ff7a1a" x="585.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">+</text>
+<text fill="#8b8c8e" x="602" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">agregar</text>
+<text fill="#ff7a1a" x="677.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text fill="#8b8c8e" x="694.4" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">filtrar</text>
+<text fill="#ff7a1a" x="770" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">r</text>
+<text fill="#8b8c8e" x="786.8" y="927.42" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">rastrear IP</text>
+<text fill="#ff7a1a" x="896" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text fill="#8b8c8e" x="912.8" y="927.42" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">evidencia</text>
+<text fill="#ff7a1a" x="1005.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text fill="#8b8c8e" x="1030.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">pestañas</text>
+<text fill="#ff7a1a" x="1114.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text fill="#8b8c8e" x="1148" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text fill="#ff7a1a" x="1206.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text fill="#8b8c8e" x="1223.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">salir</text>
+<text fill="#ff7a1a" x="1282.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
+<text fill="#8b8c8e" x="1299.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">ayuda</text>
 </svg></button><figcaption>Fig. 5 — Asistente de evidencia: el paquete para soporte, listo</figcaption></figure>
 <h2 id="garantías">Garantías</h2>
 <ul>
@@ -1049,17 +1061,17 @@ footer{margin-top:60px;padding-top:14px;border-top:1px solid var(--line);font-si
 <li><strong>Evidencia lista para soporte.</strong> Secretos ocultos, pcap original o recortado y el comando exacto para copiar el paquete a la carpeta personal del operador. Nada sale del equipo por su cuenta. Un archivo IPFIX de 199.569 registros se decodifica igual que con <code>tshark</code>.
 </li></ul>
 <h2 id="estado">Estado</h2>
-<p>Versión <strong>0.1.0</strong>: binarios estáticos para Linux x86_64 y aarch64, con <code>SHA256SUMS</code> y SBOM (sin firma). Probado en Rocky 9, UBI 8 y en una VM; <strong>todavía no validado en el colector real de un usuario de Illumio FlowLink, y RHEL 7 no está verificado.</strong></p>
+<p>Versión <strong>0.2.0</strong>: binarios estáticos para Linux x86_64 y aarch64, con <code>SHA256SUMS</code> y SBOM (sin firma). Probado en Rocky 9, UBI 8 y en una VM; <strong>todavía no validado en el colector real de un usuario de Illumio FlowLink, y RHEL 7 no está verificado.</strong></p>
 <div class="aviso warn"><strong>Importante:</strong> fl-doctor es una herramienta de campo no oficial: no es un producto de Illumio, no tiene soporte de Illumio y se entrega «tal cual».</div>
 <h2 id="próximos-pasos">Próximos pasos</h2>
 <ul>
-<li>Descargue el binario y la documentación del repositorio público de fl-doctor. Primero <code>selftest</code>, después <code>sudo fl-doctor</code> en el colector.
+<li>Descargue el binario y la documentación del repositorio público de fl-doctor en GitHub: <a href="https://github.com/roschereric/fl-doctor">https://github.com/roschereric/fl-doctor</a> (una carpeta por versión en <code>releases/</code>, con <code>SHA256SUMS</code>). Primero <code>selftest</code>, después <code>sudo fl-doctor</code> en el colector.
 </li>
 <li>En un POC con FlowLink: primera corrida en un colector de laboratorio o piloto; si algo falla, el paquete de evidencia va a soporte.
 </li>
 <li>Se buscan comentarios de campo: colectores donde falle, versiones de FlowLink posteriores a la 2.0.0 y exportadores de otros fabricantes. Contacto: Eric Roscher.
 </li></ul>
-<footer><p><strong>Binarios, sumas SHA-256 y notas de cada versión:</strong> <a href="https://github.com/roschereric/fl-doctor">github.com/roschereric/fl-doctor</a></p>fl-doctor no es un producto de Illumio ni tiene soporte de Illumio; se entrega «tal cual», sin garantías. Los datos de las capturas de pantalla son sintéticos.</footer></main>
+<footer><p><strong>Binarios, sumas SHA-256 y notas de cada versión:</strong> <a href="https://github.com/roschereric/fl-doctor">github.com/roschereric/fl-doctor</a></p>fl-doctor no es un producto de Illumio ni tiene soporte de Illumio; se entrega «tal cual», sin garantías. Los datos de las capturas de pantalla son sintéticos. Descargas y documentación: <a href="https://github.com/roschereric/fl-doctor">github.com/roschereric/fl-doctor</a>.</footer></main>
 <dialog id="zoom" aria-label="Clic para ver en tamaño original"><div class="marco" title="Cerrar"></div></dialog>
 <script>
 (function(){

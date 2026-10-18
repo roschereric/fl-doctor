@@ -94,7 +94,7 @@
 <path d="M687.68 794.61L689.53 796.62L693.06 792.09" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M687.68 813.09L689.53 815.1L693.06 810.57" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M687.68 831.57L689.53 833.58L693.06 829.05" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text class="c1" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text class="c1" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
@@ -107,14 +107,14 @@
 <text class="c2" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text class="c1" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
 <text class="c1" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
 <text class="c3" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
 <text class="c2" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
 <text class="c1" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 4% ·</text>
 <text class="c3" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
-<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:33:11 UTC</text>
+<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:42:00 UTC</text>
 <text class="c2" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
 <text class="c2" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
 <text class="c2" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
@@ -131,25 +131,25 @@
 <text class="c1" x="383.6" y="95.82" textLength="168" lengthAdjust="spacing" xml:space="preserve">· [ ] switch subview</text>
 <text class="c1 b" x="30.8" y="114.3" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">Cycles, meters and discards</text>
 <text class="c2 b" x="22.4" y="132.78" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Cycles (5 min)</text>
-<text class="c1" x="156.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:46</text>
-<text class="c1" x="232.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:51</text>
-<text class="c1" x="308" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">13:56</text>
-<text class="c1" x="383.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:01</text>
-<text class="c1" x="459.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:06</text>
-<text class="c1" x="534.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:11</text>
-<text class="c1" x="610.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:16</text>
-<text class="c1" x="686" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:21</text>
-<text class="c1" x="761.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:24</text>
-<text class="c1" x="837.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
-<text class="c1" x="912.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:29</text>
-<text class="c1" x="988.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">14:32</text>
+<text class="c1" x="156.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">23:55</text>
+<text class="c1" x="232.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:00</text>
+<text class="c1" x="308" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:05</text>
+<text class="c1" x="383.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:10</text>
+<text class="c1" x="459.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:15</text>
+<text class="c1" x="534.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:20</text>
+<text class="c1" x="610.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:25</text>
+<text class="c1" x="686" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:30</text>
+<text class="c1" x="761.6" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:33</text>
+<text class="c1" x="837.2" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:38</text>
+<text class="c1" x="912.8" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:38</text>
+<text class="c1" x="988.4" y="132.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">00:41</text>
 <text class="c2" x="1080.8" y="132.78" textLength="226.8" lengthAdjust="spacing" xml:space="preserve">1 batches · 204 · flush 0 s</text>
 <text class="c1" x="22.4" y="151.26" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">meter ipfix-core</text>
-<text class="c2" x="182" y="151.26" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 79.8/s · 15 min 80.7/s</text>
+<text class="c2" x="182" y="151.26" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 81.1/s · 15 min 81.7/s</text>
 <text class="c1" x="22.4" y="169.74" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">meter netflow-dist</text>
-<text class="c2" x="182" y="169.74" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 54.2/s · 15 min 51.6/s</text>
+<text class="c2" x="182" y="169.74" textLength="235.2" lengthAdjust="spacing" xml:space="preserve">1 min 53.7/s · 15 min 52.9/s</text>
 <text class="c1" x="22.4" y="188.22" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">meter sflow-borde</text>
-<text class="c2" x="182" y="188.22" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">1 min 9.2/s · 15 min 9.1/s</text>
+<text class="c2" x="182" y="188.22" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">1 min 9.0/s · 15 min 9.1/s</text>
 <text class="c1" x="22.4" y="206.7" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">bad data discards</text>
 <text class="c2" x="207.2" y="206.7" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">no discards</text>
 <text class="c1" x="22.4" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">Send errors</text>
@@ -167,132 +167,134 @@
 <rect x="719.6" y="283.84" width="42" height="1.05" fill="#e6e6e6"/>
 <text class="c6" x="39.2" y="299.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L01</text>
 <text class="c4" x="89.6" y="299.1" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Log alive</text>
-<text class="c4" x="408.8" y="299.1" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">3 s ago</text>
-<text class="c1" x="576.8" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:33</text>
+<text class="c4" x="408.8" y="299.1" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">5 s ago</text>
+<text class="c1" x="576.8" y="299.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:41</text>
 <text class="c7" x="686" y="299.1" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="719.6" y="299.1" textLength="352.8" lengthAdjust="spacing" xml:space="preserve">Created template for {198.51.100.12 7 257}</text>
 <text class="c1" x="39.2" y="317.58" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L02</text>
 <text class="c2" x="89.6" y="317.58" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">Starts and configuration</text>
 <text class="c3" x="408.8" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">2.0.0</text>
-<text class="c1" x="576.8" y="317.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:32</text>
-<text class="c2" x="719.6" y="317.58" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 10,361 flows · 1 batches · 1/1 with 2xx</text>
+<text class="c1" x="576.8" y="317.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:41</text>
+<text class="c2" x="719.6" y="317.58" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 10,602 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="336.06" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L03</text>
 <text class="c2" x="89.6" y="336.06" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">Consumers</text>
 <text class="c3" x="408.8" y="336.06" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix:4739 netf…</text>
-<text class="c1" x="576.8" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:29</text>
+<text class="c1" x="576.8" y="336.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:38</text>
 <text class="c2" x="719.6" y="336.06" textLength="378" lengthAdjust="spacing" xml:space="preserve">Cycle: 3,363 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="354.54" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L04</text>
 <text class="c2" x="89.6" y="354.54" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Rate per consumer</text>
-<text class="c3" x="408.8" y="354.54" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix-core 80/s…</text>
-<text class="c1" x="576.8" y="354.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:29</text>
-<text class="c2" x="719.6" y="354.54" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,644 flows · 1 batches · 1/1 with 2xx</text>
+<text class="c3" x="408.8" y="354.54" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">ipfix-core 81/s…</text>
+<text class="c1" x="576.8" y="354.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:38</text>
+<text class="c2" x="719.6" y="354.54" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,654 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="373.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L05</text>
 <text class="c2" x="89.6" y="373.02" textLength="109.2" lengthAdjust="spacing" xml:space="preserve">Counter reset</text>
-<text class="c1" x="576.8" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:24</text>
+<text class="c1" x="576.8" y="373.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:33</text>
 <text class="c2" x="719.6" y="373.02" textLength="378" lengthAdjust="spacing" xml:space="preserve">Cycle: 3,363 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L06</text>
 <text class="c2" x="89.6" y="391.5" textLength="218.4" lengthAdjust="spacing" xml:space="preserve">Exporters seen by FlowLink</text>
 <text class="c8" x="408.8" y="391.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">2/4</text>
-<text class="c1" x="576.8" y="391.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:21</text>
+<text class="c1" x="576.8" y="391.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:30</text>
 <text class="c2" x="719.6" y="391.5" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,745 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="409.98" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L07</text>
 <text class="c2" x="89.6" y="409.98" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">Data without template</text>
 <text class="c3" x="408.8" y="409.98" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text class="c1" x="576.8" y="409.98" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:16</text>
+<text class="c1" x="576.8" y="409.98" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:25</text>
 <text class="c2" x="719.6" y="409.98" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,004 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="428.46" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L08</text>
 <text class="c2" x="89.6" y="428.46" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">Aggregation cycle</text>
 <text class="c8" x="408.8" y="428.46" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">every 3 min</text>
-<text class="c1" x="576.8" y="428.46" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:11</text>
+<text class="c1" x="576.8" y="428.46" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:20</text>
 <text class="c2" x="719.6" y="428.46" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,345 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="446.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L09</text>
 <text class="c2" x="89.6" y="446.94" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">Cycle delivery</text>
 <text class="c3" x="408.8" y="446.94" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">1/1 batches · f…</text>
-<text class="c1" x="576.8" y="446.94" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:06</text>
+<text class="c1" x="576.8" y="446.94" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:15</text>
 <text class="c2" x="719.6" y="446.94" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,477 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="465.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L10</text>
 <text class="c2" x="89.6" y="465.42" textLength="168" lengthAdjust="spacing" xml:space="preserve">Last batch delivered</text>
 <text class="c3" x="408.8" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">53 s ago</text>
-<text class="c1" x="576.8" y="465.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 14:01</text>
+<text class="c1" x="576.8" y="465.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:10</text>
 <text class="c2" x="719.6" y="465.42" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,428 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="483.9" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L11</text>
 <text class="c7" x="72.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="89.6" y="483.9" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">Send errors</text>
 <text class="c7" x="408.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">2</text>
-<text class="c1" x="576.8" y="483.9" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:56</text>
+<text class="c1" x="576.8" y="483.9" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:05</text>
 <text class="c2" x="719.6" y="483.9" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,613 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="502.38" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L12</text>
 <text class="c2" x="89.6" y="502.38" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">PCE response codes</text>
 <text class="c3" x="408.8" y="502.38" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">204 ×28</text>
-<text class="c1" x="576.8" y="502.38" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:51</text>
+<text class="c1" x="576.8" y="502.38" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 18 00:00</text>
 <text class="c2" x="719.6" y="502.38" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,456 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="520.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L13</text>
 <text class="c2" x="89.6" y="520.86" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">"bad data" discards</text>
 <text class="c3" x="408.8" y="520.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text class="c1" x="576.8" y="520.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:46</text>
+<text class="c1" x="576.8" y="520.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:55</text>
 <text class="c2" x="719.6" y="520.86" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,562 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="539.34" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L14</text>
 <text class="c7" x="72.8" y="539.34" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="89.6" y="539.34" textLength="142.8" lengthAdjust="spacing" xml:space="preserve">New IPs per cycle</text>
 <text class="c7" x="408.8" y="539.34" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">3 new (3 priv ·…</text>
-<text class="c1" x="576.8" y="539.34" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:41</text>
+<text class="c1" x="576.8" y="539.34" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:50</text>
 <text class="c2" x="719.6" y="539.34" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,782 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="557.82" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L15</text>
 <text class="c2" x="89.6" y="557.82" textLength="126" lengthAdjust="spacing" xml:space="preserve">Pending batches</text>
 <text class="c3" x="408.8" y="557.82" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text class="c1" x="576.8" y="557.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:36</text>
+<text class="c1" x="576.8" y="557.82" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:45</text>
 <text class="c2" x="719.6" y="557.82" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,093 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="576.3" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L16</text>
 <text class="c2" x="89.6" y="576.3" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">General errors</text>
 <text class="c3" x="408.8" y="576.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">0</text>
-<text class="c1" x="576.8" y="576.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:31</text>
+<text class="c1" x="576.8" y="576.3" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:40</text>
 <text class="c2" x="719.6" y="576.3" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,687 flows · 1 batches · 1/1 with 2xx</text>
 <text class="c1" x="39.2" y="594.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">L17</text>
 <text class="c2" x="89.6" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">Log size</text>
 <text class="c8" x="408.8" y="594.78" textLength="134.4" lengthAdjust="spacing" xml:space="preserve">0 MB · +0 MB/h …</text>
-<text class="c1" x="576.8" y="594.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:26</text>
+<text class="c1" x="576.8" y="594.78" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:35</text>
 <text class="c2" x="719.6" y="594.78" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,523 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="613.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:21</text>
+<text class="c1" x="576.8" y="613.26" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:30</text>
 <text class="c2" x="719.6" y="613.26" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,745 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="631.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:16</text>
+<text class="c1" x="576.8" y="631.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:25</text>
 <text class="c2" x="719.6" y="631.74" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,203 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="650.22" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:11</text>
+<text class="c1" x="576.8" y="650.22" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:20</text>
 <text class="c2" x="719.6" y="650.22" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,170 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="668.7" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:06</text>
+<text class="c1" x="576.8" y="668.7" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:15</text>
 <text class="c2" x="719.6" y="668.7" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,223 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="687.18" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 13:01</text>
+<text class="c1" x="576.8" y="687.18" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:10</text>
 <text class="c2" x="719.6" y="687.18" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 15,149 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="705.66" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:56</text>
+<text class="c1" x="576.8" y="705.66" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:05</text>
 <text class="c2" x="719.6" y="705.66" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,520 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:51</text>
+<text class="c1" x="576.8" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 23:00</text>
 <text class="c2" x="719.6" y="724.14" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,568 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="742.62" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:48</text>
+<text class="c1" x="576.8" y="742.62" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:57</text>
 <text class="c2" x="719.6" y="742.62" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">2 send errors (DNS)</text>
-<text class="c1" x="576.8" y="761.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:46</text>
+<text class="c1" x="576.8" y="761.1" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:55</text>
 <text class="c2" x="719.6" y="761.1" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 14,488 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="779.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:41</text>
+<text class="c1" x="576.8" y="779.58" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:50</text>
 <text class="c2" x="719.6" y="779.58" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,183 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="798.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:36</text>
+<text class="c1" x="576.8" y="798.06" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:45</text>
 <text class="c2" x="719.6" y="798.06" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 18,522 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="816.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:31</text>
+<text class="c1" x="576.8" y="816.54" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:40</text>
 <text class="c2" x="719.6" y="816.54" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 17,584 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="835.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:26</text>
+<text class="c1" x="576.8" y="835.02" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:35</text>
 <text class="c2" x="719.6" y="835.02" textLength="386.4" lengthAdjust="spacing" xml:space="preserve">Cycle: 16,475 flows · 1 batches · 1/1 with 2xx</text>
-<text class="c1" x="576.8" y="853.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 16 12:23</text>
+<text class="c1" x="576.8" y="853.5" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">Oct 17 22:32</text>
 <text class="c7" x="686" y="853.5" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="719.6" y="853.5" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">FlowLink started (version 2.0.0)</text>
 <text class="c1" x="501.2" y="908.94" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">1/17</text>
 <text class="c2 b" x="22.4" y="927.42" textLength="294" lengthAdjust="spacing" xml:space="preserve">FlowLink › Log › Indicators L01–L17</text>
-<text class="c0" x="837.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text class="c1" x="854" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text class="c0" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text class="c1" x="946.4" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
-<text class="c0" x="1013.6" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
-<text class="c1" x="1047.2" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
-<text class="c0" x="1122.8" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text class="c1" x="1148" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
-<text class="c0" x="1198.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
-<text class="c1" x="1232" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text class="c0" x="770" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text class="c1" x="786.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text class="c0" x="862.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text class="c1" x="879.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
+<text class="c0" x="946.4" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text class="c1" x="980" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
+<text class="c0" x="1055.6" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text class="c1" x="1080.8" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text class="c0" x="1131.2" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">Tab</text>
+<text class="c1" x="1164.8" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">panel</text>
+<text class="c0" x="1223.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text class="c1" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">quit</text>
 <text class="c0" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
 <text class="c1" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
 </svg>

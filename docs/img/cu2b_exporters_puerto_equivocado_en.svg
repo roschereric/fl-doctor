@@ -17,21 +17,20 @@
 <rect x="669.2" y="156.88" width="8.4" height="18.48" fill="#e6e6e6"/>
 <rect x="686" y="156.88" width="210" height="18.48" fill="#e6e6e6"/>
 <rect x="677.6" y="156.88" width="8.4" height="18.48" fill="#f85149"/>
-<rect x="1055.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.25"/>
+<rect x="1055.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1080.8" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1106" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1131.2" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
-<rect x="1164.8" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1156.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1223.6" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1248.8" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1274" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
-<rect x="1299.2" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1307.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
+<rect x="1324.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.5"/>
 <rect x="1064" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
-<rect x="1156.4" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
 <rect x="1181.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
 <rect x="1198.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
-<rect x="1307.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
-<rect x="1324.4" y="286.24" width="16.8" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
+<rect x="1299.2" y="286.24" width="8.4" height="18.48" fill="#ff7a1a" fill-opacity="0.75"/>
 <rect x="17.05" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
 <rect x="17.05" y="91.05" width="5.35" height="2.31" fill="#ff7a1a"/>
 <rect x="17.05" y="904.16" width="836.96" height="2.31" fill="#ff7a1a"/>
@@ -40,40 +39,36 @@
 <rect x="165.2" y="91.05" width="736.15" height="2.31" fill="#ff7a1a"/>
 <rect x="896" y="904.16" width="5.36" height="2.31" fill="#ff7a1a"/>
 <rect x="899.04" y="91.05" width="2.31" height="815.43" fill="#ff7a1a"/>
-<rect x="1055.6" y="309.34" width="25.2" height="13.86" fill="#ff7a1a"/>
+<rect x="1055.6" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
+<rect x="1064" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
 <rect x="1072.4" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1080.8" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1089.2" y="309.34" width="25.2" height="13.86" fill="#ff7a1a"/>
+<rect x="1072.4" y="309.34" width="33.6" height="13.86" fill="#ff7a1a"/>
 <rect x="1097.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1114.4" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="1106" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="1114.4" y="307.03" width="16.8" height="16.17" fill="#ff7a1a"/>
 <rect x="1122.8" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1122.8" y="307.03" width="16.8" height="16.17" fill="#ff7a1a"/>
+<rect x="1131.2" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
 <rect x="1139.6" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1148" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1148" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
-<rect x="1156.4" y="304.72" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1164.8" y="309.34" width="16.8" height="13.86" fill="#ff7a1a"/>
+<rect x="1148" y="286.24" width="8.4" height="36.96" fill="#ff7a1a"/>
+<rect x="1156.4" y="307.03" width="8.4" height="16.17" fill="#ff7a1a"/>
+<rect x="1164.8" y="309.34" width="50.4" height="13.86" fill="#ff7a1a"/>
 <rect x="1173.2" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1181.6" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
 <rect x="1190" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1190" y="309.34" width="16.8" height="13.86" fill="#ff7a1a"/>
-<rect x="1206.8" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
 <rect x="1215.2" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1215.2" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
-<rect x="1223.6" y="311.65" width="16.8" height="11.55" fill="#ff7a1a"/>
+<rect x="1215.2" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
+<rect x="1223.6" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
+<rect x="1232" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
 <rect x="1240.4" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1240.4" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
-<rect x="1248.8" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1257.2" y="309.34" width="16.8" height="13.86" fill="#ff7a1a"/>
+<rect x="1240.4" y="309.34" width="25.2" height="13.86" fill="#ff7a1a"/>
 <rect x="1265.6" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1274" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1282.4" y="309.34" width="16.8" height="13.86" fill="#ff7a1a"/>
+<rect x="1265.6" y="307.03" width="8.4" height="16.17" fill="#ff7a1a"/>
+<rect x="1274" y="309.34" width="33.6" height="13.86" fill="#ff7a1a"/>
 <rect x="1290.8" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
-<rect x="1299.2" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1307.6" y="309.34" width="16.8" height="13.86" fill="#ff7a1a"/>
+<rect x="1307.6" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
 <rect x="1316" y="286.24" width="8.4" height="18.48" fill="#ff7a1a"/>
+<rect x="1316" y="309.34" width="8.4" height="13.86" fill="#ff7a1a"/>
 <rect x="1324.4" y="311.65" width="8.4" height="11.55" fill="#ff7a1a"/>
-<rect x="1332.8" y="318.58" width="8.4" height="4.62" fill="#ff7a1a"/>
+<rect x="1332.8" y="320.89" width="8.4" height="2.31" fill="#ff7a1a"/>
 <path d="M402.42 53.06L406.78 57.42M406.78 53.06L402.42 57.42" fill="none" stroke="#f85149" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M553.28 55.41L555.13 57.42L558.66 52.89" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="791" cy="55.24" r="2.86" fill="#3fb950"/>
@@ -88,7 +83,7 @@
 <path d="M32.45 162.77L37.71 166.12L32.45 169.47Z" fill="#1b1d22"/>
 <path d="M679.62 163.94L683.98 168.3M683.98 163.94L679.62 168.3" fill="none" stroke="#1b1d22" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M679.28 184.77L681.13 186.78L684.66 182.25" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text class="c1" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text class="c1" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
@@ -101,14 +96,14 @@
 <text class="c2" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text class="c1" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
 <text class="c1" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
-<text class="c3" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.1 GB</text>
+<text class="c3" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
 <text class="c2" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text class="c1" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 4% ·</text>
+<text class="c1" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 5% ·</text>
 <text class="c3" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
-<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:32:12 UTC</text>
+<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:41:02 UTC</text>
 <text class="c2" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
 <text class="c4 b" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
 <text class="c2" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
@@ -150,7 +145,7 @@
 <text class="c2" x="266" y="151.26" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v9</text>
 <text class="c2" x="350" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">2055</text>
 <text class="c2" x="425.6" y="151.26" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">4.3</text>
-<text class="c2" x="492.8" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">49.2 1</text>
+<text class="c2" x="492.8" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">49.1 1</text>
 <text class="c3" x="635.6" y="151.26" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
 <text class="c2" x="694.4" y="151.26" textLength="151.2" lengthAdjust="spacing" xml:space="preserve">accepts · log  now</text>
 <text class="c2" x="929.6" y="151.26" textLength="159.6" lengthAdjust="spacing" xml:space="preserve">4739, 6343 (B2/C3).</text>
@@ -159,7 +154,7 @@
 <text class="c4" x="266" y="169.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">v5</text>
 <text class="c4" x="350" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">9995</text>
 <text class="c4" x="425.6" y="169.74" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">1.2</text>
-<text class="c4" x="492.8" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">16.0</text>
+<text class="c4" x="492.8" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">15.9</text>
 <text class="c5" x="534.8" y="169.74" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">—</text>
 <text class="c4" x="635.6" y="169.74" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">0.0%</text>
 <text class="c4" x="694.4" y="169.74" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">no listener</text>
@@ -182,27 +177,29 @@
 <text class="c2" x="1055.6" y="206.7" textLength="285.6" lengthAdjust="spacing" xml:space="preserve">sampling no sampling · loss 0.0% ·</text>
 <text class="c2" x="1055.6" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">clock +23 s</text>
 <text class="c1" x="912.8" y="243.66" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">Traffic</text>
-<text class="c2" x="1055.6" y="243.66" textLength="294" lengthAdjust="spacing" xml:space="preserve">16.0 r/s · 1.2 pps · 794 B/s · IPs:</text>
+<text class="c2" x="1055.6" y="243.66" textLength="294" lengthAdjust="spacing" xml:space="preserve">15.9 r/s · 1.2 pps · 793 B/s · IPs:</text>
 <text class="c2" x="1055.6" y="262.14" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">85 private · 0 public</text>
 <text class="c1" x="912.8" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">Other</text>
 <text class="c2" x="1055.6" y="280.62" textLength="268.8" lengthAdjust="spacing" xml:space="preserve">fragmented 0 · max duration 33 s</text>
 <text class="c1" x="912.8" y="299.1" textLength="84" lengthAdjust="spacing" xml:space="preserve">Per minute</text>
 <text class="c1" x="862.4" y="908.94" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">3/4</text>
 <text class="c2 b" x="22.4" y="927.42" textLength="277.2" lengthAdjust="spacing" xml:space="preserve">Exporters › Table › 198.51.100.14</text>
-<text class="c0" x="686" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text class="c1" x="702.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text class="c0" x="778.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
-<text class="c1" x="795.2" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
-<text class="c0" x="862.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
-<text class="c1" x="879.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
-<text class="c0" x="929.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">d</text>
-<text class="c1" x="946.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">board</text>
-<text class="c0" x="1005.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text class="c1" x="1055.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text class="c0" x="1114.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
-<text class="c1" x="1131.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
-<text class="c0" x="1215.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text class="c1" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text class="c0" x="618.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text class="c1" x="635.6" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text class="c0" x="711.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">/</text>
+<text class="c1" x="728" y="927.42" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">search</text>
+<text class="c0" x="795.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
+<text class="c1" x="812" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
+<text class="c0" x="862.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">d</text>
+<text class="c1" x="879.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">board</text>
+<text class="c0" x="938" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text class="c1" x="988.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text class="c0" x="1047.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">e</text>
+<text class="c1" x="1064" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">evidence</text>
+<text class="c0" x="1148" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text class="c1" x="1173.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text class="c0" x="1223.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text class="c1" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">quit</text>
 <text class="c0" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
 <text class="c1" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
 </svg>

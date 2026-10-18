@@ -71,7 +71,7 @@
 <path d="M721.28 850.05L723.13 852.06L726.66 847.53" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M721.28 868.53L723.13 870.54L726.66 866.01" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M721.28 887.01L723.13 889.02L726.66 884.49" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.1.0</text>
+<text class="c0 b" x="22.4" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">fl-doctor 0.2.0</text>
 <text class="c1" x="156.8" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="173.6" y="58.86" textLength="126" lengthAdjust="spacing" xml:space="preserve">flowlink-lab-01</text>
 <text class="c1" x="308" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
@@ -84,14 +84,14 @@
 <text class="c2" x="702.8" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">15m</text>
 <text class="c1" x="736.4" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="753.2" y="58.86" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">mem</text>
-<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">24/64 MB</text>
+<text class="c2" x="803.6" y="58.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">23/64 MB</text>
 <text class="c1" x="879.2" y="58.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">·</text>
 <text class="c2" x="896" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">system</text>
 <text class="c3" x="954.8" y="58.86" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">3.0 GB</text>
 <text class="c2" x="1013.6" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">free</text>
-<text class="c1" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 5% ·</text>
+<text class="c1" x="1055.6" y="58.86" textLength="84" lengthAdjust="spacing" xml:space="preserve">· cpu 4% ·</text>
 <text class="c3" x="1164.8" y="58.86" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">LIVE</text>
-<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">14:32:49 UTC</text>
+<text class="c1" x="1248.8" y="58.86" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">00:41:38 UTC</text>
 <text class="c2" x="22.4" y="77.34" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">1 Home</text>
 <text class="c2" x="98" y="77.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">2 Exporters</text>
 <text class="c4 b" x="215.6" y="77.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">3 IPs</text>
@@ -122,9 +122,9 @@
 <text class="c1" x="879.2" y="132.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">IPs seen</text>
 <text class="c2 b" x="996.8" y="132.78" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">242</text>
 <text class="c4" x="39.2" y="151.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.11</text>
-<text class="c5" x="215.6" y="151.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c4" x="308" y="151.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c4 b" x="434" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">24,016</text>
+<text class="c5" x="215.6" y="151.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c4" x="308" y="151.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c4 b" x="434" y="151.26" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">24,160</text>
 <text class="c4" x="492.8" y="151.26" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c5" x="702.8" y="151.26" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c4" x="736.4" y="151.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
@@ -135,305 +135,307 @@
 <text class="c1" x="879.2" y="169.74" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">not reported</text>
 <text class="c2" x="996.8" y="169.74" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">3</text>
 <text class="c2" x="39.2" y="188.22" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.20.20.5</text>
-<text class="c1" x="215.6" y="188.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="188.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="434" y="188.22" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">13,489</text>
+<text class="c1" x="215.6" y="188.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="188.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="434" y="188.22" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">13,576</text>
 <text class="c2" x="492.8" y="188.22" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="188.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="188.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="879.2" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">exact up to</text>
 <text class="c2" x="996.8" y="188.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">101,264 IPs</text>
 <text class="c2" x="39.2" y="206.7" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.21</text>
-<text class="c1" x="215.6" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="434" y="206.7" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">12,160</text>
+<text class="c1" x="215.6" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="434" y="206.7" textLength="50.4" lengthAdjust="spacing" xml:space="preserve">12,225</text>
 <text class="c2" x="492.8" y="206.7" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="206.7" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="206.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="225.18" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.99.0.53</text>
-<text class="c1" x="215.6" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="225.18" textLength="42" lengthAdjust="spacing" xml:space="preserve">9,446</text>
+<text class="c1" x="215.6" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="225.18" textLength="42" lengthAdjust="spacing" xml:space="preserve">9,486</text>
 <text class="c2" x="492.8" y="225.18" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="225.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="225.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c0 b" x="879.2" y="225.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">By exporter</text>
 <text class="c2" x="39.2" y="243.66" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.12</text>
-<text class="c1" x="215.6" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="243.66" textLength="42" lengthAdjust="spacing" xml:space="preserve">8,000</text>
+<text class="c1" x="215.6" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="243.66" textLength="42" lengthAdjust="spacing" xml:space="preserve">8,048</text>
 <text class="c2" x="492.8" y="243.66" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="243.66" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="243.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="896" y="243.66" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c2" x="39.2" y="262.14" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.99.1.10</text>
-<text class="c1" x="215.6" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="262.14" textLength="42" lengthAdjust="spacing" xml:space="preserve">6,606</text>
+<text class="c1" x="215.6" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="262.14" textLength="42" lengthAdjust="spacing" xml:space="preserve">6,655</text>
 <text class="c2" x="492.8" y="262.14" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="262.14" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="262.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="912.8" y="262.14" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">231 IPs · 229 reported</text>
 <text class="c2" x="39.2" y="280.62" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.22</text>
-<text class="c1" x="215.6" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">5,295</text>
+<text class="c1" x="215.6" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="280.62" textLength="42" lengthAdjust="spacing" xml:space="preserve">5,306</text>
 <text class="c2" x="492.8" y="280.62" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="280.62" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="280.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="896" y="280.62" textLength="210" lengthAdjust="spacing" xml:space="preserve">198.51.100.13 sw-borde-03</text>
 <text class="c2" x="39.2" y="299.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.13</text>
-<text class="c1" x="215.6" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="299.1" textLength="42" lengthAdjust="spacing" xml:space="preserve">4,195</text>
+<text class="c1" x="215.6" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="299.1" textLength="42" lengthAdjust="spacing" xml:space="preserve">4,214</text>
 <text class="c2" x="492.8" y="299.1" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="299.1" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="299.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="912.8" y="299.1" textLength="184.8" lengthAdjust="spacing" xml:space="preserve">229 IPs · 228 reported</text>
 <text class="c2" x="39.2" y="317.58" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.99.0.25</text>
-<text class="c1" x="215.6" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">3,428</text>
+<text class="c1" x="215.6" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="317.58" textLength="42" lengthAdjust="spacing" xml:space="preserve">3,447</text>
 <text class="c2" x="492.8" y="317.58" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="317.58" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="317.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="896" y="317.58" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c2" x="39.2" y="336.06" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.23</text>
-<text class="c1" x="215.6" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="336.06" textLength="42" lengthAdjust="spacing" xml:space="preserve">3,283</text>
+<text class="c1" x="215.6" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="336.06" textLength="42" lengthAdjust="spacing" xml:space="preserve">3,306</text>
 <text class="c2" x="492.8" y="336.06" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="336.06" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="336.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="912.8" y="336.06" textLength="168" lengthAdjust="spacing" xml:space="preserve">97 IPs · 95 reported</text>
 <text class="c2" x="39.2" y="354.54" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">100.64.1.10</text>
-<text class="c1" x="215.6" y="354.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="354.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="354.54" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,685</text>
+<text class="c1" x="215.6" y="354.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="354.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="354.54" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,699</text>
 <text class="c2" x="492.8" y="354.54" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="354.54" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="354.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="896" y="354.54" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c2" x="39.2" y="373.02" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.20.20.6</text>
-<text class="c1" x="215.6" y="373.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="373.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="373.02" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,651</text>
+<text class="c1" x="215.6" y="373.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="373.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="373.02" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,664</text>
 <text class="c2" x="492.8" y="373.02" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="373.02" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="373.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="912.8" y="373.02" textLength="168" lengthAdjust="spacing" xml:space="preserve">87 IPs · 84 reported</text>
 <text class="c2" x="39.2" y="391.5" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.14</text>
-<text class="c1" x="215.6" y="391.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="391.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="391.5" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,559</text>
+<text class="c1" x="215.6" y="391.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="391.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="391.5" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,571</text>
 <text class="c2" x="492.8" y="391.5" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="391.5" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="391.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="409.98" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.10</text>
-<text class="c1" x="215.6" y="409.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="409.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="409.98" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,475</text>
+<text class="c1" x="215.6" y="409.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="409.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="409.98" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,494</text>
 <text class="c2" x="492.8" y="409.98" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="409.98" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="409.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="428.46" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.24</text>
-<text class="c1" x="215.6" y="428.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="428.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="428.46" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,337</text>
+<text class="c1" x="215.6" y="428.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="428.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="428.46" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,352</text>
 <text class="c2" x="492.8" y="428.46" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="428.46" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="428.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="446.94" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.99.0.123</text>
-<text class="c1" x="215.6" y="446.94" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="446.94" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="446.94" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,143</text>
+<text class="c1" x="215.6" y="446.94" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="446.94" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="446.94" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,148</text>
 <text class="c2" x="492.8" y="446.94" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="446.94" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="446.94" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="56" y="465.42" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.99</text>
-<text class="c1" x="215.6" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="465.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,112</text>
+<text class="c1" x="215.6" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="465.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="465.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">2,119</text>
 <text class="c2" x="492.8" y="465.42" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="719.6" y="465.42" textLength="117.6" lengthAdjust="spacing" xml:space="preserve">· not reported</text>
 <text class="c2" x="39.2" y="483.9" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.15</text>
-<text class="c1" x="215.6" y="483.9" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="483.9" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="483.9" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,839</text>
+<text class="c1" x="215.6" y="483.9" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="483.9" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="483.9" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,853</text>
 <text class="c2" x="492.8" y="483.9" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="483.9" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="483.9" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
-<text class="c2" x="39.2" y="502.38" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.25</text>
-<text class="c1" x="215.6" y="502.38" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="502.38" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="502.38" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,737</text>
-<text class="c2" x="492.8" y="502.38" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
+<text class="c2" x="39.2" y="502.38" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">203.0.113.7</text>
+<text class="c1" x="215.6" y="502.38" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="502.38" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="502.38" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,748</text>
+<text class="c2" x="492.8" y="502.38" textLength="210" lengthAdjust="spacing" xml:space="preserve">198.51.100.13 sw-borde-03</text>
 <text class="c1" x="702.8" y="502.38" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="502.38" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
-<text class="c2" x="39.2" y="520.86" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">203.0.113.7</text>
-<text class="c1" x="215.6" y="520.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="520.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="520.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,734</text>
-<text class="c2" x="492.8" y="520.86" textLength="210" lengthAdjust="spacing" xml:space="preserve">198.51.100.13 sw-borde-03</text>
+<text class="c2" x="39.2" y="520.86" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.25</text>
+<text class="c1" x="215.6" y="520.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="520.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="520.86" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,742</text>
+<text class="c2" x="492.8" y="520.86" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="520.86" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="520.86" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="539.34" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.11</text>
-<text class="c1" x="215.6" y="539.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="539.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="539.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,544</text>
+<text class="c1" x="215.6" y="539.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="539.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="539.34" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,550</text>
 <text class="c2" x="492.8" y="539.34" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="539.34" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="539.34" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="557.82" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.16</text>
-<text class="c1" x="215.6" y="557.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="557.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="442.4" y="557.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,446</text>
+<text class="c1" x="215.6" y="557.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="557.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="557.82" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,456</text>
 <text class="c2" x="492.8" y="557.82" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="557.82" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="557.82" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="576.3" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">100.64.1.11</text>
-<text class="c1" x="215.6" y="576.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="576.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="576.3" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,438</text>
+<text class="c1" x="215.6" y="576.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="576.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="576.3" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,448</text>
 <text class="c2" x="492.8" y="576.3" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="576.3" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="576.3" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="594.78" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.26</text>
-<text class="c1" x="215.6" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="594.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,419</text>
+<text class="c1" x="215.6" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="594.78" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,426</text>
 <text class="c2" x="492.8" y="594.78" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="594.78" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="594.78" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="613.26" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.27</text>
-<text class="c1" x="215.6" y="613.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="613.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="613.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,197</text>
-<text class="c2" x="492.8" y="613.26" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
+<text class="c1" x="215.6" y="613.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="613.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="613.26" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,207</text>
+<text class="c2" x="492.8" y="613.26" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="613.26" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="613.26" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="631.74" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.12</text>
-<text class="c1" x="215.6" y="631.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="631.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="631.74" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,160</text>
+<text class="c1" x="215.6" y="631.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="631.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="631.74" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,163</text>
 <text class="c2" x="492.8" y="631.74" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="631.74" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="631.74" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="650.22" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.17</text>
-<text class="c1" x="215.6" y="650.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="650.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="442.4" y="650.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,060</text>
+<text class="c1" x="215.6" y="650.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="650.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="442.4" y="650.22" textLength="42" lengthAdjust="spacing" xml:space="preserve">1,064</text>
 <text class="c2" x="492.8" y="650.22" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="650.22" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="650.22" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="668.7" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.28</text>
-<text class="c1" x="215.6" y="668.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:47</text>
-<text class="c2" x="308" y="668.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="668.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">991</text>
+<text class="c1" x="215.6" y="668.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:35</text>
+<text class="c2" x="308" y="668.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:35</text>
+<text class="c2 b" x="459.2" y="668.7" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">993</text>
 <text class="c2" x="492.8" y="668.7" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="668.7" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="668.7" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="687.18" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">100.64.1.12</text>
-<text class="c1" x="215.6" y="687.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="687.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:47</text>
-<text class="c2 b" x="459.2" y="687.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">964</text>
+<text class="c1" x="215.6" y="687.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="687.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="687.18" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">972</text>
 <text class="c2" x="492.8" y="687.18" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="687.18" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="687.18" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="705.66" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.13</text>
-<text class="c1" x="215.6" y="705.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="705.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="705.66" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">877</text>
+<text class="c1" x="215.6" y="705.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="705.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="705.66" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">880</text>
 <text class="c2" x="492.8" y="705.66" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="705.66" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="705.66" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="724.14" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">203.0.113.25</text>
-<text class="c1" x="215.6" y="724.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="724.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="459.2" y="724.14" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">877</text>
-<text class="c2" x="492.8" y="724.14" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
+<text class="c1" x="215.6" y="724.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="724.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="724.14" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">880</text>
+<text class="c2" x="492.8" y="724.14" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="724.14" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="724.14" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="742.62" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.10.18</text>
-<text class="c1" x="215.6" y="742.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="742.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:45</text>
-<text class="c2 b" x="459.2" y="742.62" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">854</text>
+<text class="c1" x="215.6" y="742.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="742.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="742.62" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">856</text>
 <text class="c2" x="492.8" y="742.62" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="742.62" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="742.62" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="761.1" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.29</text>
-<text class="c1" x="215.6" y="761.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="761.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="761.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">841</text>
-<text class="c2" x="492.8" y="761.1" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
+<text class="c1" x="215.6" y="761.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="761.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="761.1" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">846</text>
+<text class="c2" x="492.8" y="761.1" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="761.1" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="761.1" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="779.58" textLength="84" lengthAdjust="spacing" xml:space="preserve">10.99.1.20</text>
-<text class="c1" x="215.6" y="779.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="779.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="779.58" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">794</text>
+<text class="c1" x="215.6" y="779.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:33</text>
+<text class="c2" x="308" y="779.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="779.58" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">803</text>
 <text class="c2" x="492.8" y="779.58" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c2" x="736.4" y="779.58" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="798.06" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.30</text>
-<text class="c1" x="215.6" y="798.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:46</text>
-<text class="c2" x="308" y="798.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:46</text>
-<text class="c2 b" x="459.2" y="798.06" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">787</text>
+<text class="c1" x="215.6" y="798.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="798.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="798.06" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">794</text>
 <text class="c2" x="492.8" y="798.06" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.12 sw-dist-02</text>
 <text class="c1" x="702.8" y="798.06" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="798.06" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="816.54" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">100.64.1.13</text>
-<text class="c1" x="215.6" y="816.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:46</text>
-<text class="c2" x="308" y="816.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="816.54" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">761</text>
+<text class="c1" x="215.6" y="816.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="816.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="816.54" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">764</text>
 <text class="c2" x="492.8" y="816.54" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="816.54" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="816.54" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="835.02" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.14</text>
-<text class="c1" x="215.6" y="835.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="835.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="835.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">755</text>
+<text class="c1" x="215.6" y="835.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="835.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="835.02" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">762</text>
 <text class="c2" x="492.8" y="835.02" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="835.02" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="835.02" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="853.5" textLength="75.6" lengthAdjust="spacing" xml:space="preserve">10.99.2.1</text>
-<text class="c1" x="215.6" y="853.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="853.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:48</text>
-<text class="c2 b" x="459.2" y="853.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">666</text>
+<text class="c1" x="215.6" y="853.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="853.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="853.5" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">674</text>
 <text class="c2" x="492.8" y="853.5" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="853.5" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+2</text>
 <text class="c2" x="736.4" y="853.5" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="871.98" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.40.15</text>
-<text class="c1" x="215.6" y="871.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="871.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="459.2" y="871.98" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">660</text>
+<text class="c1" x="215.6" y="871.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="871.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:34</text>
+<text class="c2 b" x="459.2" y="871.98" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">662</text>
 <text class="c2" x="492.8" y="871.98" textLength="193.2" lengthAdjust="spacing" xml:space="preserve">198.51.100.14 sw-lab-04</text>
 <text class="c1" x="694.4" y="871.98" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">+3</text>
 <text class="c2" x="736.4" y="871.98" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c2" x="39.2" y="890.46" textLength="92.4" lengthAdjust="spacing" xml:space="preserve">10.20.30.31</text>
-<text class="c1" x="215.6" y="890.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:24:45</text>
-<text class="c2" x="308" y="890.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">14:32:49</text>
-<text class="c2 b" x="459.2" y="890.46" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">654</text>
+<text class="c1" x="215.6" y="890.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:33:34</text>
+<text class="c2" x="308" y="890.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">00:41:36</text>
+<text class="c2 b" x="459.2" y="890.46" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">657</text>
 <text class="c2" x="492.8" y="890.46" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">198.51.100.11 sw-core-01</text>
 <text class="c1" x="702.8" y="890.46" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">…</text>
 <text class="c2" x="736.4" y="890.46" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
 <text class="c1" x="812" y="908.94" textLength="42" lengthAdjust="spacing" xml:space="preserve">1/242</text>
 <text class="c2 b" x="22.4" y="927.42" textLength="201.6" lengthAdjust="spacing" xml:space="preserve">IPs › Seen › 10.20.10.11</text>
-<text class="c0" x="501.2" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
-<text class="c1" x="518" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
-<text class="c0" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
-<text class="c1" x="610.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
-<text class="c0" x="660.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">f</text>
-<text class="c1" x="677.6" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
-<text class="c0" x="761.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">x</text>
-<text class="c1" x="778.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">exporter</text>
-<text class="c0" x="862.4" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
-<text class="c1" x="912.8" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
-<text class="c0" x="971.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">C</text>
-<text class="c1" x="988.4" y="927.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">disk capture</text>
-<text class="c0" x="1106" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
-<text class="c1" x="1139.6" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
-<text class="c0" x="1215.2" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
-<text class="c1" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text class="c0" x="434" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">⏎</text>
+<text class="c1" x="450.8" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">details</text>
+<text class="c0" x="526.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">o</text>
+<text class="c1" x="543.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">sort</text>
+<text class="c0" x="593.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">f</text>
+<text class="c1" x="610.4" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">reported</text>
+<text class="c0" x="694.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">x</text>
+<text class="c1" x="711.2" y="927.42" textLength="67.2" lengthAdjust="spacing" xml:space="preserve">exporter</text>
+<text class="c0" x="795.2" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">space</text>
+<text class="c1" x="845.6" y="927.42" textLength="42" lengthAdjust="spacing" xml:space="preserve">watch</text>
+<text class="c0" x="904.4" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">C</text>
+<text class="c1" x="921.2" y="927.42" textLength="100.8" lengthAdjust="spacing" xml:space="preserve">disk capture</text>
+<text class="c0" x="1038.8" y="927.42" textLength="25.2" lengthAdjust="spacing" xml:space="preserve">[ ]</text>
+<text class="c1" x="1072.4" y="927.42" textLength="58.8" lengthAdjust="spacing" xml:space="preserve">subview</text>
+<text class="c0" x="1148" y="927.42" textLength="16.8" lengthAdjust="spacing" xml:space="preserve">←→</text>
+<text class="c1" x="1173.2" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">tabs</text>
+<text class="c0" x="1223.6" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">q</text>
+<text class="c1" x="1240.4" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">quit</text>
 <text class="c0" x="1290.8" y="927.42" textLength="8.4" lengthAdjust="spacing" xml:space="preserve">?</text>
 <text class="c1" x="1307.6" y="927.42" textLength="33.6" lengthAdjust="spacing" xml:space="preserve">help</text>
 </svg>
